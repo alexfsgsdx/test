@@ -47,6 +47,6 @@ templates/index.html # Web UI
 
 ## Notes
 
+- **Speed validation:** Only standard JEDEC/retail speeds are accepted (e.g. DDR5 starts at 4800 MT/s — 4000 is rejected).
 - Part numbers follow each vendor's public naming scheme — verify on manufacturer sites before buying.
-- SPD serials are valid-format assembly serials, not guaranteed factory-assigned values.
-- Corsair often uses separate SKUs for XMP (`C`) vs EXPO (`Z`).
+- Generated numbers are **not** looked up in product databases; warnings appear when a combo is uncommon.
