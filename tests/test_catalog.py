@@ -11,9 +11,9 @@ from ram_part_number import generate_report, RamSpec
 class TestCatalogLookup(unittest.TestCase):
     def test_catalog_loads(self):
         stats = catalog_stats()
-        self.assertGreaterEqual(stats["product_count"], 2500)
+        self.assertGreaterEqual(stats["product_count"], 2700)
         self.assertGreaterEqual(stats["brand_count"], 20)
-        self.assertGreaterEqual(stats.get("ddr5_count", 0), 2500)
+        self.assertGreaterEqual(stats.get("ddr5_count", 0), 2700)
 
     def test_all_ddr5_brands_represented(self):
         products = load_catalog()

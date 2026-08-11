@@ -5,8 +5,288 @@
   "products": [
     {
       "brand": "adata",
-      "part_number": "AD5U560016G-S",
-      "product_name": "ADATA DDR5-5600 16GB UDIMM",
+      "part_number": "AD5U48008G-B",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U48008G-DT",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U48008G-R",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U48008G-S",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U480016G-B",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U480016G-DT",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U480016G-R",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U480016G-S",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U480032G-B",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U480032G-DT",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U480032G-S",
+      "product_name": "DDR5 4800 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U56008G-B",
+      "product_name": "DDR5 5600 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U56008G-DT",
+      "product_name": "DDR5 5600 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U56008G-S",
+      "product_name": "DDR5 5600 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U560016G-B",
+      "product_name": "DDR5 5600 U-DIMM",
       "sticks": 1,
       "per_stick_gb": 16,
       "total_gb": 16,
@@ -19,14 +299,54 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://webapi3.adata.com/storage/downloadfile/datasheet_ddr5_5600_u_dimm_20251111_v2.pdf",
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "adata",
-      "part_number": "AD5U560024G-S",
-      "product_name": "ADATA DDR5-5600 24GB UDIMM",
+      "part_number": "AD5U560016G-DT",
+      "product_name": "DDR5 5600 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U560016G-S",
+      "product_name": "DDR5 5600 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U560024G-B",
+      "product_name": "DDR5 5600 U-DIMM",
       "sticks": 1,
       "per_stick_gb": 24,
       "total_gb": 24,
@@ -39,14 +359,34 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://webapi3.adata.com/storage/downloadfile/datasheet_ddr5_5600_u_dimm_20251111_v2.pdf",
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "adata",
-      "part_number": "AD5U560032G-S",
-      "product_name": "ADATA DDR5-5600 32GB UDIMM",
+      "part_number": "AD5U560024G-S",
+      "product_name": "DDR5 5600 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U560032G-B",
+      "product_name": "DDR5 5600 U-DIMM",
       "sticks": 1,
       "per_stick_gb": 32,
       "total_gb": 32,
@@ -59,14 +399,54 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://webapi3.adata.com/storage/downloadfile/datasheet_ddr5_5600_u_dimm_20251111_v2.pdf",
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "adata",
-      "part_number": "AD5U560048G-S",
-      "product_name": "ADATA DDR5-5600 48GB UDIMM",
+      "part_number": "AD5U560032G-DT",
+      "product_name": "DDR5 5600 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U560032G-S",
+      "product_name": "DDR5 5600 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U560048G-B",
+      "product_name": "DDR5 5600 U-DIMM",
       "sticks": 1,
       "per_stick_gb": 48,
       "total_gb": 48,
@@ -79,14 +459,34 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://webapi3.adata.com/storage/downloadfile/datasheet_ddr5_5600_u_dimm_20251111_v2.pdf",
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "adata",
-      "part_number": "AD5U560064G-S",
-      "product_name": "ADATA DDR5-5600 64GB UDIMM",
+      "part_number": "AD5U560048G-S",
+      "product_name": "DDR5 5600 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 48,
+      "total_gb": 48,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U560064G-B",
+      "product_name": "DDR5 5600 U-DIMM",
       "sticks": 1,
       "per_stick_gb": 64,
       "total_gb": 64,
@@ -99,17 +499,57 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://webapi3.adata.com/storage/downloadfile/datasheet_ddr5_5600_u_dimm_20251111_v2.pdf",
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "adata",
+      "part_number": "AD5U560064G-S",
+      "product_name": "DDR5 5600 U-DIMM",
+      "sticks": 1,
+      "per_stick_gb": 64,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "apacer",
+      "part_number": "AH5U16G60C622MBAA-2",
+      "product_name": "Apacer NOX DDR5 32GB 6000MT/s",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 38,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.apacer.com/en/product/zadak-product/detail/zadak_memory/nox_ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "apacer",
       "part_number": "AH5U32G60C622MBAA-2",
-      "product_name": "Apacer NOX DDR5 32GB 6000MT/s Black Kit",
+      "product_name": "Apacer NOX DDR5 64GB 6000MT/s",
       "sticks": 2,
-      "per_stick_gb": 16,
-      "total_gb": 32,
+      "per_stick_gb": 32,
+      "total_gb": 64,
       "generation": 5,
       "speed_mts": 6000,
       "cas_latency": 38,
@@ -126,10 +566,10 @@
     {
       "brand": "apacer",
       "part_number": "AH5U32G60C622NWAA-2",
-      "product_name": "Apacer NOX RGB DDR5 32GB 6000MT/s Black Kit",
+      "product_name": "Apacer NOX RGB DDR5 64GB 6000MT/s",
       "sticks": 2,
-      "per_stick_gb": 16,
-      "total_gb": 32,
+      "per_stick_gb": 32,
+      "total_gb": 64,
       "generation": 5,
       "speed_mts": 6000,
       "cas_latency": 38,
@@ -145,11 +585,31 @@
     },
     {
       "brand": "apacer",
-      "part_number": "AH5U32G64C552MBAA-2",
-      "product_name": "Apacer NOX DDR5 32GB 6400MT/s Black Kit",
+      "part_number": "AH5U16G64C552MBAA-2",
+      "product_name": "Apacer NOX DDR5 32GB 6400MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.apacer.com/en/product/zadak-product/detail/zadak_memory/nox_ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "apacer",
+      "part_number": "AH5U32G64C552MBAA-2",
+      "product_name": "Apacer NOX DDR5 64GB 6400MT/s",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
       "generation": 5,
       "speed_mts": 6400,
       "cas_latency": 32,
@@ -166,10 +626,10 @@
     {
       "brand": "apacer",
       "part_number": "AH5U32G64C552NWAA-2",
-      "product_name": "Apacer NOX RGB DDR5 32GB 6400MT/s Black Kit",
+      "product_name": "Apacer NOX RGB DDR5 64GB 6400MT/s",
       "sticks": 2,
-      "per_stick_gb": 16,
-      "total_gb": 32,
+      "per_stick_gb": 32,
+      "total_gb": 64,
       "generation": 5,
       "speed_mts": 6400,
       "cas_latency": 32,
@@ -186,15 +646,15 @@
     {
       "brand": "apacer",
       "part_number": "AH5U32G68C642MBAA-2",
-      "product_name": "Apacer NOX DDR5 32GB 6800MT/s Black Kit",
+      "product_name": "Apacer NOX DDR5 64GB 6800MT/s",
       "sticks": 2,
-      "per_stick_gb": 16,
-      "total_gb": 32,
+      "per_stick_gb": 32,
+      "total_gb": 64,
       "generation": 5,
       "speed_mts": 6800,
       "cas_latency": 34,
       "profiles": [
-        "xmp"
+        "both"
       ],
       "rgb": false,
       "form_factor": "dimm",
@@ -206,15 +666,15 @@
     {
       "brand": "apacer",
       "part_number": "AH5U32G80C632NWAA-2",
-      "product_name": "Apacer NOX RGB DDR5 32GB 8000MT/s Black Kit",
+      "product_name": "Apacer NOX RGB DDR5 64GB 8000MT/s",
       "sticks": 2,
-      "per_stick_gb": 16,
-      "total_gb": 32,
+      "per_stick_gb": 32,
+      "total_gb": 64,
       "generation": 5,
       "speed_mts": 8000,
       "cas_latency": 38,
       "profiles": [
-        "xmp"
+        "both"
       ],
       "rgb": true,
       "form_factor": "dimm",
@@ -28545,73 +29005,153 @@
     },
     {
       "brand": "mushkin",
-      "part_number": "MRE5U480FFFD16GX2",
-      "product_name": "Mushkin Redline DDR5 32GB 4800MT/s",
-      "sticks": 2,
+      "part_number": "MRE5U480FFFD16G",
+      "product_name": "Mushkin Redline DDR5 16GB 48000MT/s",
+      "sticks": 1,
       "per_stick_gb": 16,
-      "total_gb": 32,
+      "total_gb": 16,
       "generation": 5,
-      "speed_mts": 4800,
+      "speed_mts": 48000,
       "cas_latency": 40,
       "profiles": [
-        "jedec"
+        "xmp"
       ],
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://mushkin.com/redline-udimm-ddr5/",
+      "source_url": "https://mushkin.com/product/redline-16gb-ddr5-4800-udimm-pc5-4800-4800mhz-40-40-40-mre5u480fffd16g/",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "mushkin",
+      "part_number": "MRE5U480FFFD16GX2",
+      "product_name": "Mushkin Redline DDR5 32GB 48000MT/s",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 48000,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://mushkin.com/product/redline-32gb-2x16gb-ddr5-4800-udimm-pc5-4800-5600mhz-40-40-40-mre5u480fffd16gx2/",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "mushkin",
+      "part_number": "MRE5U520HHHD16G",
+      "product_name": "Mushkin Redline DDR5 16GB 52000MT/s",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 52000,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://mushkin.com/product/redline-16gb-ddr5-5200-udimm-pc5-5200-5200mhz-42-42-42-mre5u520hhhd16g/",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "mushkin",
       "part_number": "MRE5U520HHHD16GX2",
-      "product_name": "Mushkin Redline DDR5 32GB 5200MT/s",
+      "product_name": "Mushkin Redline DDR5 32GB 52000MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
       "generation": 5,
-      "speed_mts": 5200,
-      "cas_latency": 42,
+      "speed_mts": 52000,
+      "cas_latency": 40,
       "profiles": [
-        "jedec"
+        "xmp"
       ],
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://mushkin.com/redline-udimm-ddr5/",
+      "source_url": "https://mushkin.com/product/redline-32gb-2x16gb-ddr5-5200-udimm-pc5-5200-42-42-42-mre5u520hhhd16gx2/",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "mushkin",
+      "part_number": "MRE5U560LKKD16G",
+      "product_name": "Mushkin Redline DDR5 16GB 56000MT/s",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 56000,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://mushkin.com/product/redline-16gb-ddr5-5600-udimm-pc5-5600-5600mhz-46-45-45-mre5u560lkkd16g/",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "mushkin",
       "part_number": "MRE5U560LKKD16GX2",
-      "product_name": "Mushkin Redline DDR5 32GB 5600MT/s",
+      "product_name": "Mushkin Redline DDR5 32GB 56000MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
       "generation": 5,
-      "speed_mts": 5600,
-      "cas_latency": 46,
+      "speed_mts": 56000,
+      "cas_latency": 40,
       "profiles": [
-        "jedec"
+        "xmp"
       ],
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://mushkin.com/redline-udimm-ddr5/",
+      "source_url": "https://mushkin.com/product/redline-32gb-2x16gb-ddr5-5600-udimm-pc5-5600-46-45-45-mre5u560lkkd16gx2/",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "mushkin",
+      "part_number": "MRE5U560KKKD32GX2",
+      "product_name": "Mushkin Redline DDR5 64GB 56000MT/s",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 56000,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://mushkin.com/product-category/memory/ddr5/",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "mushkin",
       "part_number": "MLA5C600AEEM16GX2",
-      "product_name": "Mushkin Redline Lumina DDR5 32GB 6000MT/s",
+      "product_name": "Mushkin Redline DDR5 32GB 60000MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
       "generation": 5,
-      "speed_mts": 6000,
+      "speed_mts": 60000,
       "cas_latency": 30,
       "profiles": [
         "xmp"
@@ -28619,19 +29159,39 @@
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://mushkin.com/redline-udimm-ddr5/",
+      "source_url": "https://mushkin.com/product-category/memory/ddr5/",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "mushkin",
+      "part_number": "MLA5C600BEEM32GX2",
+      "product_name": "Mushkin Redline DDR5 64GB 60000MT/s",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 60000,
+      "cas_latency": 30,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://mushkin.com/product-category/memory/ddr5/",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "mushkin",
       "part_number": "MLA5C640A77P16GX2",
-      "product_name": "Mushkin Redline Lumina DDR5 32GB 6400MT/s",
+      "product_name": "Mushkin Redline DDR5 32GB 64000MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
       "generation": 5,
-      "speed_mts": 6400,
+      "speed_mts": 64000,
       "cas_latency": 30,
       "profiles": [
         "xmp"
@@ -28639,34 +29199,34 @@
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://mushkin.com/redline-udimm-ddr5/",
+      "source_url": "https://mushkin.com/product-category/memory/ddr5/",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "mushkin",
       "part_number": "MLA5C640BGGP16GX2",
-      "product_name": "Mushkin Redline Lumina DDR5 32GB 6400MT/s CL32",
+      "product_name": "Mushkin Redline DDR5 32GB 64000MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
       "generation": 5,
-      "speed_mts": 6400,
-      "cas_latency": 32,
+      "speed_mts": 64000,
+      "cas_latency": 30,
       "profiles": [
         "xmp"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://mushkin.com/redline-udimm-ddr5/",
+      "source_url": "https://mushkin.com/product-category/memory/ddr5/",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "oloy",
       "part_number": "MD5U1648400BRKDE",
-      "product_name": "OLOy Blade RGB DDR5 32GB 4800MT/s Black",
+      "product_name": "OLOy Blade DDR5 32GB 4800MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
@@ -28679,14 +29239,14 @@
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.oloymemory.com/",
+      "source_url": "https://www.oloymemory.com/products.html",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "oloy",
-      "part_number": "ND5U1660306BRLDA",
-      "product_name": "OLOy Blade DDR5 32GB 6000MT/s Black",
+      "part_number": "MD5U1660306BRKDE",
+      "product_name": "OLOy Blade DDR5 32GB 6000MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
@@ -28696,17 +29256,57 @@
       "profiles": [
         "xmp"
       ],
-      "rgb": false,
+      "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.oloymemory.com/",
+      "source_url": "https://www.oloymemory.com/products.html",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "oloy",
+      "part_number": "MD5U1660306BRSDE",
+      "product_name": "OLOy Blade DDR5 32GB 6000MT/s",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.oloymemory.com/products.html",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "oloy",
+      "part_number": "ND5U1660306BRLDA",
+      "product_name": "OLOy Blade DDR5 32GB 6000MT/s",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.oloymemory.com/products.html",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "oloy",
       "part_number": "MD5U1662320BRSDE",
-      "product_name": "OLOy Blade RGB DDR5 32GB 6200MT/s Platinum",
+      "product_name": "OLOy Blade DDR5 32GB 6200MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
@@ -28719,14 +29319,14 @@
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.oloymemory.com/",
+      "source_url": "https://www.oloymemory.com/products.html",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "oloy",
-      "part_number": "MD5U1664320IRKDE",
-      "product_name": "OLOy Blade RGB DDR5 32GB 6400MT/s Black",
+      "part_number": "MD5U1664320BRKDE",
+      "product_name": "OLOy Blade DDR5 32GB 6400MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
@@ -28739,7 +29339,47 @@
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.oloymemory.com/",
+      "source_url": "https://www.oloymemory.com/products.html",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "oloy",
+      "part_number": "MD5U1664320IRKDE",
+      "product_name": "OLOy Blade DDR5 32GB 6400MT/s",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.oloymemory.com/products.html",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "oloy",
+      "part_number": "ND5U1664320BRKDE",
+      "product_name": "OLOy Blade DDR5 32GB 6400MT/s",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.oloymemory.com/products.html",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -50045,6 +50685,26 @@
     },
     {
       "brand": "timetec",
+      "part_number": "75TT48NU1R8-8G",
+      "product_name": "Timetec Premium DDR5 8GB 4800MT/s",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "timetec",
       "part_number": "75TT48NU1R8-16G",
       "product_name": "Timetec Premium DDR5 16GB 4800MT/s",
       "sticks": 1,
@@ -50065,7 +50725,47 @@
     },
     {
       "brand": "timetec",
+      "part_number": "75TT48NU1R8-8GK2",
+      "product_name": "Timetec Premium DDR5 16GB Kit 4800MT/s",
+      "sticks": 2,
+      "per_stick_gb": 8,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "timetec",
       "part_number": "75TT48NU1R8-16GK",
+      "product_name": "Timetec Premium DDR5 32GB Kit 4800MT/s",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "timetec",
+      "part_number": "75TT48NU1R8-16GK2",
       "product_name": "Timetec Premium DDR5 32GB Kit 4800MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
@@ -50105,11 +50805,91 @@
     },
     {
       "brand": "timetec",
+      "part_number": "75TT48NU2R8-32G",
+      "product_name": "Timetec Premium DDR5 32GB 4800MT/s",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "timetec",
+      "part_number": "75TT48NU2R8-32GK2",
+      "product_name": "Timetec Premium DDR5 64GB Kit 4800MT/s",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "timetec",
       "part_number": "75TT56NU1R8-16G",
       "product_name": "Timetec Premium DDR5 16GB 5600MT/s",
       "sticks": 1,
       "per_stick_gb": 16,
       "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "timetec",
+      "part_number": "75TT56NU1R8-16GK2",
+      "product_name": "Timetec Premium DDR5 32GB Kit 5600MT/s",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "timetec",
+      "part_number": "75TT56NU1R8-32G",
+      "product_name": "Timetec Premium DDR5 32GB 5600MT/s",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
       "generation": 5,
       "speed_mts": 5600,
       "cas_latency": 46,
@@ -50144,9 +50924,29 @@
       "verified": "2026-08-11"
     },
     {
+      "brand": "timetec",
+      "part_number": "75TT56NU1R8-32GK2",
+      "product_name": "Timetec Premium DDR5 64GB Kit 5600MT/s",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
       "brand": "vcolor",
       "part_number": "TMXPL1656836KWK",
-      "product_name": "v-color Manta XPrism RGB DDR5 32GB 5600MT/s Black",
+      "product_name": "v-color Manta XPrism RGB DDR5 32GB 5600MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
@@ -50166,7 +50966,7 @@
     {
       "brand": "vcolor",
       "part_number": "TMXPL1660836KWK",
-      "product_name": "v-color Manta XPrism RGB DDR5 32GB 6000MT/s Black",
+      "product_name": "v-color Manta XPrism RGB DDR5 32GB 6000MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
@@ -50186,7 +50986,7 @@
     {
       "brand": "vcolor",
       "part_number": "TMXPL1662836KWK",
-      "product_name": "v-color Manta XPrism RGB DDR5 32GB 6200MT/s Black",
+      "product_name": "v-color Manta XPrism RGB DDR5 32GB 6200MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
@@ -50206,7 +51006,7 @@
     {
       "brand": "vcolor",
       "part_number": "TMXPL1664832KWK",
-      "product_name": "v-color Manta XPrism RGB DDR5 32GB 6400MT/s Black",
+      "product_name": "v-color Manta XPrism RGB DDR5 32GB 6400MT/s",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
@@ -50225,8 +51025,48 @@
     },
     {
       "brand": "vcolor",
+      "part_number": "TMXPL1680838KWK",
+      "product_name": "v-color Manta XPrism RGB DDR5 32GB 8000MT/s",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 8000,
+      "cas_latency": 38,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://v-color.net/",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "vcolor",
       "part_number": "TMXPL2480800KWK",
-      "product_name": "v-color Manta XPrism RGB DDR5 48GB 8000MT/s Black",
+      "product_name": "v-color Manta XPrism RGB DDR5 48GB 8000MT/s",
+      "sticks": 2,
+      "per_stick_gb": 24,
+      "total_gb": 48,
+      "generation": 5,
+      "speed_mts": 8000,
+      "cas_latency": 80,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://v-color.net/",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "vcolor",
+      "part_number": "TMXPL2480838KWK",
+      "product_name": "v-color Manta XPrism RGB DDR5 48GB 8000MT/s",
       "sticks": 2,
       "per_stick_gb": 24,
       "total_gb": 48,
@@ -50246,7 +51086,7 @@
     {
       "brand": "vcolor",
       "part_number": "TMXPL2482840KWK",
-      "product_name": "v-color Manta XPrism RGB DDR5 48GB 8200MT/s Black",
+      "product_name": "v-color Manta XPrism RGB DDR5 48GB 8200MT/s",
       "sticks": 2,
       "per_stick_gb": 24,
       "total_gb": 48,
@@ -50280,6 +51120,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/us/xpg/dram-modules-spectrix-d35g-ddr4",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U4800C4016G-SLARBBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U5200C3816G-DCLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 5200,
+      "cas_latency": 38,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -50325,6 +51205,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U5600C468G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U5600C468G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U5600C468G-DTLABWH",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -50365,6 +51285,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U5600C468G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U5600C468G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U5600C468G-SLABWH",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -50380,6 +51340,26 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U5600C4616G",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -50485,6 +51465,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U5600C4616G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U5600C4616G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U5600C4616G-DTLABWH",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -50560,6 +51580,26 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U5600C4616G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -50725,6 +51765,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C2816G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 28,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C2816G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 28,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C2816G-DTLABWH",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -50760,6 +51840,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C2816G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 28,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C2816G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 28,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -50846,7 +51966,7 @@
     {
       "brand": "xpg",
       "part_number": "AX5U6000C3016G-CLARBK",
-      "product_name": "XPG LANCER RGB DDR5 16GB Black",
+      "product_name": "LANCER RGB DDR5",
       "sticks": 1,
       "per_stick_gb": 16,
       "total_gb": 16,
@@ -50859,7 +51979,7 @@
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5",
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -50880,6 +52000,26 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5-golden-horse-edition",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3016G-CLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -50985,8 +52125,48 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C3016G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3016G-DTLABRBK-OBZOR-PAMJAT-KAK-PAMJAT",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C3016G-DTLABRWH",
-      "product_name": "LANCER BLADE DDR5",
+      "product_name": "LANCER BLADE RGB DDR5",
       "sticks": 1,
       "per_stick_gb": 16,
       "total_gb": 16,
@@ -50999,7 +52179,7 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51065,6 +52245,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C3016G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3016G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C3016G-SLABWH",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -51080,6 +52300,86 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3416G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 34,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3416G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 34,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3416G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 34,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3416G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 34,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51140,6 +52440,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3616G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3616G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51225,6 +52565,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C3616G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3616G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C3616G-SLABWH",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -51240,6 +52620,26 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C4816G",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 48,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51305,6 +52705,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C4816G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 48,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C4816G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 48,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C4816G-DTLABWH",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -51345,6 +52785,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C4816G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 48,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C4816G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 48,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C4816G-SLABWH",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -51365,6 +52845,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C3024G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3024G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C3624G-DTLABBK",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -51380,6 +52900,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3624G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3624G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51425,6 +52985,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C3624G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3624G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C3624G-SLABWH",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -51460,6 +53060,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C4824G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 48,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C4824G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 48,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51505,6 +53145,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C4824G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 48,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C4824G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 48,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C2832G-DTLABBK",
       "product_name": "LANCER BLADE DDR5",
       "sticks": 1,
@@ -51520,6 +53200,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C2832G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 28,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C2832G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 28,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51560,6 +53280,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C2832G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 28,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C2832G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 28,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51620,6 +53380,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-neon-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3016G-DCLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3016G-DCLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51700,6 +53500,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3032G-CLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3032G-CLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51805,6 +53645,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C3032G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3032G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C3032G-SAMBK",
       "product_name": "ARMAX DDR5",
       "sticks": 1,
@@ -51865,6 +53745,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6000C3032G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3032G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6000C4816G-DCNKRBK",
       "product_name": "NOVAKEY RGB DDR5",
       "sticks": 2,
@@ -51886,7 +53806,7 @@
     {
       "brand": "xpg",
       "part_number": "AX5U6000C3048G-CLARBK",
-      "product_name": "XPG LANCER RGB DDR5 48GB Black",
+      "product_name": "LANCER RGB DDR5",
       "sticks": 1,
       "per_stick_gb": 48,
       "total_gb": 48,
@@ -51899,7 +53819,27 @@
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5",
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3048G-CLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 48,
+      "total_gb": 48,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51920,6 +53860,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3032G-DCLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3032G-DCLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -51960,6 +53940,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3048G-DCLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 48,
+      "total_gb": 96,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6000C3048G-DCLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 48,
+      "total_gb": 96,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 30,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -52020,6 +54040,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-neon-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3216G-CLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3216G-CLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -52125,6 +54185,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6400C3216G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3216G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6400C3216G-SAMBK",
       "product_name": "ARMAX DDR5",
       "sticks": 1,
@@ -52185,6 +54285,166 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6400C3216G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3216G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3816G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 38,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3816G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 38,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3816G-SLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 38,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3816G-SLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 38,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3224G-DTLABRBK",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3224G-DTLABRWH",
+      "product_name": "LANCER BLADE RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 24,
+      "total_gb": 24,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6400C3216G-DCLABK",
       "product_name": "LANCER DDR5",
       "sticks": 2,
@@ -52220,6 +54480,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-neon-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3216G-DCLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3216G-DCLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -52285,6 +54585,46 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6400C3232G-CLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3232G-CLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U6400C3232G-CLAWH",
       "product_name": "LANCER DDR5",
       "sticks": 1,
@@ -52326,7 +54666,7 @@
     {
       "brand": "xpg",
       "part_number": "AX5U6400C3248G-CLARBK",
-      "product_name": "XPG LANCER RGB DDR5 48GB 6400MT/s Black",
+      "product_name": "LANCER RGB DDR5",
       "sticks": 1,
       "per_stick_gb": 48,
       "total_gb": 48,
@@ -52339,7 +54679,27 @@
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5",
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3248G-CLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 48,
+      "total_gb": 48,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -52360,6 +54720,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3232G-DCLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3232G-DCLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -52405,8 +54805,48 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U6400C3248G-DCLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 48,
+      "total_gb": 96,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U6400C3248G-DCLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 48,
+      "total_gb": 96,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U7200C3416G-CLARBK",
-      "product_name": "XPG LANCER RGB DDR5 16GB 7200MT/s Black",
+      "product_name": "LANCER RGB DDR5",
       "sticks": 1,
       "per_stick_gb": 16,
       "total_gb": 16,
@@ -52414,12 +54854,32 @@
       "speed_mts": 7200,
       "cas_latency": 34,
       "profiles": [
-        "xmp"
+        "both"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5",
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U7200C3416G-CLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 7200,
+      "cas_latency": 34,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -52445,8 +54905,48 @@
     },
     {
       "brand": "xpg",
+      "part_number": "AX5U7200C3416G-DCLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 7200,
+      "cas_latency": 34,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U7200C3416G-DCLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 7200,
+      "cas_latency": 34,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
       "part_number": "AX5U8000C3816G-CLARBK",
-      "product_name": "XPG LANCER RGB DDR5 16GB 8000MT/s Black",
+      "product_name": "LANCER RGB DDR5",
       "sticks": 1,
       "per_stick_gb": 16,
       "total_gb": 16,
@@ -52454,12 +54954,32 @@
       "speed_mts": 8000,
       "cas_latency": 38,
       "profiles": [
-        "xmp"
+        "both"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5",
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U8000C3816G-CLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 8000,
+      "cas_latency": 38,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -52480,6 +55000,46 @@
       "form_factor": "dimm",
       "ecc": false,
       "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-neon-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U8000C3816G-DCLARBK",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 8000,
+      "cas_latency": 38,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "xpg",
+      "part_number": "AX5U8000C3816G-DCLARWH",
+      "product_name": "LANCER RGB DDR5",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 8000,
+      "cas_latency": 38,
+      "profiles": [
+        "both"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5",
       "source": "manufacturer",
       "verified": "2026-08-11"
     }
