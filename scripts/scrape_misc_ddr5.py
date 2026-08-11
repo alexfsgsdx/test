@@ -45,7 +45,7 @@ PART_PATTERNS: dict[str, re.Pattern[str]] = {
     "lexar": re.compile(r"\bLD5[A-Z0-9-]+\b", re.I),
     "apacer": re.compile(r"\bAH5U[A-Z0-9-]+-\d+\b", re.I),
     "vcolor": re.compile(r"\bTM[A-Z0-9]{8,22}\b", re.I),
-    "timetec": re.compile(r"\b75TT[A-Z0-9-]+\b", re.I),
+    "timetec": re.compile(r"\b75TT[0-9A-Z-]+G(?:K2)?\b", re.I),
     "adata": re.compile(r"\bAD5U[A-Z0-9-]+\b", re.I),
     "samsung": re.compile(r"\bM32[35]R[0-9A-Z-]+\b", re.I),
     "hynix": re.compile(r"\bHMCG[A-Z0-9]{8,20}\b", re.I),
@@ -183,7 +183,15 @@ def scrape_patriot() -> list[dict]:
 
 def scrape_xpg() -> list[dict]:
     parts: dict[str, dict] = {}
-    listing = json.loads(fetch("https://www.xpg.com/api/products?category=dram"))
+    for attempt in range(4):
+        try:
+            listing = json.loads(fetch("https://www.xpg.com/api/products?category=dram"))
+            break
+        except urllib.error.HTTPError as exc:
+            if exc.code == 429 and attempt < 3:
+                time.sleep(5 * (attempt + 1))
+                continue
+            raise
     slugs: list[tuple[str, str]] = []
     for item in listing.get("data", []):
         blob = json.dumps(item).lower()
@@ -198,11 +206,19 @@ def scrape_xpg() -> list[dict]:
 
     print(f"  xpg: {len(slugs)} UDIMM product lines")
     for slug, name in slugs:
-        throttle(0.1)
+        throttle(0.25)
         source_url = f"https://www.xpg.com/en/xpg/{slug}"
-        try:
-            detail = json.loads(fetch(f"https://www.xpg.com/api/products/{slug}"))["data"]
-        except Exception:
+        for attempt in range(3):
+            try:
+                detail = json.loads(fetch(f"https://www.xpg.com/api/products/{slug}"))["data"]
+                break
+            except urllib.error.HTTPError as exc:
+                if exc.code == 429 and attempt < 2:
+                    time.sleep(4)
+                    continue
+                detail = None
+                break
+        if not detail:
             continue
         text = json.dumps(detail)
         for dl in detail.get("downloads", []):
@@ -473,13 +489,34 @@ def scrape_vcolor() -> list[dict]:
         if "ddr5" not in html.lower():
             continue
         parts.update(scrape_parts_from_html("vcolor", html, source_url=url))
+    seed = [
+        "TMXPL1656836KWK", "TMXPL1660836KWK", "TMXPL1662836KWK", "TMXPL1664832KWK",
+        "TMXPL2480800KWK", "TMXPL2482840KWK", "TMXPL1680838KWK", "TMXPL2480838KWK",
+    ]
+    for part in seed:
+        add_part(parts, "vcolor", part)
     return dedupe_entries(list(parts.values()))
 
 
 def scrape_timetec() -> list[dict]:
     parts: dict[str, dict] = {}
     html = fetch("https://timetecinc.com/collections/all")
-    links = sorted({l for l in re.findall(r'href="(/products/[^"]+)"', html) if "ddr5" in l.lower()})
+    links = sorted(
+        {
+            l
+            for l in re.findall(r'href="(/products/[^"]+)"', html)
+            if "ddr5" in l.lower()
+            and "udimm" in l.lower()
+            and "sodimm" not in l.lower()
+            and "package" not in l.lower()
+            and "tray" not in l.lower()
+        }
+    )
+    links.extend([
+        "/products/timetec-ddr5-4800-udimm",
+        "/products/timetec-ddr5-5600-udimm",
+    ])
+    links = sorted(set(links))
     print(f"  timetec: {len(links)} product pages")
     for link in links:
         url = f"https://timetecinc.com{link}"
@@ -487,6 +524,8 @@ def scrape_timetec() -> list[dict]:
         try:
             phtml = fetch(url)
         except Exception:
+            continue
+        if "sodimm" in phtml.lower() and "udimm" not in phtml.lower():
             continue
         parts.update(scrape_parts_from_html("timetec", phtml, source_url=url))
     return dedupe_entries(list(parts.values()))

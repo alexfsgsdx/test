@@ -1,1 +1,392 @@
-[]
+[
+  {
+    "brand": "adata",
+    "part_number": "AD5U48008G-B",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U48008G-DT",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U48008G-R",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U48008G-S",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U480016G-B",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U480016G-DT",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U480016G-R",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U480016G-S",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U480032G-B",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U480032G-DT",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U480032G-S",
+    "product_name": "DDR5 4800 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-4800-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U56008G-B",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U56008G-DT",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U56008G-S",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560016G-B",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560016G-DT",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560016G-S",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560024G-B",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560024G-S",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560032G-B",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560032G-DT",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560032G-S",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560048G-B",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 48,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560048G-S",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 48,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560064G-B",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  },
+  {
+    "brand": "adata",
+    "part_number": "AD5U560064G-S",
+    "product_name": "DDR5 5600 U-DIMM",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.adata.com/en/memory/dram-module-ddr5-5600-u-dimm"
+  }
+]

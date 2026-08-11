@@ -321,14 +321,17 @@ def decode_lexar(part: str, product_name: str = "", source_url: str = "") -> dic
 
 def decode_apacer(part: str, product_name: str = "", source_url: str = "") -> dict | None:
     p = part.upper()
-    m = re.match(r"^AH5U(\d+)G(\d{4})C(\d{2,3})([A-Z]{4})-(\d+)$", p)
+    m = re.match(r"^AH5U(\d+)G(\d{2,4})C(\d{2,3})([A-Z]{4})-(\d+)$", p)
     if not m:
         return None
-    per, speed_mts, cl, suffix, sticks = m.groups()
+    per, speed_raw, cl, suffix, sticks = m.groups()
     rgb = "NW" in suffix
+    speed_mts = int(speed_raw)
+    if speed_mts < 1000:
+        speed_mts *= 100
     cas = int(cl[:2])
     if cas > 52:
-        cas = {6000: 38, 6400: 32, 6800: 34, 8000: 38}.get(int(speed_mts), 36)
+        cas = {6000: 38, 6400: 32, 6800: 34, 8000: 38}.get(speed_mts, 36)
     return finalize(
         "apacer", p,
         product_name=product_name or f"Apacer NOX {'RGB ' if rgb else ''}DDR5 {int(sticks)*int(per)}GB {speed_mts}MT/s",
@@ -340,16 +343,21 @@ def decode_apacer(part: str, product_name: str = "", source_url: str = "") -> di
 
 def decode_vcolor(part: str, product_name: str = "", source_url: str = "") -> dict | None:
     p = part.upper()
-    m = re.match(r"^TMXPL(\d{2})(\d{2})(\d{2})(\d{2})KWK$", p)
-    if not m:
-        return None
-    per, speed_hi, cl, cap2 = m.groups()
-    per_stick = int(per)
+    m = re.match(r"^TMXPL(\d{2})(\d{2})(\d{3})KWK$", p)
+    if m:
+        per, speed_hi, cl_raw = m.groups()
+        per_stick = int(per)
+        speed_mts = int(speed_hi) * 100
+        cas = int(cl_raw[-2:]) if int(cl_raw[-2:]) >= 20 else int(cl_raw[0] + cl_raw[-1])
+    else:
+        m = re.match(r"^TMXPL(\d{3})(\d{4})KWK$", p)
+        if not m:
+            return None
+        cap, speed_raw = m.groups()
+        per_stick = int(cap)
+        speed_mts = int(speed_raw)
+        cas = {8000: 38, 8200: 40}.get(speed_mts, 38)
     sticks = 2
-    if per_stick >= 24:
-        per_stick = int(f"{per}{cap2}")
-    speed_mts = int(speed_hi) * 100
-    cas = int(cl)
     return finalize(
         "vcolor", p,
         product_name=product_name or f"v-color Manta XPrism RGB DDR5 {sticks * per_stick}GB {speed_mts}MT/s",
@@ -360,18 +368,26 @@ def decode_vcolor(part: str, product_name: str = "", source_url: str = "") -> di
 
 def decode_timetec(part: str, product_name: str = "", source_url: str = "") -> dict | None:
     p = part.upper()
-    m = re.match(r"^75TT(\d{2})NU1R8-(\d+)G(K?)$", p)
+    m = re.match(r"^75TT(\d{2})NU\dR8-(\d+)GK2$", p)
+    if m:
+        speed_hi, cap = m.groups()
+        speed_mts = int(speed_hi) * 100
+        return finalize(
+            "timetec", p,
+            product_name=product_name or f"Timetec Premium DDR5 {int(cap) * 2}GB Kit {speed_mts}MT/s",
+            sticks=2, per_stick_gb=int(cap), speed_mts=speed_mts,
+            cas_latency=JEDEC_CL.get(speed_mts, 40), profiles=["jedec"], rgb=False,
+            source_url=source_url or "https://timetecinc.com/collections/all",
+        )
+    m = re.match(r"^75TT(\d{2})NU\dR8-(\d+)G$", p)
     if not m:
         return None
-    speed_hi, cap, kit = m.groups()
+    speed_hi, cap = m.groups()
     speed_mts = int(speed_hi) * 100
-    cap_gb = int(cap)
-    sticks = 2 if kit else 1
-    per = cap_gb // sticks if kit else cap_gb
     return finalize(
         "timetec", p,
-        product_name=product_name or f"Timetec Premium DDR5 {cap_gb if not kit else cap_gb * 2}GB {speed_mts}MT/s",
-        sticks=sticks, per_stick_gb=per, speed_mts=speed_mts,
+        product_name=product_name or f"Timetec Premium DDR5 {int(cap)}GB {speed_mts}MT/s",
+        sticks=1, per_stick_gb=int(cap), speed_mts=speed_mts,
         cas_latency=JEDEC_CL.get(speed_mts, 40), profiles=["jedec"], rgb=False,
         source_url=source_url or "https://timetecinc.com/collections/all",
     )

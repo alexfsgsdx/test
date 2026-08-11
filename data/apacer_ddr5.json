@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "brand": "apacer",
+    "part_number": "AH5U16G60C622MBAA-2",
+    "product_name": "Apacer NOX DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.apacer.com/en/product/zadak-product/detail/zadak_memory/nox_ddr5"
+  },
+  {
+    "brand": "apacer",
+    "part_number": "AH5U32G60C622MBAA-2",
+    "product_name": "Apacer NOX DDR5 64GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.apacer.com/en/product/zadak-product/detail/zadak_memory/nox_ddr5"
+  },
+  {
+    "brand": "apacer",
+    "part_number": "AH5U32G60C622NWAA-2",
+    "product_name": "Apacer NOX RGB DDR5 64GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.apacer.com/en/product/zadak-product/detail/zadak_memory/nox_ddr5"
+  },
+  {
+    "brand": "apacer",
+    "part_number": "AH5U16G64C552MBAA-2",
+    "product_name": "Apacer NOX DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.apacer.com/en/product/zadak-product/detail/zadak_memory/nox_ddr5"
+  },
+  {
+    "brand": "apacer",
+    "part_number": "AH5U32G64C552MBAA-2",
+    "product_name": "Apacer NOX DDR5 64GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.apacer.com/en/product/zadak-product/detail/zadak_memory/nox_ddr5"
+  },
+  {
+    "brand": "apacer",
+    "part_number": "AH5U32G64C552NWAA-2",
+    "product_name": "Apacer NOX RGB DDR5 64GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.apacer.com/en/product/zadak-product/detail/zadak_memory/nox_ddr5"
+  },
+  {
+    "brand": "apacer",
+    "part_number": "AH5U32G68C642MBAA-2",
+    "product_name": "Apacer NOX DDR5 64GB 6800MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6800,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.apacer.com/en/product/zadak-product/detail/zadak_memory/nox_ddr5"
+  },
+  {
+    "brand": "apacer",
+    "part_number": "AH5U32G80C632NWAA-2",
+    "product_name": "Apacer NOX RGB DDR5 64GB 8000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.apacer.com/en/product/zadak-product/detail/zadak_memory/nox_ddr5"
+  }
+]

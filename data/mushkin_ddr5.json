@@ -1,1 +1,167 @@
-[]
+[
+  {
+    "brand": "mushkin",
+    "part_number": "MRE5U480FFFD16G",
+    "product_name": "Mushkin Redline DDR5 16GB 48000MT/s",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 48000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product/redline-16gb-ddr5-4800-udimm-pc5-4800-4800mhz-40-40-40-mre5u480fffd16g/"
+  },
+  {
+    "brand": "mushkin",
+    "part_number": "MRE5U480FFFD16GX2",
+    "product_name": "Mushkin Redline DDR5 32GB 48000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 48000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product/redline-32gb-2x16gb-ddr5-4800-udimm-pc5-4800-5600mhz-40-40-40-mre5u480fffd16gx2/"
+  },
+  {
+    "brand": "mushkin",
+    "part_number": "MRE5U520HHHD16G",
+    "product_name": "Mushkin Redline DDR5 16GB 52000MT/s",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 52000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product/redline-16gb-ddr5-5200-udimm-pc5-5200-5200mhz-42-42-42-mre5u520hhhd16g/"
+  },
+  {
+    "brand": "mushkin",
+    "part_number": "MRE5U520HHHD16GX2",
+    "product_name": "Mushkin Redline DDR5 32GB 52000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 52000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product/redline-32gb-2x16gb-ddr5-5200-udimm-pc5-5200-42-42-42-mre5u520hhhd16gx2/"
+  },
+  {
+    "brand": "mushkin",
+    "part_number": "MRE5U560LKKD16G",
+    "product_name": "Mushkin Redline DDR5 16GB 56000MT/s",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 56000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product/redline-16gb-ddr5-5600-udimm-pc5-5600-5600mhz-46-45-45-mre5u560lkkd16g/"
+  },
+  {
+    "brand": "mushkin",
+    "part_number": "MRE5U560LKKD16GX2",
+    "product_name": "Mushkin Redline DDR5 32GB 56000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 56000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product/redline-32gb-2x16gb-ddr5-5600-udimm-pc5-5600-46-45-45-mre5u560lkkd16gx2/"
+  },
+  {
+    "brand": "mushkin",
+    "part_number": "MRE5U560KKKD32GX2",
+    "product_name": "Mushkin Redline DDR5 64GB 56000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 56000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product-category/memory/ddr5/"
+  },
+  {
+    "brand": "mushkin",
+    "part_number": "MLA5C600AEEM16GX2",
+    "product_name": "Mushkin Redline DDR5 32GB 60000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 60000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product-category/memory/ddr5/"
+  },
+  {
+    "brand": "mushkin",
+    "part_number": "MLA5C600BEEM32GX2",
+    "product_name": "Mushkin Redline DDR5 64GB 60000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 60000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product-category/memory/ddr5/"
+  },
+  {
+    "brand": "mushkin",
+    "part_number": "MLA5C640A77P16GX2",
+    "product_name": "Mushkin Redline DDR5 32GB 64000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 64000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product-category/memory/ddr5/"
+  },
+  {
+    "brand": "mushkin",
+    "part_number": "MLA5C640BGGP16GX2",
+    "product_name": "Mushkin Redline DDR5 32GB 64000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 64000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://mushkin.com/product-category/memory/ddr5/"
+  }
+]
