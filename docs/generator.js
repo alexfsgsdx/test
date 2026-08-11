@@ -146,9 +146,9 @@ function getISOWeek(d) {
   return Math.ceil((((t - yearStart) / 86400000) + 1) / 7);
 }
 
-async function encodeSerial(scheme, brand, part, stick, generation) {
+async function encodeSerial(scheme, brand, part, stick, generation, serialSalt = 0) {
   if (scheme === "empty") return [0,0,0,0];
-  const seed = await stableSeed(brand, part, stick, generation);
+  const seed = await stableSeed(brand, part, stick, generation, serialSalt);
   if (scheme === "tester_seq_le") {
     const tester = (seed & 0xFF) % 0x0F || 1;
     const counter = (seed >> 8) & 0xFFFFFF;
@@ -160,11 +160,11 @@ async function encodeSerial(scheme, brand, part, stick, generation) {
   return [seed&0xFF, (seed>>8)&0xFF, (seed>>16)&0xFF, (seed>>24)&0xFF];
 }
 
-async function generateSpdSerials(brand, part, generation, stickCount) {
+async function generateSpdSerials(brand, part, generation, stickCount, serialSalt = 0) {
   const scheme = SERIAL_SCHEMES[brand] || "binary_le";
   const out = [];
   for (let stick = 1; stick <= stickCount; stick++) {
-    const raw = await encodeSerial(scheme, brand, part, stick, generation);
+    const raw = await encodeSerial(scheme, brand, part, stick, generation, serialSalt);
     const plain = raw.map(b => b.toString(16).padStart(2,"0").toUpperCase()).join("");
     const le = raw[0] | (raw[1]<<8) | (raw[2]<<16) | (raw[3]<<24);
     const be = (raw[0]<<24) | (raw[1]<<16) | (raw[2]<<8) | raw[3];
@@ -314,7 +314,8 @@ function lookupCatalog(spec, catalog) {
   return matches;
 }
 
-export async function generateReport(spec) {
+export async function generateReport(spec, options = {}) {
+  const serialSalt = options.serialSalt ?? ((Date.now() ^ (Math.random() * 0xFFFFFFFF)) >>> 0);
   const per = perStickGb(spec);
   const validation = validateKitSpec(spec);
   if (!validation.ok) throw new Error(validation.errors.join(" "));
@@ -349,7 +350,7 @@ export async function generateReport(spec) {
         source: product.source,
         verified: product.verified,
         profiles: product.profiles || [product.profile],
-        spd_serials: await generateSpdSerials(id, product.part_number, spec.generation, spec.sticks),
+        spd_serials: await generateSpdSerials(id, product.part_number, spec.generation, spec.sticks, serialSalt),
       });
     }
     brands[id] = enriched;
@@ -373,7 +374,32 @@ export async function generateReport(spec) {
     brand_meta,
     brands,
     brand_count: brand_meta.length,
+    serial_salt: serialSalt,
   };
+}
+
+/** Re-roll SPD assembly serials for an existing report without re-querying the catalog. */
+export async function refreshReportSerials(report, serialSalt) {
+  const salt = serialSalt ?? ((Date.now() ^ (Math.random() * 0xFFFFFFFF)) >>> 0);
+  const spec = report.spec;
+  const brands = {};
+  for (const meta of report.brand_meta) {
+    const enriched = [];
+    for (const entry of report.brands[meta.id]) {
+      enriched.push({
+        ...entry,
+        spd_serials: await generateSpdSerials(
+          meta.id,
+          entry.part_number,
+          spec.generation,
+          spec.sticks,
+          salt,
+        ),
+      });
+    }
+    brands[meta.id] = enriched;
+  }
+  return { ...report, brands, serial_salt: salt };
 }
 
 export function parseNaturalLanguage(text) {

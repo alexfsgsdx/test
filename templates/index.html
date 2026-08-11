@@ -971,6 +971,7 @@
             <div class="actions">
               <button type="submit" class="btn btn-primary" id="btnGenerate">Generate</button>
               <button type="button" class="btn btn-ghost" id="btnExample">Load example</button>
+              <button type="button" class="btn btn-ghost" id="btnSeriesRefresh" disabled>Series refresh</button>
             </div>
             <p class="hint"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> or <kbd>⌘</kbd>+<kbd>Enter</kbd> to generate</p>
           </form>
@@ -986,6 +987,7 @@
             <div class="actions">
               <button type="button" class="btn btn-primary" id="btnGenerateQuick">Generate</button>
               <button type="button" class="btn btn-ghost" id="btnExampleQuick">Load example</button>
+              <button type="button" class="btn btn-ghost" id="btnSeriesRefreshQuick" disabled>Series refresh</button>
             </div>
             <p class="hint"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> or <kbd>⌘</kbd>+<kbd>Enter</kbd> to generate</p>
           </div>
@@ -1044,6 +1046,12 @@
       let activeTab = "form";
       let isLoading = false;
       let speedOptions = { 4: [], 5: [] };
+      let lastPayload = null;
+      let hasResults = false;
+
+      function newSerialSalt() {
+        return (Date.now() ^ Math.floor(Math.random() * 0xFFFFFFFF)) >>> 0;
+      }
 
       const $ = (sel) => document.querySelector(sel);
       const $$ = (sel) => document.querySelectorAll(sel);
@@ -1058,6 +1066,8 @@
       const btnGenerateQuick = $("#btnGenerateQuick");
       const btnExample = $("#btnExample");
       const btnExampleQuick = $("#btnExampleQuick");
+      const btnSeriesRefresh = $("#btnSeriesRefresh");
+      const btnSeriesRefreshQuick = $("#btnSeriesRefreshQuick");
 
       /* ── brandColor: deterministic hue from brand id hash ── */
       function brandColor(brandId) {
@@ -1169,6 +1179,22 @@
 
       btnExample.addEventListener("click", loadExampleForm);
       btnExampleQuick.addEventListener("click", loadExampleQuick);
+
+      function setSeriesRefreshEnabled(enabled) {
+        btnSeriesRefresh.disabled = !enabled;
+        btnSeriesRefreshQuick.disabled = !enabled;
+      }
+
+      function refreshSerials() {
+        if (!lastPayload || !hasResults) {
+          showToast("Generate results first");
+          return;
+        }
+        generate(lastPayload);
+      }
+
+      btnSeriesRefresh.addEventListener("click", refreshSerials);
+      btnSeriesRefreshQuick.addEventListener("click", refreshSerials);
 
       async function fetchValidSpeeds(generation) {
         const res = await fetch(`/api/valid-speeds?generation=${generation}`);
@@ -1330,6 +1356,8 @@
 
         emptyState.hidden = true;
         resultsContent.hidden = false;
+        hasResults = true;
+        setSeriesRefreshEnabled(true);
 
         resultsContent.querySelectorAll(".btn-copy").forEach((btn) => {
           btn.addEventListener("click", () => {
@@ -1343,6 +1371,8 @@
       function renderError(message) {
         emptyState.hidden = true;
         resultsContent.hidden = false;
+        hasResults = false;
+        setSeriesRefreshEnabled(false);
         resultsContent.innerHTML = `<div class="error-banner">${escapeHtml(message)}</div>`;
         scrollToResultsOnMobile();
       }
@@ -1352,6 +1382,12 @@
         document.body.classList.toggle("loading", loading);
         btnGenerate.disabled = loading;
         btnGenerateQuick.disabled = loading;
+        if (loading) {
+          btnSeriesRefresh.disabled = true;
+          btnSeriesRefreshQuick.disabled = true;
+        } else {
+          setSeriesRefreshEnabled(hasResults);
+        }
       }
 
       /* ── API call ── */
@@ -1366,10 +1402,17 @@
         setLoading(true);
 
         try {
+          const body = { ...payload, serial_salt: newSerialSalt() };
+          if (body.natural_language === undefined) {
+            lastPayload = payload;
+          } else {
+            lastPayload = { natural_language: body.natural_language };
+          }
+
           const res = await fetch("/api/generate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload),
+            body: JSON.stringify(body),
           });
 
           const data = await res.json();

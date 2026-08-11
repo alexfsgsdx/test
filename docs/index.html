@@ -971,6 +971,7 @@
             <div class="actions">
               <button type="submit" class="btn btn-primary" id="btnGenerate">Generate</button>
               <button type="button" class="btn btn-ghost" id="btnExample">Load example</button>
+              <button type="button" class="btn btn-ghost" id="btnSeriesRefresh" disabled>Series refresh</button>
             </div>
             <p class="hint"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> or <kbd>⌘</kbd>+<kbd>Enter</kbd> to generate</p>
           </form>
@@ -986,6 +987,7 @@
             <div class="actions">
               <button type="button" class="btn btn-primary" id="btnGenerateQuick">Generate</button>
               <button type="button" class="btn btn-ghost" id="btnExampleQuick">Load example</button>
+              <button type="button" class="btn btn-ghost" id="btnSeriesRefreshQuick" disabled>Series refresh</button>
             </div>
             <p class="hint"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> or <kbd>⌘</kbd>+<kbd>Enter</kbd> to generate</p>
           </div>
@@ -1016,7 +1018,7 @@
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
   <script type="module">
-    import { generateReport, parseNaturalLanguage, specFromForm, validSpeeds, loadCatalog, catalogStats } from "./generator.js";
+    import { generateReport, refreshReportSerials, parseNaturalLanguage, specFromForm, validSpeeds, loadCatalog, catalogStats } from "./generator.js";
 
     (function () {
       "use strict";
@@ -1046,6 +1048,8 @@
       let activeTab = "form";
       let isLoading = false;
       let speedOptions = { 4: [], 5: [] };
+      let lastReport = null;
+      let hasResults = false;
 
       const $ = (sel) => document.querySelector(sel);
       const $$ = (sel) => document.querySelectorAll(sel);
@@ -1060,6 +1064,8 @@
       const btnGenerateQuick = $("#btnGenerateQuick");
       const btnExample = $("#btnExample");
       const btnExampleQuick = $("#btnExampleQuick");
+      const btnSeriesRefresh = $("#btnSeriesRefresh");
+      const btnSeriesRefreshQuick = $("#btnSeriesRefreshQuick");
 
       /* ── brandColor: deterministic hue from brand id hash ── */
       function brandColor(brandId) {
@@ -1171,6 +1177,32 @@
 
       btnExample.addEventListener("click", loadExampleForm);
       btnExampleQuick.addEventListener("click", loadExampleQuick);
+
+      function setSeriesRefreshEnabled(enabled) {
+        btnSeriesRefresh.disabled = !enabled;
+        btnSeriesRefreshQuick.disabled = !enabled;
+      }
+
+      async function refreshSerials() {
+        if (!lastReport || !hasResults) {
+          showToast("Generate results first");
+          return;
+        }
+        if (isLoading) return;
+        setLoading(true);
+        try {
+          const data = await refreshReportSerials(lastReport);
+          lastReport = data;
+          renderResults(data);
+        } catch (err) {
+          renderError(err.message || "Serial refresh failed");
+        } finally {
+          setLoading(false);
+        }
+      }
+
+      btnSeriesRefresh.addEventListener("click", refreshSerials);
+      btnSeriesRefreshQuick.addEventListener("click", refreshSerials);
 
       async function fetchValidSpeeds(generation) {
         speedOptions[generation] = validSpeeds(generation);
@@ -1329,6 +1361,8 @@
 
         emptyState.hidden = true;
         resultsContent.hidden = false;
+        hasResults = true;
+        setSeriesRefreshEnabled(true);
 
         resultsContent.querySelectorAll(".btn-copy").forEach((btn) => {
           btn.addEventListener("click", () => {
@@ -1342,6 +1376,8 @@
       function renderError(message) {
         emptyState.hidden = true;
         resultsContent.hidden = false;
+        hasResults = false;
+        setSeriesRefreshEnabled(false);
         resultsContent.innerHTML = `<div class="error-banner">${escapeHtml(message)}</div>`;
         scrollToResultsOnMobile();
       }
@@ -1351,6 +1387,12 @@
         document.body.classList.toggle("loading", loading);
         btnGenerate.disabled = loading;
         btnGenerateQuick.disabled = loading;
+        if (loading) {
+          btnSeriesRefresh.disabled = true;
+          btnSeriesRefreshQuick.disabled = true;
+        } else {
+          setSeriesRefreshEnabled(hasResults);
+        }
       }
 
       /* ── Client-side generation (GitHub Pages — no server) ── */
@@ -1369,6 +1411,7 @@
             ? parseNaturalLanguage(payload.natural_language)
             : specFromForm(payload);
           const data = await generateReport(spec);
+          lastReport = data;
           renderResults(data);
         } catch (err) {
           renderError(err.message || "Generation failed");

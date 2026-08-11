@@ -39,7 +39,10 @@ def api_generate():
             spec = parse_natural_language(payload["natural_language"])
         else:
             spec = spec_from_form(payload)
-        return jsonify({"ok": True, **generate_report(spec)})
+        serial_salt = payload.get("serial_salt")
+        if serial_salt is not None:
+            serial_salt = int(serial_salt)
+        return jsonify({"ok": True, **generate_report(spec, serial_salt=serial_salt)})
     except (ValueError, KeyError, TypeError) as exc:
         return jsonify({"ok": False, "error": str(exc)}), 400
 

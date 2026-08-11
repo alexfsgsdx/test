@@ -397,7 +397,7 @@ def enrich_brand_entries(
     return enriched
 
 
-def generate_report(spec: RamSpec) -> dict:
+def generate_report(spec: RamSpec, serial_salt: int | None = None) -> dict:
     spec.validate()
     validation = validation_to_dict(spec.validation_result())
     cl = spec.cas_latency or default_cl(spec.generation, spec.speed_mts, spec.profile)
@@ -421,6 +421,11 @@ def generate_report(spec: RamSpec) -> dict:
             "SKUs are returned."
         )
 
+    if serial_salt is None:
+        import secrets
+
+        serial_salt = secrets.randbelow(0xFFFFFFFF)
+
     brands: dict[str, list[dict]] = {}
     brand_meta = []
     matched_cls: set[int] = set()
@@ -435,7 +440,11 @@ def generate_report(spec: RamSpec) -> dict:
             matched_cls.add(product.cas_latency)
             base = catalog_product_to_entry(product, spec.profile)
             serials = generate_spd_serials(
-                brand_id, product.part_number, spec.generation, spec.sticks
+                brand_id,
+                product.part_number,
+                spec.generation,
+                spec.sticks,
+                serial_salt,
             )
             entries.append(
                 {

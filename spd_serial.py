@@ -128,11 +128,12 @@ def _encode_raw_bytes(
     part_number: str,
     stick_index: int,
     generation: Generation,
+    serial_salt: int = 0,
 ) -> bytes:
     if scheme == "empty":
         return b"\x00\x00\x00\x00"
 
-    seed = _stable_seed(brand, part_number, stick_index, generation)
+    seed = _stable_seed(brand, part_number, stick_index, generation, serial_salt)
 
     if scheme == "tester_seq_le":
         tester_id = (seed & 0xFF) % 0x0F or 0x01
@@ -154,12 +155,13 @@ def generate_spd_serials(
     part_number: str,
     generation: Generation,
     stick_count: int,
+    serial_salt: int = 0,
 ) -> list[SpdSerialInfo]:
     scheme = SERIAL_SCHEMES.get(brand, "binary_le")
     results: list[SpdSerialInfo] = []
 
     for stick in range(1, stick_count + 1):
-        raw = _encode_raw_bytes(scheme, brand, part_number, stick, generation)
+        raw = _encode_raw_bytes(scheme, brand, part_number, stick, generation, serial_salt)
         serial_number, serial_plain = format_assembly_serial(raw)
         results.append(
             SpdSerialInfo(
