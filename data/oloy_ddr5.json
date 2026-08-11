@@ -1,0 +1,122 @@
+[
+  {
+    "brand": "oloy",
+    "part_number": "MD5U1648400BRKDE",
+    "product_name": "OLOy Blade DDR5 32GB 4800MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.oloymemory.com/products.html"
+  },
+  {
+    "brand": "oloy",
+    "part_number": "MD5U1660306BRKDE",
+    "product_name": "OLOy Blade DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.oloymemory.com/products.html"
+  },
+  {
+    "brand": "oloy",
+    "part_number": "MD5U1660306BRSDE",
+    "product_name": "OLOy Blade DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.oloymemory.com/products.html"
+  },
+  {
+    "brand": "oloy",
+    "part_number": "ND5U1660306BRLDA",
+    "product_name": "OLOy Blade DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.oloymemory.com/products.html"
+  },
+  {
+    "brand": "oloy",
+    "part_number": "MD5U1662320BRSDE",
+    "product_name": "OLOy Blade DDR5 32GB 6200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6200,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.oloymemory.com/products.html"
+  },
+  {
+    "brand": "oloy",
+    "part_number": "MD5U1664320BRKDE",
+    "product_name": "OLOy Blade DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.oloymemory.com/products.html"
+  },
+  {
+    "brand": "oloy",
+    "part_number": "MD5U1664320IRKDE",
+    "product_name": "OLOy Blade DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.oloymemory.com/products.html"
+  },
+  {
+    "brand": "oloy",
+    "part_number": "ND5U1664320BRKDE",
+    "product_name": "OLOy Blade DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.oloymemory.com/products.html"
+  }
+]

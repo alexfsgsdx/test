@@ -10,16 +10,38 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from build_catalog import VERIFIED, dedupe, entry, norm_ecc, norm_ff, norm_gen, norm_profiles  # noqa: E402
+from build_catalog import VERIFIED, dedupe, norm_ecc, norm_ff, norm_gen, norm_profiles  # noqa: E402
 
 OUT = ROOT / "data" / "catalog.json"
 DOCS = ROOT / "docs" / "catalog.json"
 CATALOG = ROOT / "data" / "catalog.json"
 
-SOURCES: list[tuple[Path, str]] = [
-    (ROOT / "data" / "kingston_gskill_ddr5_compact.json", "array"),
-    (ROOT / "data" / "corsair_ddr5.json", "array"),
-    (ROOT / "data" / "ddr5_skus.json", "array"),
+# Most authoritative sources first (dedupe keeps first hit).
+SOURCE_PRIORITY = [
+    "corsair_ddr5.json",
+    "gskill_ddr5.json",
+    "teamgroup_ddr5.json",
+    "kingston_ddr5.json",
+    "crucial_ddr5.json",
+    "patriot_ddr5.json",
+    "xpg_ddr5.json",
+    "pny_ddr5.json",
+    "oloy_ddr5.json",
+    "geil_ddr5.json",
+    "mushkin_ddr5.json",
+    "silicon_power_ddr5.json",
+    "klevv_ddr5.json",
+    "lexar_ddr5.json",
+    "apacer_ddr5.json",
+    "vcolor_ddr5.json",
+    "timetec_ddr5.json",
+    "adata_ddr5.json",
+    "samsung_ddr5.json",
+    "hynix_ddr5.json",
+    "micron_ddr5.json",
+    "misc_ddr5.json",
+    "ddr5_skus.json",
+    "kingston_gskill_ddr5_compact.json",
 ]
 
 BRAND_MAP: dict[str, str] = {
@@ -119,6 +141,23 @@ def raw_to_entry(raw: dict) -> dict | None:
     }
 
 
+def discover_sources() -> list[Path]:
+    data_dir = ROOT / "data"
+    ordered: list[Path] = []
+    seen: set[str] = set()
+    for name in SOURCE_PRIORITY:
+        path = data_dir / name
+        if path.exists():
+            ordered.append(path)
+            seen.add(name)
+    for path in sorted(data_dir.glob("*ddr5*.json")):
+        if path.name in seen or path.name == "catalog.json":
+            continue
+        ordered.append(path)
+        seen.add(path.name)
+    return ordered
+
+
 def load_ddr4_products() -> list[dict]:
     if not CATALOG.exists():
         return []
@@ -128,10 +167,7 @@ def load_ddr4_products() -> list[dict]:
 
 def load_ddr5_from_sources() -> list[dict]:
     products: list[dict] = []
-    for path, _kind in SOURCES:
-        if not path.exists():
-            print(f"  skip missing: {path.name}")
-            continue
+    for path in discover_sources():
         raw_items = load_json_array(path)
         converted = 0
         for raw in raw_items:
@@ -156,6 +192,13 @@ def main() -> None:
     ddr4_count = sum(1 for p in products if p["generation"] == 4)
     brands = sorted({p["brand"] for p in products})
 
+    by_brand: dict[str, int] = {}
+    ddr5_by_brand: dict[str, int] = {}
+    for p in products:
+        by_brand[p["brand"]] = by_brand.get(p["brand"], 0) + 1
+        if p["generation"] == 5:
+            ddr5_by_brand[p["brand"]] = ddr5_by_brand.get(p["brand"], 0) + 1
+
     payload = {
         "version": 2,
         "updated": VERIFIED,
@@ -167,7 +210,9 @@ def main() -> None:
     DOCS.write_text(text, encoding="utf-8")
 
     print(f"\nWrote {len(products)} total products ({ddr5_count} DDR5 + {ddr4_count} DDR4)")
-    print(f"Across {len(brands)} brands: {', '.join(brands)}")
+    print(f"Across {len(brands)} brands")
+    for brand in brands:
+        print(f"  {brand}: {ddr5_by_brand.get(brand, 0)} DDR5, {by_brand[brand]} total")
 
 
 if __name__ == "__main__":

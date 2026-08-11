@@ -1,0 +1,1457 @@
+[
+  {
+    "brand": "patriot",
+    "part_number": "PSD532G4800K",
+    "product_name": "Signature Line DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/signature-line-ddr5"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER516G52C36W",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 5200,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV516G52C36",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 5200,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR516G52C36",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 5200,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G52C36W",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5200,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G52C36",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5200,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G52C36",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5200,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSD516G5600K",
+    "product_name": "Signature Line DDR5",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/signature-line-ddr5"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER516G56C36W",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER516G56C38W",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV516G56C36",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR516G56C36",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSD532G5600K",
+    "product_name": "Signature Line DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/signature-line-ddr5"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G56C36W",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G56C38W",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G56C36",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G56C36",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSD564G5600K",
+    "product_name": "Signature Line DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/signature-line-ddr5"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSD564G5602",
+    "product_name": "Signature Line DDR5",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "speed_mts": 5602,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/signature-line-ddr5"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER516G60C30W",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER516G60C42W",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 6000,
+    "cas_latency": 42,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV516G60C30",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR516G60C30",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G60C30KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G60C30W",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G60C42W",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 42,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G60C30",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G60C30",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVX532G60C30K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVXR532G60C30K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVXR532G60C36K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER548G60C30KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER548G60C42KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 42,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVX548G60C30K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER596G60C42KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 48,
+    "speed_mts": 6000,
+    "cas_latency": 42,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G62C42KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6200,
+    "cas_latency": 42,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER564G62C42KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6200,
+    "cas_latency": 42,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G64C32KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVX532G64C32K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVXR532G64C32K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER548G64C32KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVX548G64C32K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G66C36KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G70C32KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER532G70C38KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVX532G70C32K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVER548G70C32KW",
+    "product_name": "Viper Elite 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 7000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/elite5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVX548G70C32K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 7000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVX532G76C36K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVXR532G76C36K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVX548G76C36K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 7600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVXR548G76C36K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 7600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVXR532G78C38K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7800,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVXR532G80C38K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVXR548G80C38K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVX532G82C38K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8200,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVX548G82C38K",
+    "product_name": "Viper Xtreme 5 RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 8200,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/xtreme5-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV516G520C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 52000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV564G520C40K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 52000,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR564G520C40K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 52000,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV516G560C40K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 56000,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G560C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 56000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G560C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 56000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV564G560C40K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 56000,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR564G560C40K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 56000,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV516G600C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 60000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR516G600C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 60000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G600C30K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 60000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G600C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 60000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G600C30K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 60000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G600C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 60000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV548G600C30K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 60000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV548G600C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 60000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR548G600C30K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 60000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR548G600C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 60000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV58G600C40",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 1,
+    "per_stick_gb": 58,
+    "speed_mts": 60000,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV564G600C30K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 60000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV564G600C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 60000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR564G600C30K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 60000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR564G600C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 60000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G620C40K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 62000,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G620C40K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 62000,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G640C32K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 64000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G640C32K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 64000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV548G640C32K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 64000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR548G640C32K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 64000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV564G640C32K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 64000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G660C34K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 66000,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G660C34K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 66000,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G680C34K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 68000,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G680C34K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 68000,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G700C32K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 70000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G700C32K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 70000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G720C34K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 72000,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G720C34K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 72000,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVV532G740C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 74000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PVVR532G740C36K",
+    "product_name": "Viper Venom RGB &amp; Non-RGB DDR5 Performance DRAM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 74000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/products/viper-venom-ddr5-performance-ram"
+  }
+]

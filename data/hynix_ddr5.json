@@ -1,0 +1,137 @@
+[
+  {
+    "brand": "hynix",
+    "part_number": "HMCG78MEBUA081N",
+    "product_name": "SK hynix DDR5 16GB 4800MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.skhynix.com/"
+  },
+  {
+    "brand": "hynix",
+    "part_number": "HMCG88MEBUA081N",
+    "product_name": "SK hynix DDR5 32GB 4800MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.skhynix.com/"
+  },
+  {
+    "brand": "hynix",
+    "part_number": "HMCG78AEBUA081N",
+    "product_name": "SK hynix DDR5 16GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.skhynix.com/"
+  },
+  {
+    "brand": "hynix",
+    "part_number": "HMCG78AGBEA081N",
+    "product_name": "SK hynix DDR5 16GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.skhynix.com/"
+  },
+  {
+    "brand": "hynix",
+    "part_number": "HMCG78AGBUA081N",
+    "product_name": "SK hynix DDR5 16GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.skhynix.com/"
+  },
+  {
+    "brand": "hynix",
+    "part_number": "HMCG78AGBUA169N",
+    "product_name": "SK hynix DDR5 16GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.skhynix.com/"
+  },
+  {
+    "brand": "hynix",
+    "part_number": "HMCG88AEBUA081N",
+    "product_name": "SK hynix DDR5 32GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.skhynix.com/"
+  },
+  {
+    "brand": "hynix",
+    "part_number": "HMCG88AGBUA081N",
+    "product_name": "SK hynix DDR5 32GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.skhynix.com/"
+  },
+  {
+    "brand": "hynix",
+    "part_number": "HMCG88AGBUA169N",
+    "product_name": "SK hynix DDR5 32GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.skhynix.com/"
+  }
+]

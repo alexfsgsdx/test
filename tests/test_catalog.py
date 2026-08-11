@@ -11,11 +11,21 @@ from ram_part_number import generate_report, RamSpec
 class TestCatalogLookup(unittest.TestCase):
     def test_catalog_loads(self):
         stats = catalog_stats()
-        self.assertGreaterEqual(stats["product_count"], 1100)
+        self.assertGreaterEqual(stats["product_count"], 2500)
         self.assertGreaterEqual(stats["brand_count"], 20)
-        self.assertGreaterEqual(stats.get("ddr5_count", 0), 1100)
+        self.assertGreaterEqual(stats.get("ddr5_count", 0), 2500)
 
-    def test_corsair_6000_xmp_match(self):
+    def test_all_ddr5_brands_represented(self):
+        products = load_catalog()
+        ddr5_brands = {p.brand for p in products if p.generation == 5}
+        expected = {
+            "adata", "apacer", "corsair", "crucial", "geil", "gskill", "hynix",
+            "kingston", "klevv", "lexar", "micron", "mushkin", "oloy", "patriot",
+            "pny", "samsung", "silicon_power", "teamgroup", "timetec", "vcolor", "xpg",
+        }
+        missing = expected - ddr5_brands
+        self.assertFalse(missing, f"missing DDR5 brands: {sorted(missing)}")
+        self.assertNotIn("ballistix", ddr5_brands)
         matches = lookup_catalog(
             sticks=2,
             total_gb=32,

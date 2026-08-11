@@ -1,0 +1,497 @@
+[
+  {
+    "brand": "crucial",
+    "part_number": "CT16G48C40U5",
+    "product_name": "Crucial DDR5-4800 16GB UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/ct16g48c40u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G48C40U5",
+    "product_name": "Crucial Pro DDR5-4800 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g48c40u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G48C40U5",
+    "product_name": "Crucial DDR5-4800 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/ct2k16g48c40u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT32G48C40U5",
+    "product_name": "Crucial DDR5-4800 32GB UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/ct32g48c40u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K32G48C40U5",
+    "product_name": "Crucial Pro DDR5-4800 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k32g48c40u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K32G48C40U5",
+    "product_name": "Crucial DDR5-4800 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/ct2k32g48c40u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G52C42U5",
+    "product_name": "Crucial Pro DDR5-5200 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5200,
+    "cas_latency": 42,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g52c42u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G52C42U5",
+    "product_name": "Crucial DDR5-5200 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5200,
+    "cas_latency": 42,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/ct2k16g52c42u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K32G52C42U5",
+    "product_name": "Crucial Pro DDR5-5200 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 5200,
+    "cas_latency": 42,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k32g52c42u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K32G52C42U5",
+    "product_name": "Crucial DDR5-5200 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 5200,
+    "cas_latency": 42,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/ct2k32g52c42u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT16G56C46U5",
+    "product_name": "Crucial DDR5-5600 16GB UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/ct16g56c46u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G56C46U5",
+    "product_name": "Crucial Pro DDR5-5600 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g56c46u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP3U16G56C46U5",
+    "product_name": "Crucial Pro DDR5-5600 32GB UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp3u16g56c46u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G56C46U5",
+    "product_name": "Crucial DDR5-5600 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/ct2k16g56c46u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT32G56C46U5",
+    "product_name": "Crucial DDR5-5600 32GB UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/ct32g56c46u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K32G56C46U5",
+    "product_name": "Crucial Pro DDR5-5600 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k32g56c46u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K32G56C46U5",
+    "product_name": "Crucial DDR5-5600 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/ct2k32g56c46u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G60C36U5B",
+    "product_name": "Crucial Pro DDR5-6000 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g60c36u5b"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G60C36U5W",
+    "product_name": "Crucial Pro DDR5-6000 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g60c36u5w"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G60C48U5",
+    "product_name": "Crucial Pro DDR5-6000 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g60c48u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K32G60C40U5B",
+    "product_name": "Crucial Pro DDR5-6000 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k32g60c40u5b"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K32G60C40U5W",
+    "product_name": "Crucial Pro DDR5-6000 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k32g60c40u5w"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K32G60C48U5",
+    "product_name": "Crucial Pro DDR5-6000 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k32g60c48u5"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G64C32U5B",
+    "product_name": "Crucial Pro DDR5-6400 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g64c32u5b"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G64C32U5W",
+    "product_name": "Crucial Pro DDR5-6400 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g64c32u5w"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G64C38U5B",
+    "product_name": "Crucial Pro DDR5-6400 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g64c38u5b"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G64C38U5W",
+    "product_name": "Crucial Pro DDR5-6400 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g64c38u5w"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G64C40U5B",
+    "product_name": "Crucial Pro DDR5-6400 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g64c40u5b"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K16G64C40U5W",
+    "product_name": "Crucial Pro DDR5-6400 32GB Kit (16GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k16g64c40u5w"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K32G64C32U5B",
+    "product_name": "Crucial Pro DDR5-6400 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k32g64c32u5b"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K32G64C32U5W",
+    "product_name": "Crucial Pro DDR5-6400 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k32g64c32u5w"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K32G64C40U5B",
+    "product_name": "Crucial Pro DDR5-6400 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k32g64c40u5b"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CP2K32G64C40U5W",
+    "product_name": "Crucial Pro DDR5-6400 64GB Kit (32GBx2)",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr5/cp2k32g64c40u5w"
+  }
+]

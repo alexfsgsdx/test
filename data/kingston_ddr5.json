@@ -1,0 +1,438 @@
+[
+  {
+    "brand": "kingston",
+    "part_number": "KF548C38BBK2-32",
+    "product_name": "FURY Beast 32GB (2x16GB) DDR5 4800 CL38",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF548C38BBK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF552C40BBAK2-32",
+    "product_name": "FURY Beast RGB 32GB (2x16GB) DDR5 5200 CL40",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5200,
+    "cas_latency": 40,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF552C40BBAK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF552C40BBK2-32",
+    "product_name": "FURY Beast 32GB (2x16GB) DDR5 5200 CL40",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5200,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF552C40BBK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF552C40BBK2-64",
+    "product_name": "FURY Beast 64GB (2x32GB) DDR5 5200 CL40",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 5200,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF552C40BBK2-64.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF556C36BBEK2-32",
+    "product_name": "FURY Beast 32GB (2x16GB) DDR5 5600 CL36",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 36,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF556C36BBEK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF556C40BBAK2-16",
+    "product_name": "FURY Beast RGB 16GB (2x8GB) DDR5 5600 CL40",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 40,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF556C40BBAK2-16.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF556C40BBAK2-32",
+    "product_name": "FURY Beast RGB 32GB (2x16GB) DDR5 5600 CL40",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 40,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF556C40BBAK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF556C40BBK2-32",
+    "product_name": "FURY Beast 32GB (2x16GB) DDR5 5600 CL40",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF556C40BBK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF556C40BBK2-64",
+    "product_name": "FURY Beast 64GB (2x32GB) DDR5 5600 CL40",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF556C40BBK2-64.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF556C40BWAK2-32",
+    "product_name": "FURY Beast RGB 32GB (2x16GB) DDR5 5600 CL40 White",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF556C40BWAK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF560C30BBAK2-32",
+    "product_name": "FURY Beast RGB 32GB (2x16GB) DDR5 6000 CL30",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF560C30BBAK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF560C30BBK2-32",
+    "product_name": "FURY Beast 32GB (2x16GB) DDR5 6000 CL30",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF560C30BBK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF560C30BBK2-64",
+    "product_name": "FURY Beast 64GB (2x32GB) DDR5 6000 CL30",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF560C30BBK2-64.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF560C36BBE2AK2-32",
+    "product_name": "FURY Renegade RGB 32GB (2x16GB) DDR5 6000 CL36",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF560C36BBE2AK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF560C36BBE2AK2-64",
+    "product_name": "FURY Renegade RGB 64GB (2x32GB) DDR5 6000 CL36",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF560C36BBE2AK2-64.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF560C36BBEAK2-64",
+    "product_name": "FURY Beast RGB 64GB (2x32GB) DDR5 6000 CL36",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF560C36BBEAK2-64.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF560C36BBEK2-64",
+    "product_name": "FURY Beast 64GB (2x32GB) DDR5 6000 CL36",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF560C36BBEK2-64.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF560C40BBK2-32",
+    "product_name": "FURY Beast 32GB (2x16GB) DDR5 6000 CL40",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF560C40BBK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF564C32BBEA-32",
+    "product_name": "FURY Beast RGB 32GB (1x32GB) DDR5 6400 CL32",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF564C32BBEA-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF564C32BBEAK2-32",
+    "product_name": "FURY Beast RGB 32GB (2x16GB) DDR5 6400 CL32",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF564C32BBEAK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF564C32BBEAK2-64",
+    "product_name": "FURY Beast RGB 64GB (2x32GB) DDR5 6400 CL32",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF564C32BBEAK2-64.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF564C32BBEK2-32",
+    "product_name": "FURY Beast 32GB (2x16GB) DDR5 6400 CL32",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF564C32BBEK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF564C32BBEK2-64",
+    "product_name": "FURY Beast 64GB (2x32GB) DDR5 6400 CL32",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF564C32BBEK2-64.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF564C32BWEAK2-64",
+    "product_name": "FURY Beast RGB 64GB (2x32GB) DDR5 6400 CL32 White",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF564C32BWEAK2-64.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF568C34BBEK2-32",
+    "product_name": "FURY Beast 32GB (2x16GB) DDR5 6800 CL34",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6800,
+    "cas_latency": 34,
+    "profiles": [
+      "expo",
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF568C34BBEK2-32.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF580C38RS-24",
+    "product_name": "FURY Renegade 24GB (1x24GB) DDR5 8000 CL38",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF580C38RS-24.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF580C38RW-16",
+    "product_name": "FURY Renegade 16GB (1x16GB) DDR5 8000 CL38",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF580C38RW-16.pdf"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF580C38RW-24",
+    "product_name": "FURY Renegade 24GB (1x24GB) DDR5 8000 CL38",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/datasheets/KF580C38RW-24.pdf"
+  }
+]
