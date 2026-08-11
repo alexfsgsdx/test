@@ -96,9 +96,12 @@ def load_catalog(path: Path | None = None) -> tuple[CatalogProduct, ...]:
 def catalog_stats(path: Path | None = None) -> dict:
     products = load_catalog(path)
     brands = {p.brand for p in products}
+    ddr5 = sum(1 for p in products if p.generation == 5)
     return {
         "product_count": len(products),
         "brand_count": len(brands),
+        "ddr5_count": ddr5,
+        "ddr4_count": len(products) - ddr5,
         "brands": sorted(brands),
         "version": _catalog_meta(path).get("version"),
         "updated": _catalog_meta(path).get("updated"),
