@@ -443,6 +443,26 @@
       font-size: 0.8125rem;
     }
 
+    .warning-banner {
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(210, 153, 34, 0.45);
+      border-radius: var(--radius-sm);
+      background: rgba(210, 153, 34, 0.12);
+      color: var(--warning);
+      font-size: 0.8125rem;
+      line-height: 1.5;
+    }
+
+    .warning-banner ul {
+      margin: 0.35rem 0 0 1.1rem;
+      padding: 0;
+    }
+
+    .warning-banner li + li {
+      margin-top: 0.25rem;
+    }
+
     .brands-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -698,7 +718,8 @@
               </div>
               <div class="field">
                 <label for="speed_mts">Speed (MT/s)</label>
-                <input type="number" id="speed_mts" name="speed_mts" min="800" step="100" value="6000" required>
+                <select id="speed_mts" name="speed_mts" required></select>
+                <p class="hint" id="speedHint">Standard retail DDR5 speeds only</p>
               </div>
             </div>
 
@@ -824,6 +845,7 @@
 
       let activeTab = "form";
       let isLoading = false;
+      let speedOptions = { 4: [], 5: [] };
 
       const $ = (sel) => document.querySelector(sel);
       const $$ = (sel) => document.querySelectorAll(sel);
@@ -950,6 +972,34 @@
       btnExample.addEventListener("click", loadExampleForm);
       btnExampleQuick.addEventListener("click", loadExampleQuick);
 
+      async function fetchValidSpeeds(generation) {
+        const res = await fetch(`/api/valid-speeds?generation=${generation}`);
+        const data = await res.json();
+        if (!data.ok) throw new Error(data.error || "Could not load speeds");
+        speedOptions[generation] = data.speeds;
+        return data.speeds;
+      }
+
+      function populateSpeedSelect(generation, preferred) {
+        const speeds = speedOptions[generation] || [];
+        const select = $("#speed_mts");
+        select.innerHTML = speeds
+          .map((s) => `<option value="${s}">${s} MT/s</option>`)
+          .join("");
+        const pick = preferred && speeds.includes(preferred) ? preferred : speeds.includes(6000) ? 6000 : speeds[0];
+        if (pick) select.value = String(pick);
+        $("#speedHint").textContent =
+          generation === 5
+            ? "DDR5 retail starts at 4800 MT/s — non-standard speeds are rejected"
+            : "Standard DDR4 JEDEC and common XMP speeds";
+      }
+
+      $("#generation").addEventListener("change", async () => {
+        const gen = parseInt($("#generation").value, 10);
+        if (!speedOptions[gen]?.length) await fetchValidSpeeds(gen);
+        populateSpeedSelect(gen);
+      });
+
       /* ── Collect form payload ── */
       function getFormPayload() {
         const cl = $("#cas_latency").value.trim();
@@ -1036,8 +1086,16 @@
         return Math.abs(h);
       }
 
+      function renderWarnings(validation) {
+        if (!validation?.warnings?.length) return "";
+        const items = validation.warnings
+          .map((w) => `<li>${escapeHtml(w)}</li>`)
+          .join("");
+        return `<div class="warning-banner"><strong>Before you search these part numbers:</strong><ul>${items}</ul></div>`;
+      }
+
       function renderResults(data) {
-        const { spec, brand_meta, brands, brand_count } = data;
+        const { spec, brand_meta, brands, brand_count, validation } = data;
 
         brandCountBadge.textContent = `${brand_count} brands`;
 
@@ -1046,6 +1104,7 @@
           .join("");
 
         resultsContent.innerHTML = `
+          ${renderWarnings(validation)}
           ${renderStats(spec)}
           <div class="brands-grid">${cards}</div>`;
 
@@ -1130,6 +1189,15 @@
 
       /* Initial badge count matches server default */
       brandCountBadge.textContent = "22 brands";
+
+      (async function initSpeeds() {
+        try {
+          await Promise.all([fetchValidSpeeds(4), fetchValidSpeeds(5)]);
+          populateSpeedSelect(parseInt($("#generation").value, 10), EXAMPLE_FORM.speed_mts);
+        } catch (err) {
+          $("#speedHint").textContent = "Could not load speed list — refresh the page";
+        }
+      })();
     })();
   </script>
 </body>

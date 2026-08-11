@@ -14,6 +14,7 @@ import sys
 from dataclasses import dataclass
 from typing import Callable, Literal
 
+from product_validation import validate_kit_spec, validation_to_dict, valid_speeds
 from spd_serial import generate_spd_serials, spd_serial_to_dict
 
 Profile = Literal["jedec", "xmp", "expo", "both"]
@@ -48,15 +49,31 @@ class RamSpec:
             raise ValueError("Stick count must be at least 1.")
         if self.total_gb < 1:
             raise ValueError("Total capacity must be at least 1 GB.")
-        if self.generation == 4 and not (1600 <= self.speed_mts <= 5100):
-            raise ValueError("DDR4 speed is usually 1600–5100 MT/s.")
-        if self.generation == 5 and not (4000 <= self.speed_mts <= 9200):
-            raise ValueError("DDR5 speed is usually 4000–9200 MT/s.")
-        if self.per_stick_gb not in {4, 8, 16, 24, 32, 48, 64, 96, 128}:
-            raise ValueError(
-                f"Unusual per-stick capacity: {self.per_stick_gb} GB. "
-                "Common sizes are 4/8/16/24/32/48/64 GB."
-            )
+
+        result = validate_kit_spec(
+            sticks=self.sticks,
+            total_gb=self.total_gb,
+            generation=self.generation,
+            speed_mts=self.speed_mts,
+            profile=self.profile,
+            per_stick_gb=self.per_stick_gb,
+            form_factor=self.form_factor,
+            ecc=self.ecc,
+        )
+        if result.errors:
+            raise ValueError(" ".join(result.errors))
+
+    def validation_result(self):
+        return validate_kit_spec(
+            sticks=self.sticks,
+            total_gb=self.total_gb,
+            generation=self.generation,
+            speed_mts=self.speed_mts,
+            profile=self.profile,
+            per_stick_gb=self.per_stick_gb,
+            form_factor=self.form_factor,
+            ecc=self.ecc,
+        )
 
 
 def default_cl(generation: Generation, speed_mts: int, profile: Profile) -> int:
@@ -380,6 +397,8 @@ def enrich_brand_entries(
 
 
 def generate_report(spec: RamSpec) -> dict:
+    spec.validate()
+    validation = validation_to_dict(spec.validation_result())
     results = build_all(spec)
     cl = results["assumed_cl"]
 
@@ -395,6 +414,8 @@ def generate_report(spec: RamSpec) -> dict:
         brand_meta.append({"id": brand_id, "name": brand_name})
 
     return {
+        "validation": validation,
+        "valid_speeds": valid_speeds(spec.generation),
         "spec": {
             "sticks": spec.sticks,
             "per_stick_gb": spec.per_stick_gb,
