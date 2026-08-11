@@ -1,0 +1,107 @@
+[
+  {
+    "brand": "pny",
+    "part_number": "MD32GK2D5560046XR",
+    "product_name": "PNY XLR8 DDR5 32GB 5560MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5560,
+    "cas_latency": 4,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.pny.com/xlr8-gaming-ddr5-5600-mhz-desktop-memory-kit"
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK2D5600036RGB",
+    "product_name": "PNY XLR8 DDR5 32GB 5600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 3,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.pny.com/ddr5-6000mhz-epic-x-rgb-desktop-memory-kit"
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK2D5600036XR",
+    "product_name": "PNY XLR8 DDR5 32GB 5600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 3,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.pny.com/xlr8-gaming-ddr5-6000-mhz-desktop-memory-kit"
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD64GK2D5600030XRGB",
+    "product_name": "PNY XLR8 DDR5 64GB 5600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 3,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.pny.com/xlr8-gaming-ddr5-rgb-6000mhz-desktop-memory-kit"
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK2D5640036RGB",
+    "product_name": "PNY XLR8 DDR5 32GB 5640MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5640,
+    "cas_latency": 3,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.pny.com/ddr5-6400mhz-epic-x-rgb-desktop-memory-kit"
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK2D5640036XR",
+    "product_name": "PNY XLR8 DDR5 32GB 5640MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5640,
+    "cas_latency": 3,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.pny.com/xlr8-gaming-ddr5-6400-mhz-desktop-memory-kit"
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK2D5640036XRGB",
+    "product_name": "PNY XLR8 DDR5 32GB 5640MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5640,
+    "cas_latency": 3,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.pny.com/xlr8-gaming-ddr5-rgb-6400mhz-desktop-memory-kit"
+  }
+]

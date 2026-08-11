@@ -1,0 +1,1382 @@
+[
+  {
+    "brand": "klevv",
+    "part_number": "KD58GU880-56K300F489519496961716G",
+    "product_name": "KLEVV CRAS DDR5 32GB 5600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD58GU880-56K300L489519496966216G",
+    "product_name": "KLEVV CRAS DDR5 32GB 5600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-56K300K489519496850432G",
+    "product_name": "KLEVV CRAS DDR5 32GB 5600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-56K300Q489519496837532G",
+    "product_name": "KLEVV CRAS DDR5 32GB 5600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD58GU880-60A300F489519496973016G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD58GU880-60A300L489519496971616G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD58GU880-60B280F489519496962416G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD58GU880-60B280L489519496967916G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60A300F489519496816016G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60A300G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60A300K489519496877132G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60A300Q489519496833732G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60A320Q489519496841232G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60B280F489519496907516G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60B280G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60B280K489519496901332G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60B280L489519496903716G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60B280Q489519496905132G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-60A300G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-60B260G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 26,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-60B280G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-60E400S489519496714932G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5BGUA80-60A300G4895194967682128G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5BGUA80-60A300J4895194967965128G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5CGUB80-60A320G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-60A320S489519496778148G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-60A320S489519496744632G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-60A300G489519496754564G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-60A300H489519496759064G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_BoltV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-60A300I489519496860364G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_BoltV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-60A300J489519496791064G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-60A300M489519496823864G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-60A300V489519496942664G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-60A320S489519496749164G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-60B280G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-62B320P489519496921148G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6200,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB_ROG.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-62E400S489519496715632G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6200,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-62A320S489519496779848G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6200,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-62A320S489519496745332G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6200,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-62A320S489519496750764G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6200,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD58GU880-64A320F489519496974716G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD58GU880-64A320L489519496972316G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD58GU880-64B300F489519496964816G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD58GU880-64B300L489519496969316G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-64A320F489519496817716G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-64A320G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-64A320K489519496878832G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-64A320Q489519496834432G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-64A340Q489519496842932G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-64B300F489519496908216G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-64B300G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-64B300K489519496902032G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-64B300L489519496904416G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGU880-64B300Q489519496906832G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_FITV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-64A320G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-64B300G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5BGUA80-64A320G4895194967699128G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5BGUA80-64A320J4895194967972128G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5CGUB80-64A340G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-64A320G489519496755264G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-64A320H489519496784264G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_BoltV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-64A320I489519496861064G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_BoltV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-64A320J489519496792764G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-64A320M489519496824564G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-64A320V489519496943364G",
+    "product_name": "KLEVV CRAS DDR5 48GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-68A340H489519496730948G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6800MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6800,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_BoltV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-68A340I489519496858048G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6800MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6800,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_BoltV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-68A340M489519496848148G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6800MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6800,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-68A340V489519496938948G",
+    "product_name": "KLEVV CRAS DDR5 32GB 6800MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6800,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-70B360S489519496732348G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-72B340G489519496724848G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-72B340H489519496812248G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_BoltV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-72B340I489519496859748G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_BoltV.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-72B340J489519496788048G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-72B340M489519496820748G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-72B340P489519496845048G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB_ROG.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-72B340V489519496939648G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-72B360S489519496733048G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-72B340G",
+    "product_name": "KLEVV CRAS DDR5 48GB 7200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-76B360G489519496725548G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-76B360J489519496789748G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-76B360M489519496821448G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-76B360V489519496940248G",
+    "product_name": "KLEVV CRAS DDR5 32GB 7600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-76B360G",
+    "product_name": "KLEVV CRAS DDR5 48GB 7600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 7600,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-80D380G489519496785948G",
+    "product_name": "KLEVV CRAS DDR5 32GB 8000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-80D380J489519496790348G",
+    "product_name": "KLEVV CRAS DDR5 32GB 8000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-80D380M489519496822148G",
+    "product_name": "KLEVV CRAS DDR5 32GB 8000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-80D380V489519496941948G",
+    "product_name": "KLEVV CRAS DDR5 32GB 8000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_UrbaneVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5AGUA80-80R380S489519496734748G",
+    "product_name": "KLEVV CRAS DDR5 32GB 8000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasXR5RGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-80D380G",
+    "product_name": "KLEVV CRAS DDR5 48GB 8000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-82D380G",
+    "product_name": "KLEVV CRAS DDR5 48GB 8200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 8200,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  },
+  {
+    "brand": "klevv",
+    "part_number": "KD5KGUD80-84D400G",
+    "product_name": "KLEVV CRAS DDR5 48GB 8400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 8400,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.klevv.com/ken/products_details/memory/Klevv_CrasVRGB.php"
+  }
+]

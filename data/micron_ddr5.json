@@ -1,0 +1,182 @@
+[
+  {
+    "brand": "micron",
+    "part_number": "MTC16C2084S1UC48BA1R",
+    "product_name": "Micron DDR5 16GB 4800MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC16C2084S1UC48BB1R",
+    "product_name": "Micron DDR5 16GB 4800MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC16C2084S1UC48BG1",
+    "product_name": "Micron DDR5 16GB 4800MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC8C1084S1UC48BA1R",
+    "product_name": "Micron DDR5 16GB 4800MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC8C1084S1UC48BB1R",
+    "product_name": "Micron DDR5 16GB 4800MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC8C1084S1UC48BG1",
+    "product_name": "Micron DDR5 16GB 4800MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC8C2084S1UC48BA1R",
+    "product_name": "Micron DDR5 16GB 4800MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC16C2084S1UC56BA1R",
+    "product_name": "Micron DDR5 16GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC16C2084S1UC56BG1",
+    "product_name": "Micron DDR5 16GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC8C1084S1UC56BA1R",
+    "product_name": "Micron DDR5 16GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC8C1084S1UC56BG1",
+    "product_name": "Micron DDR5 16GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  },
+  {
+    "brand": "micron",
+    "part_number": "MTC8C2084S1UC56BA1R",
+    "product_name": "Micron DDR5 16GB 5600MT/s UDIMM",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.micron.com/products/memory/dram-components/ddr5-sdram"
+  }
+]

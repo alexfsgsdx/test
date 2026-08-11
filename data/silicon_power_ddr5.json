@@ -1,0 +1,182 @@
+[
+  {
+    "brand": "silicon_power",
+    "part_number": "SP016GXLWU60AFSE",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 16GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP016GXLWU60AFSG",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 16GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP016GXLWU60FFSE",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 16GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 6000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP016GXLWU60FFSG",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 16GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 6000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP032GXLWU60AFDE",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP032GXLWU60AFDG",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP032GXLWU60AFSE",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP032GXLWU60AFSG",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP032GXLWU60FFDE",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP032GXLWU60FFDG",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP064GXLWU60AFDE",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 64GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  },
+  {
+    "brand": "silicon_power",
+    "part_number": "SP064GXLWU60AFDG",
+    "product_name": "Silicon Power XPOWER Zenith DDR5 64GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.silicon-power.com/web/product-Zenith_DDR5_Gaming_UDIMM"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "brand": "samsung",
+    "part_number": "M323R2GA3BB0-CQK0L",
+    "product_name": "Samsung DDR5 32GB 5600MT/s UDIMM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://semiconductor.samsung.com/dram/module/udimm/"
+  },
+  {
+    "brand": "samsung",
+    "part_number": "M323R4GA3BB0-CQKOD",
+    "product_name": "Samsung DDR5 32GB 5600MT/s UDIMM",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://semiconductor.samsung.com/dram/module/udimm/"
+  }
+]

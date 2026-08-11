@@ -1,0 +1,122 @@
+[
+  {
+    "brand": "vcolor",
+    "part_number": "TMXPL1656836KWK",
+    "product_name": "v-color Manta XPrism RGB DDR5 32GB 5600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://v-color.net/"
+  },
+  {
+    "brand": "vcolor",
+    "part_number": "TMXPL1660836KWK",
+    "product_name": "v-color Manta XPrism RGB DDR5 32GB 6000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://v-color.net/"
+  },
+  {
+    "brand": "vcolor",
+    "part_number": "TMXPL1662836KWK",
+    "product_name": "v-color Manta XPrism RGB DDR5 32GB 6200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6200,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://v-color.net/"
+  },
+  {
+    "brand": "vcolor",
+    "part_number": "TMXPL1664832KWK",
+    "product_name": "v-color Manta XPrism RGB DDR5 32GB 6400MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://v-color.net/"
+  },
+  {
+    "brand": "vcolor",
+    "part_number": "TMXPL1680838KWK",
+    "product_name": "v-color Manta XPrism RGB DDR5 32GB 8000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://v-color.net/"
+  },
+  {
+    "brand": "vcolor",
+    "part_number": "TMXPL2480800KWK",
+    "product_name": "v-color Manta XPrism RGB DDR5 48GB 8000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 8000,
+    "cas_latency": 80,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://v-color.net/"
+  },
+  {
+    "brand": "vcolor",
+    "part_number": "TMXPL2480838KWK",
+    "product_name": "v-color Manta XPrism RGB DDR5 48GB 8000MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://v-color.net/"
+  },
+  {
+    "brand": "vcolor",
+    "part_number": "TMXPL2482840KWK",
+    "product_name": "v-color Manta XPrism RGB DDR5 48GB 8200MT/s",
+    "sticks": 2,
+    "per_stick_gb": 24,
+    "speed_mts": 8200,
+    "cas_latency": 40,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://v-color.net/"
+  }
+]

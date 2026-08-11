@@ -1,0 +1,77 @@
+[
+  {
+    "brand": "geil",
+    "part_number": "GAMSG532GB6000C36CDC",
+    "product_name": "GeIL DDR5 32GB 6000MT/s CL36",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://geilmemory.com/"
+  },
+  {
+    "brand": "geil",
+    "part_number": "GAMSW532GB6000C36CDC",
+    "product_name": "GeIL DDR5 32GB 6000MT/s CL36",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://geilmemory.com/"
+  },
+  {
+    "brand": "geil",
+    "part_number": "GAOSG532GB6000C36ADC",
+    "product_name": "GeIL DDR5 32GB 6000MT/s CL36",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://geilmemory.com/"
+  },
+  {
+    "brand": "geil",
+    "part_number": "GAVSG532GB6000C38BDC",
+    "product_name": "GeIL DDR5 32GB 6000MT/s CL38",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://geilmemory.com/"
+  },
+  {
+    "brand": "geil",
+    "part_number": "GAVSG532GB6400C40BDC",
+    "product_name": "GeIL DDR5 32GB 6400MT/s CL40",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 40,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://geilmemory.com/"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "brand": "timetec",
+    "part_number": "75TT48NU1R8-8G",
+    "product_name": "Timetec Premium DDR5 8GB 4800MT/s",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm"
+  },
+  {
+    "brand": "timetec",
+    "part_number": "75TT48NU1R8-16G",
+    "product_name": "Timetec Premium DDR5 16GB 4800MT/s",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm"
+  },
+  {
+    "brand": "timetec",
+    "part_number": "75TT48NU1R8-8GK2",
+    "product_name": "Timetec Premium DDR5 16GB Kit 4800MT/s",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm"
+  },
+  {
+    "brand": "timetec",
+    "part_number": "75TT48NU1R8-16GK2",
+    "product_name": "Timetec Premium DDR5 32GB Kit 4800MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm"
+  },
+  {
+    "brand": "timetec",
+    "part_number": "75TT48NU2R8-32G",
+    "product_name": "Timetec Premium DDR5 32GB 4800MT/s",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm"
+  },
+  {
+    "brand": "timetec",
+    "part_number": "75TT48NU2R8-32GK2",
+    "product_name": "Timetec Premium DDR5 64GB Kit 4800MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm"
+  },
+  {
+    "brand": "timetec",
+    "part_number": "75TT56NU1R8-16G",
+    "product_name": "Timetec Premium DDR5 16GB 5600MT/s",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm"
+  },
+  {
+    "brand": "timetec",
+    "part_number": "75TT56NU1R8-16GK2",
+    "product_name": "Timetec Premium DDR5 32GB Kit 5600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm"
+  },
+  {
+    "brand": "timetec",
+    "part_number": "75TT56NU1R8-32G",
+    "product_name": "Timetec Premium DDR5 32GB 5600MT/s",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm"
+  },
+  {
+    "brand": "timetec",
+    "part_number": "75TT56NU1R8-32GK2",
+    "product_name": "Timetec Premium DDR5 64GB Kit 5600MT/s",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://timetecinc.com/products/timetec-ddr5-4800-udimm"
+  }
+]

@@ -1,0 +1,2942 @@
+[
+  {
+    "brand": "xpg",
+    "part_number": "AX5U4800C4016G-SLARBBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 4800,
+    "cas_latency": 40,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5200C3816G-DCLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5200,
+    "cas_latency": 38,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5200C3816G-DCLAWH",
+    "product_name": "LANCER DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5200,
+    "cas_latency": 38,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C468G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C468G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C468G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C468G-DTLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C468G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C468G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C468G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C468G-SLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-CLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-CNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-DTAMBK",
+    "product_name": "ARMAX DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-DTAMRBK",
+    "product_name": "ARMAX RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-DTLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-SAMBK",
+    "product_name": "ARMAX DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-SAMRBK",
+    "product_name": "ARMAX RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-SLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4616G-DCNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4632G-CLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4632G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4632G-DTLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4632G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U5600C4632G-SLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 5600,
+    "cas_latency": 46,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2816G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2816G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2816G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2816G-DTLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2816G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2816G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2816G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2816G-SLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-CLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-CLANRSG",
+    "product_name": "LANCER NEON RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-neon-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-CLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-CLARRD",
+    "product_name": "LANCER RGB GOLDEN HORSE EDITION",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5-golden-horse-edition"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-CLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-CLAWH",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-CNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DTAMBK",
+    "product_name": "ARMAX DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DTAMRBK",
+    "product_name": "ARMAX RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DTLABRBK-OBZOR-PAMJAT-KAK-PAMJAT",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-SAMBK",
+    "product_name": "ARMAX DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-SAMRBK",
+    "product_name": "ARMAX RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-SLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3416G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3416G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3416G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3416G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-DTAMBK",
+    "product_name": "ARMAX DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-DTAMRBK",
+    "product_name": "ARMAX RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-DTLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-SAMBK",
+    "product_name": "ARMAX DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-SAMRBK",
+    "product_name": "ARMAX RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3616G-SLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-CLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-CNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-DTLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-SLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3024G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3024G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3624G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3624G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3624G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3624G-DTLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3624G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3624G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3624G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3624G-SLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 36,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4824G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4824G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4824G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4824G-DTLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4824G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4824G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4824G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2832G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2832G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2832G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2832G-DTLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2832G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2832G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2832G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C2832G-SLABWH",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 28,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DCLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DCLANRSG",
+    "product_name": "LANCER NEON RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-neon-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DCLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DCLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DCLAWH",
+    "product_name": "LANCER DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3016G-DCNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-CLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-CLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-CLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-CLAWH",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-CNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-DTAMBK",
+    "product_name": "ARMAX DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-DTAMRBK",
+    "product_name": "ARMAX RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-SAMBK",
+    "product_name": "ARMAX DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-SAMRBK",
+    "product_name": "ARMAX RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C4816G-DCNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6000,
+    "cas_latency": 48,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3048G-CLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 48,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3048G-CLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 48,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-DCLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-DCLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-DCLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-DCLAWH",
+    "product_name": "LANCER DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3032G-DCNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3048G-DCLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 48,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6000C3048G-DCLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 48,
+    "speed_mts": 6000,
+    "cas_latency": 30,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-CLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-CLANRSG",
+    "product_name": "LANCER NEON RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-neon-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-CLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-CLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-CLAWH",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-CNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DTAMBK",
+    "product_name": "ARMAX DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DTAMRBK",
+    "product_name": "ARMAX RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DTLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-SAMBK",
+    "product_name": "ARMAX DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-SAMRBK",
+    "product_name": "ARMAX RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-armax-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-SLABBK",
+    "product_name": "LANCER BLADE DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3816G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3816G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3816G-SLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3816G-SLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3224G-DTLABRBK",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3224G-DTLABRWH",
+    "product_name": "LANCER BLADE RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 24,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-blade-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DCLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DCLANRSG",
+    "product_name": "LANCER NEON RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-neon-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DCLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DCLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DCLAWH",
+    "product_name": "LANCER DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3216G-DCNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3232G-CLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3232G-CLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3232G-CLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3232G-CLAWH",
+    "product_name": "LANCER DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3232G-CNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3248G-CLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 48,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3248G-CLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 48,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3232G-DCLABK",
+    "product_name": "LANCER DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3232G-DCLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3232G-DCLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3232G-DCLAWH",
+    "product_name": "LANCER DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3232G-DCNKRBK",
+    "product_name": "NOVAKEY RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/computer-memory-novakey-rgb-ddr5-memory"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3248G-DCLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 48,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U6400C3248G-DCLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 48,
+    "speed_mts": 6400,
+    "cas_latency": 32,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U7200C3416G-CLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U7200C3416G-CLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U7200C3416G-DCLANRSG",
+    "product_name": "LANCER NEON RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-neon-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U7200C3416G-DCLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U7200C3416G-DCLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 7200,
+    "cas_latency": 34,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U8000C3816G-CLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U8000C3816G-CLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U8000C3816G-DCLANRSG",
+    "product_name": "LANCER NEON RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-neon-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U8000C3816G-DCLARBK",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX5U8000C3816G-DCLARWH",
+    "product_name": "LANCER RGB DDR5",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "speed_mts": 8000,
+    "cas_latency": 38,
+    "profiles": [
+      "both"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.xpg.com/en/xpg/dram-modules-lancer-rgb-ddr5"
+  }
+]
