@@ -4,8 +4,6 @@ __pycache__/
 .eggs/
 dist/
 build/
-*.pyc
 .env
 venv/
 .venv/
-*_decompiled/
