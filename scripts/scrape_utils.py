@@ -195,56 +195,142 @@ def decode_teamgroup_part(part: str, product_name: str = "") -> dict | None:
     }
 
 
+def _kingston_profiles(series: str, product_name: str) -> list[str]:
+    blob = f"{series} {product_name}".lower()
+    has_xmp = "xmp" in blob or "BB" in series
+    has_expo = "expo" in blob or "BBE" in series
+    if has_xmp and has_expo:
+        return ["both"]
+    if has_expo:
+        return ["expo"]
+    if has_xmp:
+        return ["xmp"]
+    return ["jedec"]
+
+
+def _kingston_line(part: str, series: str, product_name: str) -> str:
+    blob = product_name.lower()
+    if part.startswith("KVR5"):
+        return "ValueRAM"
+    if part.startswith("KSM5"):
+        return "Server Premier"
+    if "impact" in blob or re.search(r"KF5\d{2}S", part, re.I):
+        return "FURY Impact"
+    if "renegade" in blob or "RW" in part or "RS" in part or series.startswith("RB") or "R36" in part:
+        return "FURY Renegade"
+    if "beast" in blob or "BB" in series:
+        return "FURY Beast"
+    return "FURY"
+
+
+def _parse_sticks_from_name(product_name: str) -> int | None:
+    m = re.search(r"\(\s*(\d+)\s*x\s*(\d+)\s*GB\s*\)", product_name, re.I)
+    if m:
+        return int(m.group(1))
+    return None
+
+
 def decode_kingston_part(part: str, product_name: str = "") -> dict | None:
+    up = part.upper()
     m = re.match(
-        r"KF5(?P<speed>\d{2})(?P<alt>[A-Z]?)(?P<cl>C\d{2})(?P<series>[A-Z0-9]+?)(?P<kit>K\d)?-(?P<total>\d+)$",
-        part,
-        re.I,
+        r"KF5(?P<speed>\d{2})(?P<mod>[A-Z]?)(?P<cl>\d{2})(?P<series>[A-Z0-9]+?)(?P<kit>K\d)?-(?P<total>\d+)$",
+        up,
     )
-    if not m:
-        return None
+    if m and m.group("mod").upper() in {"", "C", "S", "R"}:
+        speed_mts = int(m.group("speed")) * 100
+        cas = int(m.group("cl"))
+        total = int(m.group("total"))
+        kit = (m.group("kit") or "").upper()
+        sticks = {"K2": 2, "K4": 4, "K8": 8}.get(kit, 1)
+        named = _parse_sticks_from_name(product_name)
+        if named:
+            sticks = named
+        if total % sticks:
+            sticks = 1
+        per_stick_gb = total // sticks
+        series = m.group("series").upper()
+        mod = m.group("mod").upper()
+        rgb = any(x in up for x in ("BBA", "BBE", "BBE2A", "RWA", "RSA", "RW", "WB", "BWA", "BWEA"))
+        profiles = _kingston_profiles(series, product_name)
+        line = _kingston_line(up, series, product_name)
+        form_factor = "sodimm" if mod == "S" or "so-dimm" in product_name.lower() or "impact" in product_name.lower() else "dimm"
+        if product_name:
+            label = product_name
+        elif sticks == 1:
+            label = f"{line} {total}GB (1x{per_stick_gb}GB) DDR5 {speed_mts} CL{cas}"
+        else:
+            label = f"{line} {total}GB ({sticks}x{per_stick_gb}GB) DDR5 {speed_mts} CL{cas}"
+        return {
+            "brand": "kingston",
+            "part_number": up,
+            "product_name": label[:120],
+            "sticks": sticks,
+            "per_stick_gb": per_stick_gb,
+            "speed_mts": speed_mts,
+            "cas_latency": cas,
+            "profiles": profiles,
+            "rgb": rgb,
+            "form_factor": form_factor,
+            "source_url": f"https://www.kingston.com/en/memory/search?partid={up}",
+        }
 
-    speed_mts = int(m.group("speed")) * 100
-    cas = int(m.group("cl")[1:])
-    total = int(m.group("total"))
-    kit = (m.group("kit") or "").upper()
-    sticks = {"K2": 2, "K4": 4}.get(kit, 1)
-    if sticks == 1 and "dual" in product_name.lower():
-        sticks = 2
-    if total % sticks != 0:
-        sticks = 1
-    per_stick_gb = total // sticks
+    m2 = re.match(
+        r"KVR(?P<speed>\d{2})U(?P<cl>\d{2})(?P<series>[A-Z0-9]+)-(?P<total>\d+)$",
+        up,
+    )
+    if m2:
+        speed_mts = int(m2.group("speed")) * 100
+        cas = int(m2.group("cl"))
+        total = int(m2.group("total"))
+        series = m2.group("series").upper()
+        kit_m = re.search(r"(K[248])$", series)
+        kit = kit_m.group(1) if kit_m else ""
+        series = series[: kit_m.start()] if kit_m else series
+        sticks = {"K2": 2, "K4": 4, "K8": 8}.get(kit, 1)
+        if total % sticks:
+            sticks = 1
+        per_stick_gb = total // sticks
+        label = product_name or f"ValueRAM {total}GB DDR5 {speed_mts} CL{cas}"
+        form_factor = "sodimm" if series.startswith("BS") else "dimm"
+        return {
+            "brand": "kingston",
+            "part_number": up,
+            "product_name": label[:120],
+            "sticks": sticks,
+            "per_stick_gb": per_stick_gb,
+            "speed_mts": speed_mts,
+            "cas_latency": cas,
+            "profiles": ["jedec"],
+            "rgb": False,
+            "form_factor": form_factor,
+            "source_url": f"https://www.kingston.com/en/memory/search?partid={up}",
+        }
 
-    series = m.group("series").upper()
-    rgb = any(x in series for x in ("BBA", "BBE", "RWA", "RSA", "RW"))
-    profiles: list[str] = []
-    if any(x in series for x in ("BE", "BA", "EA", "SA", "Z")):
-        profiles.extend(["expo", "xmp"])
-    elif "R" in series and "RB" in series:
-        profiles.append("xmp")
-    else:
-        profiles.append("xmp")
-    if "expo" not in " ".join(profiles).lower() and "BBE" in series:
-        profiles.append("expo")
+    m3 = re.match(r"KSM(?P<speed>\d{2})[A-Z0-9]+-(?P<total>\d+)[A-Z]*$", up)
+    if m3:
+        speed_mts = int(m3.group("speed")) * 100
+        total = int(m3.group("total"))
+        sticks = 2 if "K2" in up or total <= 32 else 1
+        if total % sticks:
+            sticks = 1
+        per_stick_gb = total // sticks
+        label = product_name or f"Server Premier {total}GB DDR5 {speed_mts}"
+        form_factor = "sodimm" if "BS" in up else "dimm"
+        return {
+            "brand": "kingston",
+            "part_number": up,
+            "product_name": label[:120],
+            "sticks": sticks,
+            "per_stick_gb": per_stick_gb,
+            "speed_mts": speed_mts,
+            "cas_latency": 40,
+            "profiles": ["jedec"],
+            "rgb": False,
+            "form_factor": form_factor,
+            "source_url": f"https://www.kingston.com/en/memory/search?partid={up}",
+        }
 
-    form_factor = "sodimm" if "impact" in product_name.lower() else "dimm"
-    if "RDIMM" in product_name.upper() or series.startswith("R"):
-        form_factor = "dimm"
-
-    label = product_name or f"Kingston FURY {sticks}x{per_stick_gb}GB DDR5 {speed_mts} CL{cas}"
-    return {
-        "brand": "kingston",
-        "part_number": part.upper(),
-        "product_name": label[:120],
-        "sticks": sticks,
-        "per_stick_gb": per_stick_gb,
-        "speed_mts": speed_mts,
-        "cas_latency": cas,
-        "profiles": sorted(set(profiles)) or ["jedec"],
-        "rgb": rgb,
-        "form_factor": form_factor,
-        "source_url": f"https://www.kingston.com/datasheets/{part.upper()}.pdf",
-    }
+    return None
 
 
 def parse_kingston_pdf(text: str, part: str) -> dict | None:
