@@ -30,23 +30,48 @@ python3 ram_part_number.py "2x16gb ddr5 6000 xmp" --brand corsair
 
 ## Web UI
 
+### Local (Flask — full Python backend)
+
 ```bash
 python3 app.py
 ```
 
 Open http://127.0.0.1:8080
 
+### GitHub Pages (static — no server)
+
+The site in the `docs/` folder runs entirely in your browser (JavaScript port of the generator). Deploy it with GitHub Pages:
+
+1. **Push this repo to GitHub**
+2. Open your repo on GitHub → **Settings** → **Pages**
+3. Under **Build and deployment** → **Source**, choose **GitHub Actions**
+4. Push to `main` (or merge your branch) — the workflow `.github/workflows/pages.yml` deploys automatically
+5. Your site will be at:
+   ```
+   https://<your-username>.github.io/<repo-name>/
+   ```
+   Example: `https://alexfsgsdx.github.io/test/`
+
+**Manual deploy:** You can also set Source to **Deploy from a branch**, branch `main`, folder `/docs` — no Actions needed.
+
+> GitHub Pages cannot run Python/Flask. The `docs/` site uses client-side JavaScript; the Flask app in `app.py` is for local development only.
+
 ## Project structure
 
 ```
-ram_part_number.py   # Core generator + CLI
+ram_part_number.py   # Core generator + CLI (Python)
 spd_serial.py        # SPD assembly serial encoding
-app.py               # Flask web server
-templates/index.html # Web UI
+product_validation.py # Speed / kit validation
+app.py               # Flask web server (local dev)
+templates/index.html # Flask UI template
+docs/                # Static site for GitHub Pages
+  index.html
+  generator.js
+.github/workflows/pages.yml  # Auto-deploy to GitHub Pages
 ```
 
 ## Notes
 
+- **Speed validation:** Only standard JEDEC/retail speeds are accepted (e.g. DDR5 starts at 4800 MT/s — 4000 is rejected).
 - Part numbers follow each vendor's public naming scheme — verify on manufacturer sites before buying.
-- SPD serials are valid-format assembly serials, not guaranteed factory-assigned values.
-- Corsair often uses separate SKUs for XMP (`C`) vs EXPO (`Z`).
+- Generated numbers are **not** looked up in product databases; warnings appear when a combo is uncommon.

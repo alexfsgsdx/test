@@ -817,7 +817,9 @@
 
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
-  <script>
+  <script type="module">
+    import { generateReport, parseNaturalLanguage, specFromForm, validSpeeds } from "./generator.js";
+
     (function () {
       "use strict";
 
@@ -973,11 +975,8 @@
       btnExampleQuick.addEventListener("click", loadExampleQuick);
 
       async function fetchValidSpeeds(generation) {
-        const res = await fetch(`/api/valid-speeds?generation=${generation}`);
-        const data = await res.json();
-        if (!data.ok) throw new Error(data.error || "Could not load speeds");
-        speedOptions[generation] = data.speeds;
-        return data.speeds;
+        speedOptions[generation] = validSpeeds(generation);
+        return speedOptions[generation];
       }
 
       function populateSpeedSelect(generation, preferred) {
@@ -1131,7 +1130,7 @@
         btnGenerateQuick.disabled = loading;
       }
 
-      /* ── API call ── */
+      /* ── Client-side generation (GitHub Pages — no server) ── */
       async function generate(payload) {
         if (isLoading) return;
 
@@ -1143,22 +1142,13 @@
         setLoading(true);
 
         try {
-          const res = await fetch("/api/generate", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload),
-          });
-
-          const data = await res.json();
-
-          if (!res.ok || !data.ok) {
-            renderError(data.error || `Request failed (${res.status})`);
-            return;
-          }
-
+          const spec = payload.natural_language
+            ? parseNaturalLanguage(payload.natural_language)
+            : specFromForm(payload);
+          const data = await generateReport(spec);
           renderResults(data);
         } catch (err) {
-          renderError(err.message || "Network error");
+          renderError(err.message || "Generation failed");
         } finally {
           setLoading(false);
         }
@@ -1191,12 +1181,9 @@
       brandCountBadge.textContent = "22 brands";
 
       (async function initSpeeds() {
-        try {
-          await Promise.all([fetchValidSpeeds(4), fetchValidSpeeds(5)]);
-          populateSpeedSelect(parseInt($("#generation").value, 10), EXAMPLE_FORM.speed_mts);
-        } catch (err) {
-          $("#speedHint").textContent = "Could not load speed list — refresh the page";
-        }
+        speedOptions[4] = validSpeeds(4);
+        speedOptions[5] = validSpeeds(5);
+        populateSpeedSelect(parseInt($("#generation").value, 10), EXAMPLE_FORM.speed_mts);
       })();
     })();
   </script>
