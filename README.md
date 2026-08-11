@@ -1,72 +1,52 @@
-# pyd-decompiler
+# RAM Part Number Generator
 
-Analyze and decompile **Python `.pyd` extension modules** (Windows PE DLLs).
+Generate manufacturer-style part numbers and SPD assembly serial numbers for DDR4/DDR5 memory kits across 22 major brands.
 
-`.pyd` files are compiled native extensions — usually C, C++, **Cython**, or **Nuitka** — not plain Python bytecode. This tool:
+## Features
 
-1. **Analyzes** the PE structure (exports, imports, sections, strings)
-2. **Detects** module type (CPython extension, Cython, Nuitka, pybind11)
-3. **Scans** for embedded `.pyc` bytecode blobs inside the binary
-4. **Decompiles** extracted bytecode to `.py` when possible
-
-> **Important:** Most `.pyd` files cannot be fully recovered as Python source. Native code requires reverse-engineering tools (Ghidra, IDA). This tool helps when bytecode is embedded (some packers/protectors) and provides useful metadata for RE.
+- **Part number generation** for Kingston, Corsair, G.Skill, Crucial, TeamGroup, Patriot, XPG, PNY, and more
+- **SPD assembly serial numbers** (bytes 325–328) per stick, brand-specific encoding
+- **Natural language input** or structured form
+- **Web UI** with copy buttons and per-brand results grid
 
 ## Install
 
 ```bash
-pip install -e .
-# or
 pip install -r requirements.txt
 ```
 
-Optional: install [pycdc](https://github.com/zrax/pycdc) for better decompilation of Python 3.9+ bytecode.
-
-## Usage
+## CLI usage
 
 ```bash
-# Full analysis + bytecode scan + decompile
-python -m pyd_decompiler module.pyd
+# Natural language
+python3 ram_part_number.py "2 sticks 32 gb total ddr5 speed 6000 both xmp and expo"
 
-# Custom output directory
-python -m pyd_decompiler module.pyd -o output/
+# Explicit flags
+python3 ram_part_number.py --sticks 2 --total-gb 32 --generation 5 --speed 6000 --profile both
 
-# PE analysis only (no bytecode extraction)
-python -m pyd_decompiler module.pyd --scan-only
-
-# Extract .pyc without decompiling
-python -m pyd_decompiler module.pyd --no-decompile
-
-# Prefer a specific decompiler backend
-python -m pyd_decompiler module.pyd --backend pycdc
+# Single brand
+python3 ram_part_number.py "2x16gb ddr5 6000 xmp" --brand corsair
 ```
 
-## Output structure
+## Web UI
 
-```
-module_decompiled/
-├── analysis_report.txt      # Human-readable PE analysis
-├── analysis_report.json     # Machine-readable report
-├── extracted_pyc/           # Embedded bytecode (if found)
-│   └── module_000_py311.pyc
-└── decompiled_source/       # Recovered Python source (if decompilable)
-    └── module_000_py311.py
+```bash
+python3 app.py
 ```
 
-## Decompiler backends (tried in order)
+Open http://127.0.0.1:8080
 
-| Backend     | Python versions | Notes                          |
-|------------|-----------------|--------------------------------|
-| decompyle3 | 3.7–3.8         | Best for older bytecode        |
-| uncompyle6 | 2.7–3.8         | Legacy support                 |
-| pycdc      | 2.7–3.12+       | External binary, broad support |
-| dis        | any             | Bytecode disassembly fallback  |
+## Project structure
 
-## Limitations
+```
+ram_part_number.py   # Core generator + CLI
+spd_serial.py        # SPD assembly serial encoding
+app.py               # Flask web server
+templates/index.html # Web UI
+```
 
-- **Cython / Nuitka / C extensions:** Machine code only — no Python source recovery
-- **Embedded bytecode:** Only recovered if present in the binary
-- **Obfuscation:** May block decompilation even when bytecode exists
+## Notes
 
-## License
-
-MIT
+- Part numbers follow each vendor's public naming scheme — verify on manufacturer sites before buying.
+- SPD serials are valid-format assembly serials, not guaranteed factory-assigned values.
+- Corsair often uses separate SKUs for XMP (`C`) vs EXPO (`Z`).
