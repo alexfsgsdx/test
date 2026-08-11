@@ -26085,6 +26085,186 @@
     },
     {
       "brand": "kingston",
+      "part_number": "KF548C38BB-8",
+      "product_name": "FURY Beast 8GB (1x8GB) DDR5 4800 CL38",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 38,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF548C38BB-8",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KVR48U40BS6-8",
+      "product_name": "ValueRAM 8GB DDR5 4800 CL40",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "sodimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KVR48U40BS6-8",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF548C38BB-16",
+      "product_name": "FURY Beast 16GB (1x16GB) DDR5 4800 CL38",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 38,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF548C38BB-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF548C38BBK2-16",
+      "product_name": "FURY Beast 16GB (2x8GB) DDR5 4800 CL38",
+      "sticks": 2,
+      "per_stick_gb": 8,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 38,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF548C38BBK2-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF548R36RB-16",
+      "product_name": "FURY Renegade 16GB (1x16GB) DDR5 4800 CL36",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 36,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF548R36RB-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KSM48E40BS8KM-16HM",
+      "product_name": "Server Premier 16GB DDR5 4800",
+      "sticks": 2,
+      "per_stick_gb": 8,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "sodimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KSM48E40BS8KM-16HM",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KVR48U40BS6K2-16",
+      "product_name": "ValueRAM 16GB DDR5 4800 CL40",
+      "sticks": 2,
+      "per_stick_gb": 8,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "sodimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KVR48U40BS6K2-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KVR48U40BS8-16",
+      "product_name": "ValueRAM 16GB DDR5 4800 CL40",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "sodimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KVR48U40BS8-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF548C38BB-32",
+      "product_name": "FURY Beast 32GB (1x32GB) DDR5 4800 CL38",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 38,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF548C38BB-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
       "part_number": "KF548C38BBK2-32",
       "product_name": "FURY Beast 32GB (2x16GB) DDR5 4800 CL38",
       "sticks": 2,
@@ -26099,14 +26279,254 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF548C38BBK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF548C38BBK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF548R36RB-32",
+      "product_name": "FURY Renegade 32GB (1x32GB) DDR5 4800 CL36",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 36,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF548R36RB-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KSM48E40BD8KM-32HM",
+      "product_name": "Server Premier 32GB DDR5 4800",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KSM48E40BD8KM-32HM",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KSM48R40BD8KMM-32HMR",
+      "product_name": "Server Premier 32GB DDR5 4800",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KSM48R40BD8KMM-32HMR",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KVR48U40BS8K2-32",
+      "product_name": "ValueRAM 32GB DDR5 4800 CL40",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "sodimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KVR48U40BS8K2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF548C38BBK2-64",
+      "product_name": "FURY Beast 64GB (2x32GB) DDR5 4800 CL38",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 38,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF548C38BBK2-64",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KSM48R40BD4TMM-64HMR",
+      "product_name": "Server Premier 64GB DDR5 4800",
+      "sticks": 1,
+      "per_stick_gb": 64,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 4800,
+      "cas_latency": 40,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KSM48R40BD4TMM-64HMR",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KVR52U42BS6-8",
+      "product_name": "ValueRAM 8GB DDR5 5200 CL42",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 5200,
+      "cas_latency": 42,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "sodimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KVR52U42BS6-8",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF552C40BB-16",
+      "product_name": "FURY Beast 16GB (1x16GB) DDR5 5200 CL40",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5200,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF552C40BB-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF552C40BBAK2-16",
+      "product_name": "FURY Beast 16GB (2x8GB) DDR5 5200 CL40",
+      "sticks": 2,
+      "per_stick_gb": 8,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5200,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF552C40BBAK2-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF552C40BBK2-16",
+      "product_name": "FURY Beast 16GB (2x8GB) DDR5 5200 CL40",
+      "sticks": 2,
+      "per_stick_gb": 8,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5200,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF552C40BBK2-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF552C36BBEAK2-32",
+      "product_name": "FURY Beast 32GB (2x16GB) DDR5 5200 CL36",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 5200,
+      "cas_latency": 36,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF552C36BBEAK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF552C40BB-32",
+      "product_name": "FURY Beast 32GB (1x32GB) DDR5 5200 CL40",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 5200,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF552C40BB-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
     {
       "brand": "kingston",
       "part_number": "KF552C40BBAK2-32",
-      "product_name": "FURY Beast RGB 32GB (2x16GB) DDR5 5200 CL40",
+      "product_name": "FURY Beast 32GB (2x16GB) DDR5 5200 CL40",
       "sticks": 2,
       "per_stick_gb": 16,
       "total_gb": 32,
@@ -26114,12 +26534,12 @@
       "speed_mts": 5200,
       "cas_latency": 40,
       "profiles": [
-        "both"
+        "xmp"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF552C40BBAK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF552C40BBAK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26139,7 +26559,7 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF552C40BBK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF552C40BBK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26159,7 +26579,107 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF552C40BBK2-64.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF552C40BBK2-64",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF556C40BB-8",
+      "product_name": "FURY Beast 8GB (1x8GB) DDR5 5600 CL40",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C40BB-8",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KVR56U46BS6-8",
+      "product_name": "ValueRAM 8GB DDR5 5600 CL46",
+      "sticks": 1,
+      "per_stick_gb": 8,
+      "total_gb": 8,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "sodimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KVR56U46BS6-8",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF556C36BBE-16",
+      "product_name": "FURY Beast 16GB (1x16GB) DDR5 5600 CL36",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 36,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C36BBE-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF556C36BBEA-16",
+      "product_name": "FURY Beast 16GB (1x16GB) DDR5 5600 CL36",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 36,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C36BBEA-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF556C40BB-16",
+      "product_name": "FURY Beast 16GB (1x16GB) DDR5 5600 CL40",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C40BB-16",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26174,12 +26694,52 @@
       "speed_mts": 5600,
       "cas_latency": 40,
       "profiles": [
-        "both"
+        "xmp"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF556C40BBAK2-16.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C40BBAK2-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KVR56U46BS8-16",
+      "product_name": "ValueRAM 16GB DDR5 5600 CL46",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "sodimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KVR56U46BS8-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF556C36BBEAK2-32",
+      "product_name": "FURY Beast 32GB (2x16GB) DDR5 5600 CL36",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 36,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C36BBEAK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26194,12 +26754,32 @@
       "speed_mts": 5600,
       "cas_latency": 36,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF556C36BBEK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C36BBEK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF556C40BB-32",
+      "product_name": "FURY Beast 32GB (1x32GB) DDR5 5600 CL40",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C40BB-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26214,12 +26794,12 @@
       "speed_mts": 5600,
       "cas_latency": 40,
       "profiles": [
-        "both"
+        "xmp"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF556C40BBAK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C40BBAK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26239,7 +26819,7 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF556C40BBK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C40BBK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26254,12 +26834,52 @@
       "speed_mts": 5600,
       "cas_latency": 40,
       "profiles": [
-        "xmp"
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C40BWAK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KVR56U46BD8-32",
+      "product_name": "ValueRAM 32GB DDR5 5600 CL46",
+      "sticks": 1,
+      "per_stick_gb": 32,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 46,
+      "profiles": [
+        "jedec"
       ],
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF556C40BWAK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KVR56U46BD8-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF556C40BBAK2-64",
+      "product_name": "FURY Beast 64GB (2x32GB) DDR5 5600 CL40",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 5600,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C40BBAK2-64",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26279,7 +26899,47 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF556C40BBK2-64.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF556C40BBK2-64",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF560C36BBEA-16",
+      "product_name": "FURY Beast 16GB (1x16GB) DDR5 6000 CL36",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C36BBEA-16",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF560C40BB-16",
+      "product_name": "FURY Beast 16GB (1x16GB) DDR5 6000 CL40",
+      "sticks": 1,
+      "per_stick_gb": 16,
+      "total_gb": 16,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 40,
+      "profiles": [
+        "xmp"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C40BB-16",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26294,12 +26954,12 @@
       "speed_mts": 6000,
       "cas_latency": 30,
       "profiles": [
-        "both"
+        "xmp"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF560C30BBAK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C30BBAK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26319,7 +26979,47 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF560C30BBK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C30BBK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF560C32RSAK2-32",
+      "product_name": "FURY Renegade 32GB (2x16GB) DDR5 6000 CL32",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 32,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C32RSAK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF560C32RWAK2-32",
+      "product_name": "FURY Renegade 32GB (2x16GB) DDR5 6000 CL32",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 32,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C32RWAK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26334,12 +27034,52 @@
       "speed_mts": 6000,
       "cas_latency": 36,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF560C36BBE2AK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C36BBE2AK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF560C36BBEAK2-32",
+      "product_name": "FURY Beast 32GB (2x16GB) DDR5 6000 CL36",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C36BBEAK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF560C36BBEK2-32",
+      "product_name": "FURY Beast 32GB (2x16GB) DDR5 6000 CL36",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 36,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C36BBEK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26359,7 +27099,7 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF560C40BBK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C40BBK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26379,7 +27119,47 @@
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF560C30BBK2-64.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C30BBK2-64",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF560C32RSAK2-64",
+      "product_name": "FURY Renegade 64GB (2x32GB) DDR5 6000 CL32",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 32,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": true,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C32RSAK2-64",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF560C32RSK2-64",
+      "product_name": "FURY Renegade 64GB (2x32GB) DDR5 6000 CL32",
+      "sticks": 2,
+      "per_stick_gb": 32,
+      "total_gb": 64,
+      "generation": 5,
+      "speed_mts": 6000,
+      "cas_latency": 32,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C32RSK2-64",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26394,12 +27174,12 @@
       "speed_mts": 6000,
       "cas_latency": 36,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF560C36BBE2AK2-64.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C36BBE2AK2-64",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26414,12 +27194,12 @@
       "speed_mts": 6000,
       "cas_latency": 36,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF560C36BBEAK2-64.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C36BBEAK2-64",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26434,12 +27214,12 @@
       "speed_mts": 6000,
       "cas_latency": 36,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF560C36BBEK2-64.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF560C36BBEK2-64",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26454,12 +27234,12 @@
       "speed_mts": 6400,
       "cas_latency": 32,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF564C32BBEA-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF564C32BBEA-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26474,12 +27254,12 @@
       "speed_mts": 6400,
       "cas_latency": 32,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF564C32BBEAK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF564C32BBEAK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26494,12 +27274,32 @@
       "speed_mts": 6400,
       "cas_latency": 32,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF564C32BBEK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF564C32BBEK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF564C32RSK2-32",
+      "product_name": "FURY Renegade 32GB (2x16GB) DDR5 6400 CL32",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6400,
+      "cas_latency": 32,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF564C32RSK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26514,12 +27314,12 @@
       "speed_mts": 6400,
       "cas_latency": 32,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF564C32BBEAK2-64.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF564C32BBEAK2-64",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26534,12 +27334,12 @@
       "speed_mts": 6400,
       "cas_latency": 32,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF564C32BBEK2-64.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF564C32BBEK2-64",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26554,12 +27354,12 @@
       "speed_mts": 6400,
       "cas_latency": 32,
       "profiles": [
-        "both"
+        "jedec"
       ],
-      "rgb": false,
+      "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF564C32BWEAK2-64.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF564C32BWEAK2-64",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26574,12 +27374,52 @@
       "speed_mts": 6800,
       "cas_latency": 34,
       "profiles": [
-        "both"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF568C34BBEK2-32.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF568C34BBEK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF568C36RSK2-32",
+      "product_name": "FURY Renegade 32GB (2x16GB) DDR5 6800 CL36",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 6800,
+      "cas_latency": 36,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF568C36RSK2-32",
+      "source": "manufacturer",
+      "verified": "2026-08-11"
+    },
+    {
+      "brand": "kingston",
+      "part_number": "KF572C38RSK2-32",
+      "product_name": "FURY Renegade 32GB (2x16GB) DDR5 7200 CL38",
+      "sticks": 2,
+      "per_stick_gb": 16,
+      "total_gb": 32,
+      "generation": 5,
+      "speed_mts": 7200,
+      "cas_latency": 38,
+      "profiles": [
+        "jedec"
+      ],
+      "rgb": false,
+      "form_factor": "dimm",
+      "ecc": false,
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF572C38RSK2-32",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26594,12 +27434,12 @@
       "speed_mts": 8000,
       "cas_latency": 38,
       "profiles": [
-        "xmp"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF580C38RW-16.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF580C38RW-16",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26614,12 +27454,12 @@
       "speed_mts": 8000,
       "cas_latency": 38,
       "profiles": [
-        "xmp"
+        "jedec"
       ],
       "rgb": false,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF580C38RS-24.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF580C38RS-24",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
@@ -26634,12 +27474,12 @@
       "speed_mts": 8000,
       "cas_latency": 38,
       "profiles": [
-        "xmp"
+        "jedec"
       ],
       "rgb": true,
       "form_factor": "dimm",
       "ecc": false,
-      "source_url": "https://www.kingston.com/datasheets/KF580C38RW-24.pdf",
+      "source_url": "https://www.kingston.com/en/memory/search?partid=KF580C38RW-24",
       "source": "manufacturer",
       "verified": "2026-08-11"
     },
