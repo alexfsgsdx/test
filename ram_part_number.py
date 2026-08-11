@@ -14,6 +14,7 @@ import sys
 from dataclasses import dataclass
 from typing import Callable, Literal
 
+from catalog import catalog_product_to_entry, catalog_stats, lookup_catalog
 from product_validation import validate_kit_spec, validation_to_dict, valid_speeds
 from spd_serial import generate_spd_serials, spd_serial_to_dict
 
@@ -399,23 +400,66 @@ def enrich_brand_entries(
 def generate_report(spec: RamSpec) -> dict:
     spec.validate()
     validation = validation_to_dict(spec.validation_result())
-    results = build_all(spec)
-    cl = results["assumed_cl"]
+    cl = spec.cas_latency or default_cl(spec.generation, spec.speed_mts, spec.profile)
 
-    brands = {}
-    brand_meta = []
-    for brand_id, brand_name, _ in BRAND_REGISTRY:
-        value = results[brand_id]
-        assert isinstance(value, (str, list))
-        entries = normalize_brand_result(value)
-        brands[brand_id] = enrich_brand_entries(
-            brand_id, entries, spec.generation, spec.sticks
+    matches = lookup_catalog(
+        sticks=spec.sticks,
+        total_gb=spec.total_gb,
+        generation=spec.generation,
+        speed_mts=spec.speed_mts,
+        profile=spec.profile,
+        cas_latency=spec.cas_latency,
+        rgb=spec.rgb,
+        ecc=spec.ecc,
+        form_factor=spec.form_factor,
+    )
+
+    if not matches:
+        raise ValueError(
+            "No verified manufacturer catalog products match this configuration. "
+            "Adjust speed, capacity, profile, RGB, or CAS latency — only catalog-confirmed "
+            "SKUs are returned."
         )
+
+    brands: dict[str, list[dict]] = {}
+    brand_meta = []
+    matched_cls: set[int] = set()
+
+    for brand_id, brand_name, _ in BRAND_REGISTRY:
+        products = matches.get(brand_id)
+        if not products:
+            continue
+
+        entries = []
+        for product in products:
+            matched_cls.add(product.cas_latency)
+            base = catalog_product_to_entry(product, spec.profile)
+            serials = generate_spd_serials(
+                brand_id, product.part_number, spec.generation, spec.sticks
+            )
+            entries.append(
+                {
+                    **base,
+                    "spd_serials": [spd_serial_to_dict(s) for s in serials],
+                }
+            )
+
+        brands[brand_id] = entries
         brand_meta.append({"id": brand_id, "name": brand_name})
 
+    if len(matched_cls) == 1:
+        cl = next(iter(matched_cls))
+
+    stats = catalog_stats()
     return {
         "validation": validation,
         "valid_speeds": valid_speeds(spec.generation),
+        "catalog": {
+            **stats,
+            "mode": "catalog_only",
+            "matched_brands": len(brand_meta),
+            "matched_products": sum(len(v) for v in brands.values()),
+        },
         "spec": {
             "sticks": spec.sticks,
             "per_stick_gb": spec.per_stick_gb,
@@ -431,7 +475,7 @@ def generate_report(spec: RamSpec) -> dict:
         },
         "brand_meta": brand_meta,
         "brands": brands,
-        "brand_count": len(BRAND_REGISTRY),
+        "brand_count": len(brand_meta),
     }
 
 

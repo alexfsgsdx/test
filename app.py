@@ -5,6 +5,7 @@ from __future__ import annotations
 
 from flask import Flask, jsonify, render_template, request
 
+from catalog import catalog_stats
 from product_validation import valid_speeds
 from ram_part_number import generate_report, parse_natural_language, spec_from_form
 
@@ -14,6 +15,11 @@ app = Flask(__name__)
 @app.get("/")
 def index():
     return render_template("index.html")
+
+
+@app.get("/api/catalog-stats")
+def api_catalog_stats():
+    return jsonify({"ok": True, **catalog_stats()})
 
 
 @app.get("/api/valid-speeds")

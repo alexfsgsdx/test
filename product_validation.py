@@ -186,11 +186,9 @@ def validate_kit_spec(
             "Generated numbers are approximate."
         )
 
-    # Always warn: format-generated, not looked up in a product database.
     warnings.append(
-        "Part numbers follow naming rules only — they are NOT verified against "
-        "manufacturer catalogs. Always confirm speed and capacity on the vendor "
-        "website before buying."
+        "Only manufacturer catalog-confirmed SKUs are shown. "
+        "If no results appear, this exact configuration is not in the verified catalog."
     )
 
     retail_likely = not errors and tier in {"jedec", "oc"}

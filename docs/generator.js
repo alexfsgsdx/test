@@ -84,7 +84,7 @@ export function validateKitSpec(spec) {
   if (spec.generation === 5 && spec.speed_mts >= 7200 && spec.total_gb >= 64) {
     warnings.push("High-speed DDR5 (7200+) at 64 GB+ is rare — only a few brands sell this combo.");
   }
-  warnings.push("Part numbers follow naming rules only — they are NOT verified against manufacturer catalogs. Always confirm on the vendor website before buying.");
+  warnings.push("Only manufacturer catalog-confirmed SKUs are shown. If no results appear, this exact configuration is not in the verified catalog.");
 
   return { errors, warnings, speed_tier: tier, retail_likely: !errors.length && (tier === "jedec" || tier === "oc"), ok: !errors.length };
 }
@@ -249,15 +249,69 @@ const BRAND_REGISTRY = [
   ["micron","Micron"], ["ballistix","Ballistix (legacy)"],
 ];
 
-function normalizeResult(v) {
-  const items = Array.isArray(v) ? v : [v];
-  return items.map(line => {
-    if (line.includes("   ")) {
-      const [part, label] = line.split("   ", 2);
-      return { part_number: part.trim(), label: label.trim() };
-    }
-    return { part_number: line.trim(), label: null };
-  });
+let catalogCache = null;
+
+export async function loadCatalog() {
+  if (catalogCache) return catalogCache;
+  const res = await fetch(new URL("./catalog.json", import.meta.url));
+  if (!res.ok) throw new Error("Failed to load verified product catalog.");
+  catalogCache = await res.json();
+  return catalogCache;
+}
+
+export function catalogStats(catalog) {
+  const brands = new Set(catalog.products.map((p) => p.brand));
+  return {
+    product_count: catalog.products.length,
+    brand_count: brands.size,
+    brands: [...brands].sort(),
+    version: catalog.version,
+    updated: catalog.updated,
+  };
+}
+
+function profileMatches(entryProfiles, requested) {
+  if (requested === "both") return entryProfiles.some((p) => ["xmp", "expo", "both"].includes(p));
+  if (requested === "jedec") return entryProfiles.includes("jedec");
+  return entryProfiles.includes(requested) || entryProfiles.includes("both");
+}
+
+function profileLabel(product, requested) {
+  const profiles = product.profiles || [product.profile];
+  if (requested === "both") {
+    if (profiles.includes("xmp") && profiles.includes("expo")) return "Intel XMP 3.0 & AMD EXPO";
+    if (profiles.includes("xmp")) return "Intel XMP 3.0";
+    if (profiles.includes("expo")) return "AMD EXPO";
+    if (profiles.includes("both")) return "Intel XMP 3.0 & AMD EXPO";
+    return null;
+  }
+  if (profiles.includes(requested) || profiles.includes("both")) {
+    return { xmp: "Intel XMP 3.0", expo: "AMD EXPO", jedec: "JEDEC" }[requested] || null;
+  }
+  return null;
+}
+
+function lookupCatalog(spec, catalog) {
+  const perStick = spec.total_gb / spec.sticks;
+  const matches = {};
+  for (const product of catalog.products) {
+    const profiles = product.profiles || [product.profile];
+    if (product.sticks !== spec.sticks) continue;
+    if (product.per_stick_gb !== perStick) continue;
+    if (product.total_gb !== spec.total_gb) continue;
+    if (product.generation !== spec.generation) continue;
+    if (product.speed_mts !== spec.speed_mts) continue;
+    if (product.rgb !== !!spec.rgb) continue;
+    if (product.ecc !== !!spec.ecc) continue;
+    if ((product.form_factor || "dimm") !== (spec.form_factor || "dimm")) continue;
+    if (spec.cas_latency != null && product.cas_latency !== spec.cas_latency) continue;
+    if (!profileMatches(profiles, spec.profile)) continue;
+    (matches[product.brand] ||= []).push(product);
+  }
+  for (const brand of Object.keys(matches)) {
+    matches[brand].sort((a, b) => a.part_number.localeCompare(b.part_number));
+  }
+  return matches;
 }
 
 export async function generateReport(spec) {
@@ -265,29 +319,60 @@ export async function generateReport(spec) {
   const validation = validateKitSpec(spec);
   if (!validation.ok) throw new Error(validation.errors.join(" "));
 
-  const cl = spec.cas_latency ?? defaultCl(spec);
-  const builders = buildAll(spec, cl);
+  const catalog = await loadCatalog();
+  const matches = lookupCatalog(spec, catalog);
+  const brandIds = Object.keys(matches);
+  if (!brandIds.length) {
+    throw new Error(
+      "No verified manufacturer catalog products match this configuration. " +
+      "Adjust speed, capacity, profile, RGB, or CAS latency — only catalog-confirmed SKUs are returned."
+    );
+  }
+
+  let cl = spec.cas_latency ?? defaultCl(spec);
+  const matchedCls = new Set();
   const brands = {};
   const brand_meta = [];
 
   for (const [id, name] of BRAND_REGISTRY) {
-    const entries = normalizeResult(builders[id]());
+    const products = matches[id];
+    if (!products?.length) continue;
     const enriched = [];
-    for (const e of entries) {
-      enriched.push({ ...e, spd_serials: await generateSpdSerials(id, e.part_number, spec.generation, spec.sticks) });
+    for (const product of products) {
+      matchedCls.add(product.cas_latency);
+      enriched.push({
+        part_number: product.part_number,
+        label: profileLabel(product, spec.profile),
+        product_name: product.product_name,
+        catalog_confirmed: true,
+        source_url: product.source_url,
+        source: product.source,
+        verified: product.verified,
+        profiles: product.profiles || [product.profile],
+        spd_serials: await generateSpdSerials(id, product.part_number, spec.generation, spec.sticks),
+      });
     }
     brands[id] = enriched;
     brand_meta.push({ id, name });
   }
 
+  if (matchedCls.size === 1) cl = [...matchedCls][0];
+  const stats = catalogStats(catalog);
+
   return {
     ok: true,
     validation,
     valid_speeds: validSpeeds(spec.generation),
+    catalog: {
+      ...stats,
+      mode: "catalog_only",
+      matched_brands: brand_meta.length,
+      matched_products: Object.values(brands).reduce((n, arr) => n + arr.length, 0),
+    },
     spec: { ...spec, per_stick_gb: per, cas_latency: cl, cas_latency_custom: spec.cas_latency != null },
     brand_meta,
     brands,
-    brand_count: BRAND_REGISTRY.length,
+    brand_count: brand_meta.length,
   };
 }
 

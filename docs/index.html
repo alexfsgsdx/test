@@ -485,6 +485,73 @@
       margin-top: 0.25rem;
     }
 
+    .success-banner {
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(63, 185, 80, 0.45);
+      border-radius: var(--radius-sm);
+      background: rgba(63, 185, 80, 0.12);
+      color: var(--success);
+      font-size: 0.8125rem;
+      line-height: 1.5;
+    }
+
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      background: rgba(63, 185, 80, 0.15);
+      border: 1px solid rgba(63, 185, 80, 0.35);
+      color: var(--success);
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .verified-badge::before {
+      content: "✓";
+      font-weight: 700;
+    }
+
+    .verified-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.35rem;
+      flex-wrap: wrap;
+    }
+
+    .verified-date {
+      font-size: 0.6875rem;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+    }
+
+    .product-name {
+      margin-top: 0.2rem;
+      font-size: 0.8125rem;
+      color: var(--text);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .catalog-link {
+      display: inline-block;
+      margin-top: 0.35rem;
+      font-size: 0.75rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .catalog-link:hover {
+      text-decoration: underline;
+      color: var(--accent-hover);
+    }
+
     .brands-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
@@ -810,8 +877,8 @@
 </head>
 <body>
   <header class="header">
-    <h1>RAM Part Number Generator <span>multi-vendor kit lookup</span></h1>
-    <div class="brand-count-badge" id="brandCountBadge">22 brands</div>
+    <h1>RAM Part Number Generator <span>manufacturer catalog lookup</span></h1>
+    <div class="brand-count-badge" id="brandCountBadge">Loading catalog…</div>
   </header>
 
   <div class="layout">
@@ -939,7 +1006,7 @@
             <line x1="6" y1="12" x2="14" y2="12"/>
             <line x1="6" y1="16" x2="10" y2="16"/>
           </svg>
-          <p>Configure your kit and click <strong>Generate</strong> to see part numbers across all supported brands.</p>
+          <p>Configure your kit and click <strong>Generate</strong> to see <strong>catalog-verified</strong> part numbers from manufacturer product listings.</p>
         </div>
         <div id="resultsContent" hidden></div>
       </div>
@@ -949,7 +1016,7 @@
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
   <script type="module">
-    import { generateReport, parseNaturalLanguage, specFromForm, validSpeeds } from "./generator.js";
+    import { generateReport, parseNaturalLanguage, specFromForm, validSpeeds, loadCatalog, catalogStats } from "./generator.js";
 
     (function () {
       "use strict";
@@ -1154,7 +1221,7 @@
       function renderStats(spec) {
         const clLabel = spec.cas_latency_custom
           ? String(spec.cas_latency)
-          : `${spec.cas_latency} (assumed)`;
+          : `${spec.cas_latency} (from catalog)`;
 
         const items = [
           { label: "Kit", value: `${spec.sticks}×${spec.per_stick_gb} GB` },
@@ -1187,11 +1254,17 @@
             const pnId = `pn-${meta.id}-${hashCode(entry.part_number)}`;
             return `
               <div class="part-entry">
+                <div class="verified-row">
+                  <span class="verified-badge">Catalog verified</span>
+                  ${entry.verified ? `<span class="verified-date">${escapeHtml(entry.verified)}</span>` : ""}
+                </div>
                 <div class="part-line">
                   <div class="part-number" id="${pnId}">${escapeHtml(entry.part_number)}</div>
                   <button type="button" class="btn-copy" data-copy="${escapeHtml(entry.part_number)}" aria-label="Copy part number">Copy PN</button>
                 </div>
+                ${entry.product_name ? `<div class="product-name">${escapeHtml(entry.product_name)}</div>` : ""}
                 ${entry.label ? `<div class="part-label">${escapeHtml(entry.label)}</div>` : ""}
+                ${entry.source_url ? `<a class="catalog-link" href="${escapeHtml(entry.source_url)}" target="_blank" rel="noopener noreferrer">View on manufacturer site</a>` : ""}
                 ${renderSpdSerials(entry.spd_serials, color)}
               </div>`;
           })
@@ -1216,12 +1289,18 @@
         return Math.abs(h);
       }
 
-      function renderWarnings(validation) {
-        if (!validation?.warnings?.length) return "";
-        const items = validation.warnings
-          .map((w) => `<li>${escapeHtml(w)}</li>`)
-          .join("");
-        return `<div class="warning-banner"><strong>Before you search these part numbers:</strong><ul>${items}</ul></div>`;
+      function renderCatalogBanner(catalog, validation) {
+        let html = "";
+        if (catalog) {
+          html += `<div class="success-banner"><strong>100% catalog confirmed.</strong> Showing ${catalog.matched_products} verified SKU(s) from ${catalog.matched_brands} brand(s). Database: ${catalog.product_count} products across ${catalog.brand_count} brands (updated ${catalog.updated}).</div>`;
+        }
+        if (validation?.warnings?.length) {
+          const items = validation.warnings
+            .map((w) => `<li>${escapeHtml(w)}</li>`)
+            .join("");
+          html += `<div class="warning-banner"><strong>Notes:</strong><ul>${items}</ul></div>`;
+        }
+        return html;
       }
 
       function scrollToResultsOnMobile() {
@@ -1235,16 +1314,16 @@
       }
 
       function renderResults(data) {
-        const { spec, brand_meta, brands, brand_count, validation } = data;
+        const { spec, brand_meta, brands, brand_count, validation, catalog } = data;
 
-        brandCountBadge.textContent = `${brand_count} brands`;
+        brandCountBadge.textContent = `${brand_count} verified brand${brand_count === 1 ? "" : "s"}`;
 
         const cards = brand_meta
           .map((meta) => renderBrandCard(meta, brands[meta.id] || []))
           .join("");
 
         resultsContent.innerHTML = `
-          ${renderWarnings(validation)}
+          ${renderCatalogBanner(catalog, validation)}
           ${renderStats(spec)}
           <div class="brands-grid">${cards}</div>`;
 
@@ -1321,8 +1400,15 @@
         }
       });
 
-      /* Initial badge count matches server default */
-      brandCountBadge.textContent = "22 brands";
+      (async function initCatalog() {
+        try {
+          const catalog = await loadCatalog();
+          const stats = catalogStats(catalog);
+          brandCountBadge.textContent = `${stats.product_count} verified SKUs`;
+        } catch {
+          brandCountBadge.textContent = "Catalog unavailable";
+        }
+      })();
 
       (async function initSpeeds() {
         speedOptions[4] = validSpeeds(4);
