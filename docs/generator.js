@@ -23,19 +23,82 @@ const JEDEC_MODULE_IDS = {
 };
 
 const SERIAL_SCHEMES = {
-  gskill:"empty", corsair:"binary_le", kingston:"binary_be", crucial:"binary_le", micron:"binary_le",
+  gskill:"empty", corsair:"binary_le", kingston:"binary_be", crucial:"binary_be", micron:"binary_be",
   samsung:"binary_le", hynix:"binary_le", teamgroup:"tester_seq_le", patriot:"binary_le", xpg:"binary_le",
   adata:"binary_le", pny:"binary_le", oloy:"binary_le", geil:"binary_le", mushkin:"binary_le",
   silicon_power:"tester_seq_le", klevv:"binary_le", lexar:"binary_le", apacer:"binary_le", vcolor:"binary_le",
-  timetec:"binary_le", ballistix:"binary_le",
+  timetec:"binary_le", ballistix:"binary_be",
 };
 
 const SCHEME_NOTES = {
-  empty:"Blank SPD serial (0x00000000)",
-  binary_le:"Binary counter stored little-endian in SPD",
-  binary_be:"Binary counter stored big-endian in SPD (Kingston-style)",
-  tester_seq_le:"Byte 325 = tester ID, bytes 326-328 = LE counter",
+  empty:"Factory blank SPD serial (0x00000000)",
+  binary_le:"Production counter, little-endian (+1 per module in kit)",
+  binary_be:"Production counter, big-endian (+1 per module in kit)",
+  binary_be_batch:"Micron production batch (+1105 per module in kit)",
+  tester_seq_le:"Factory tester ID (byte 325) + LE production counter (326-328)",
 };
+
+const MICRON_BATCH_STEP = 1105;
+
+function parseVerifiedDate(verified) {
+  if (!verified) return null;
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(verified);
+  if (!m) return null;
+  return new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+}
+
+function resolveSerialScheme(brand, profiles) {
+  const profileSet = new Set(profiles || []);
+  if (brand === "gskill") return { scheme: "empty", step: 0 };
+  if (brand === "corsair") {
+    const jedecOnly = profileSet.size <= 1 && profileSet.has("jedec");
+    if (jedecOnly) return { scheme: "empty", step: 0 };
+    return { scheme: "binary_le", step: 1 };
+  }
+  if (brand === "kingston") return { scheme: "binary_be", step: 1 };
+  if (brand === "crucial" || brand === "micron" || brand === "ballistix") {
+    return { scheme: "binary_be", step: MICRON_BATCH_STEP };
+  }
+  if (brand === "teamgroup" || brand === "silicon_power") {
+    return { scheme: "tester_seq_le", step: 1 };
+  }
+  return { scheme: SERIAL_SCHEMES[brand] || "binary_le", step: 1 };
+}
+
+async function batchBase(part, generation, serialSalt) {
+  const payload = `${part}|${generation}|${serialSalt}`;
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(payload));
+  const view = new DataView(buf);
+  let v = view.getUint32(0, true) & 0x00FFFFFF;
+  return v || 0x0424A9;
+}
+
+function testerId(serialSalt) {
+  return ((serialSalt >> 8) & 0xFF) % 0x0F || 1;
+}
+
+function counterForStick(base, stickIndex, step) {
+  return (base + (stickIndex - 1) * step) >>> 0;
+}
+
+function encodeCounter(scheme, counter, tester = 1) {
+  if (scheme === "empty") return [0, 0, 0, 0];
+  if (scheme === "tester_seq_le") {
+    const body = counter & 0xFFFFFF;
+    return [tester & 0xFF, body & 0xFF, (body >> 8) & 0xFF, (body >> 16) & 0xFF];
+  }
+  if (scheme === "binary_be") {
+    return [(counter >>> 24) & 0xFF, (counter >>> 16) & 0xFF, (counter >>> 8) & 0xFF, counter & 0xFF];
+  }
+  return [counter & 0xFF, (counter >>> 8) & 0xFF, (counter >>> 16) & 0xFF, (counter >>> 24) & 0xFF];
+}
+
+function encodingLabel(scheme, step) {
+  if (scheme === "empty") return { encoding: "empty", note: SCHEME_NOTES.empty };
+  if (scheme === "tester_seq_le") return { encoding: "tester_seq_le", note: SCHEME_NOTES.tester_seq_le };
+  if (step === MICRON_BATCH_STEP) return { encoding: "binary_be_batch", note: SCHEME_NOTES.binary_be_batch };
+  return { encoding: scheme, note: SCHEME_NOTES[scheme] || scheme };
+}
 
 export function validSpeeds(generation) {
   return generation === 5 ? [...DDR5_SPEEDS] : [...DDR4_SPEEDS];
@@ -133,51 +196,34 @@ function perStickGb(spec) {
   return spec.total_gb / spec.sticks;
 }
 
-async function stableSeed(...parts) {
-  const payload = parts.join("|");
-  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(payload));
-  const view = new DataView(buf);
-  let v = view.getUint32(0, true);
-  return (v & 0xFFFFFFFF) || 0x08424A92;
-}
-
 function toBcd(v) { return ((Math.floor(v / 10) << 4) | (v % 10)); }
 
-function buildModuleUniqueId(brand, raw) {
-  const [cont, code] = JEDEC_MODULE_IDS[brand] || [0x01, 0x98];
-  const now = new Date();
-  const year = toBcd(now.getFullYear() % 100);
-  const week = toBcd(Math.min(getISOWeek(now), 53));
-  const block = new Uint8Array([cont, code, 0x01, year, week, ...raw]);
-  return "0x" + [...block].map(b => b.toString(16).padStart(2,"0").toUpperCase()).join("");
-}
-
 function getISOWeek(d) {
-  const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const t = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
   t.setUTCDate(t.getUTCDate() + 4 - (t.getUTCDay() || 7));
   const yearStart = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
   return Math.ceil((((t - yearStart) / 86400000) + 1) / 7);
 }
 
-async function encodeSerial(scheme, brand, part, stick, generation, serialSalt = 0) {
-  if (scheme === "empty") return [0,0,0,0];
-  const seed = await stableSeed(brand, part, stick, generation, serialSalt);
-  if (scheme === "tester_seq_le") {
-    const tester = (seed & 0xFF) % 0x0F || 1;
-    const counter = (seed >> 8) & 0xFFFFFF;
-    return [tester, counter & 0xFF, (counter >> 8) & 0xFF, (counter >> 16) & 0xFF];
-  }
-  if (scheme === "binary_be") {
-    return [(seed>>24)&0xFF, (seed>>16)&0xFF, (seed>>8)&0xFF, seed&0xFF];
-  }
-  return [seed&0xFF, (seed>>8)&0xFF, (seed>>16)&0xFF, (seed>>24)&0xFF];
+function buildModuleUniqueId(brand, raw, verifiedDate = null) {
+  const [cont, code] = JEDEC_MODULE_IDS[brand] || [0x01, 0x98];
+  const when = verifiedDate instanceof Date ? verifiedDate : new Date();
+  const year = toBcd(when.getUTCFullYear() % 100);
+  const week = toBcd(Math.min(getISOWeek(when), 53));
+  const block = new Uint8Array([cont, code, 0x01, year, week, ...raw]);
+  return "0x" + [...block].map(b => b.toString(16).padStart(2,"0").toUpperCase()).join("");
 }
 
-async function generateSpdSerials(brand, part, generation, stickCount, serialSalt = 0) {
-  const scheme = SERIAL_SCHEMES[brand] || "binary_le";
+async function generateSpdSerials(brand, part, generation, stickCount, serialSalt = 0, profiles = null, verified = null) {
+  const { scheme, step } = resolveSerialScheme(brand, profiles);
+  const mfgDate = parseVerifiedDate(verified);
+  const base = await batchBase(part, generation, serialSalt);
+  const tester = testerId(serialSalt);
+  const { encoding, note } = encodingLabel(scheme, step);
   const out = [];
   for (let stick = 1; stick <= stickCount; stick++) {
-    const raw = await encodeSerial(scheme, brand, part, stick, generation, serialSalt);
+    const counter = counterForStick(base, stick, step);
+    const raw = encodeCounter(scheme, counter, tester);
     const plain = raw.map(b => b.toString(16).padStart(2,"0").toUpperCase()).join("");
     const le = raw[0] | (raw[1]<<8) | (raw[2]<<16) | (raw[3]<<24);
     const be = (raw[0]<<24) | (raw[1]<<16) | (raw[2]<<8) | raw[3];
@@ -185,11 +231,11 @@ async function generateSpdSerials(brand, part, generation, stickCount, serialSal
       stick_index: stick,
       serial_number: "0x" + plain,
       serial_plain: plain,
-      module_unique_id: buildModuleUniqueId(brand, raw),
+      module_unique_id: buildModuleUniqueId(brand, raw, mfgDate),
       raw_bytes: raw.map(b => b.toString(16).padStart(2,"0").toUpperCase()).join(" "),
       spd_offset: "325-328 (0x145-0x148)",
-      encoding: scheme,
-      encoding_note: SCHEME_NOTES[scheme] || scheme,
+      encoding,
+      encoding_note: note,
       uint32_le: "0x" + (le>>>0).toString(16).padStart(8,"0").toUpperCase(),
       uint32_be: "0x" + (be>>>0).toString(16).padStart(8,"0").toUpperCase(),
     });
@@ -469,7 +515,15 @@ export async function generateReport(spec, options = {}) {
         source: product.source,
         verified: product.verified,
         profiles: product.profiles || [product.profile],
-        spd_serials: await generateSpdSerials(id, product.part_number, spec.generation, spec.sticks, serialSalt),
+        spd_serials: await generateSpdSerials(
+          id,
+          product.part_number,
+          spec.generation,
+          spec.sticks,
+          serialSalt,
+          product.profiles || [product.profile],
+          product.verified,
+        ),
       });
     }
     brands[id] = enriched;
@@ -513,6 +567,8 @@ export async function refreshReportSerials(report, serialSalt) {
           spec.generation,
           spec.sticks,
           salt,
+          entry.profiles,
+          entry.verified,
         ),
       });
     }

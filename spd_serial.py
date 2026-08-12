@@ -1,4 +1,9 @@
-"""SPD assembly serial number generation for DDR4/DDR5 modules."""
+"""SPD assembly serial number generation for DDR4/DDR5 modules.
+
+Serial bytes 325-328 follow each brand's observed factory programming model:
+production lot counter (+ kit step), blank fields where vendors leave SPD unset,
+and module unique ID (320-328) using catalog verification date — not today's date.
+"""
 
 from __future__ import annotations
 
@@ -39,8 +44,8 @@ SERIAL_SCHEMES: dict[str, str] = {
     "gskill": "empty",
     "corsair": "binary_le",
     "kingston": "binary_be",
-    "crucial": "binary_le",
-    "micron": "binary_le",
+    "crucial": "binary_be",
+    "micron": "binary_be",
     "samsung": "binary_le",
     "hynix": "binary_le",
     "teamgroup": "tester_seq_le",
@@ -57,16 +62,19 @@ SERIAL_SCHEMES: dict[str, str] = {
     "apacer": "binary_le",
     "vcolor": "binary_le",
     "timetec": "binary_le",
-    "ballistix": "binary_le",
+    "ballistix": "binary_be",
 }
 
 SCHEME_NOTES = {
-    "empty": "Blank SPD serial (0x00000000)",
-    "binary_le": "Binary counter stored little-endian in SPD",
-    "binary_be": "Binary counter stored big-endian in SPD (Kingston-style)",
-    "tester_seq_le": "Byte 325 = tester ID, bytes 326-328 = LE counter",
+    "empty": "Factory blank SPD serial (0x00000000)",
+    "binary_le": "Production counter, little-endian (+1 per module in kit)",
+    "binary_be": "Production counter, big-endian (+1 per module in kit)",
+    "binary_be_batch": "Micron production batch (+1105 per module in kit)",
+    "tester_seq_le": "Factory tester ID (byte 325) + LE production counter (326-328)",
     "ascii4": "Four ASCII characters in bytes 325-328",
 }
+
+MICRON_BATCH_STEP = 1105
 
 
 @dataclass(frozen=True)
@@ -84,11 +92,54 @@ class SpdSerialInfo:
     uint32_be: int
 
 
-def _stable_seed(*parts: str | int) -> int:
-    payload = "|".join(str(p) for p in parts).encode()
+def parse_verified_date(verified: str | None) -> datetime.date | None:
+    if not verified:
+        return None
+    try:
+        return datetime.date.fromisoformat(verified)
+    except ValueError:
+        return None
+
+
+def resolve_serial_scheme(
+    brand: str,
+    profiles: tuple[str, ...] | list[str] | None = None,
+) -> tuple[str, int]:
+    """Return (encoding scheme, per-stick counter step) for a catalog product."""
+    profile_set = set(profiles or [])
+
+    if brand == "gskill":
+        return "empty", 0
+
+    if brand == "corsair":
+        jedec_only = profile_set <= {"jedec"} and "jedec" in profile_set
+        if jedec_only:
+            return "empty", 0
+        return "binary_le", 1
+
+    if brand == "kingston":
+        return "binary_be", 1
+
+    if brand in ("crucial", "micron", "ballistix"):
+        return "binary_be", MICRON_BATCH_STEP
+
+    if brand in ("teamgroup", "silicon_power"):
+        return "tester_seq_le", 1
+
+    default = SERIAL_SCHEMES.get(brand, "binary_le")
+    return default, 1
+
+
+def _batch_base(part_number: str, serial_salt: int, generation: Generation) -> int:
+    """Deterministic production-lot start counter from SKU + batch salt."""
+    payload = f"{part_number}|{generation}|{serial_salt}".encode()
     digest = hashlib.sha256(payload).digest()
-    value = int.from_bytes(digest[:4], "little")
-    return value & 0xFFFFFFFF or 0x08424A92
+    value = int.from_bytes(digest[:4], "little") & 0x00FFFFFF
+    return value or 0x0424A9
+
+
+def _tester_id(serial_salt: int) -> int:
+    return ((serial_salt >> 8) & 0xFF) % 0x0F or 0x01
 
 
 def _mfg_date_bcd(when: datetime.date | None = None) -> tuple[int, int]:
@@ -122,32 +173,42 @@ def build_module_unique_id(
     return "0x" + block.hex().upper()
 
 
-def _encode_raw_bytes(
+def _counter_for_stick(base: int, stick_index: int, step: int) -> int:
+    return (base + (stick_index - 1) * step) & 0xFFFFFFFF
+
+
+def _encode_counter(
     scheme: str,
-    brand: str,
-    part_number: str,
-    stick_index: int,
-    generation: Generation,
-    serial_salt: int = 0,
+    counter: int,
+    *,
+    tester_id: int = 1,
 ) -> bytes:
     if scheme == "empty":
         return b"\x00\x00\x00\x00"
 
-    seed = _stable_seed(brand, part_number, stick_index, generation, serial_salt)
-
     if scheme == "tester_seq_le":
-        tester_id = (seed & 0xFF) % 0x0F or 0x01
-        counter = (seed >> 8) & 0xFFFFFF
-        return bytes([tester_id]) + counter.to_bytes(3, "little")
+        body = counter & 0xFFFFFF
+        return bytes([tester_id & 0xFF]) + body.to_bytes(3, "little")
 
     if scheme == "binary_be":
-        return seed.to_bytes(4, "big")
+        return counter.to_bytes(4, "big")
 
     if scheme == "ascii4":
-        chars = f"{seed & 0xFFFF:04X}"[:4]
+        chars = f"{counter & 0xFFFF:04X}"[:4]
         return chars.encode("ascii")
 
-    return seed.to_bytes(4, "little")
+    return counter.to_bytes(4, "little")
+
+
+def _encoding_label(scheme: str, step: int) -> tuple[str, str]:
+    if scheme == "empty":
+        return scheme, SCHEME_NOTES["empty"]
+    if scheme == "tester_seq_le":
+        return scheme, SCHEME_NOTES["tester_seq_le"]
+    if step == MICRON_BATCH_STEP:
+        return "binary_be_batch", SCHEME_NOTES["binary_be_batch"]
+    note = SCHEME_NOTES.get(scheme, scheme)
+    return scheme, note
 
 
 def generate_spd_serials(
@@ -156,24 +217,31 @@ def generate_spd_serials(
     generation: Generation,
     stick_count: int,
     serial_salt: int = 0,
+    profiles: tuple[str, ...] | list[str] | None = None,
+    verified: str | None = None,
 ) -> list[SpdSerialInfo]:
-    scheme = SERIAL_SCHEMES.get(brand, "binary_le")
+    scheme, step = resolve_serial_scheme(brand, profiles)
+    mfg_date = parse_verified_date(verified)
+    base = _batch_base(part_number, serial_salt, generation)
+    tester = _tester_id(serial_salt)
+    encoding, encoding_note = _encoding_label(scheme, step)
     results: list[SpdSerialInfo] = []
 
     for stick in range(1, stick_count + 1):
-        raw = _encode_raw_bytes(scheme, brand, part_number, stick, generation, serial_salt)
+        counter = _counter_for_stick(base, stick, step)
+        raw = _encode_counter(scheme, counter, tester_id=tester)
         serial_number, serial_plain = format_assembly_serial(raw)
         results.append(
             SpdSerialInfo(
                 stick_index=stick,
                 serial_number=serial_number,
                 serial_plain=serial_plain,
-                module_unique_id=build_module_unique_id(brand, raw),
+                module_unique_id=build_module_unique_id(brand, raw, mfg_date),
                 raw_bytes=raw,
                 raw_bytes_spaced=" ".join(f"{b:02X}" for b in raw),
                 spd_offset="325-328 (0x145-0x148)",
-                encoding=scheme,
-                encoding_note=SCHEME_NOTES.get(scheme, scheme),
+                encoding=encoding,
+                encoding_note=encoding_note,
                 uint32_le=int.from_bytes(raw, "little"),
                 uint32_be=int.from_bytes(raw, "big"),
             )
@@ -185,7 +253,7 @@ def generate_crucial_batch_serials(
     part_number: str,
     existing_serials: list[str],
     count: int,
-    step: int = 1105,
+    step: int = MICRON_BATCH_STEP,
 ) -> list[SpdSerialInfo]:
     """Extrapolate Crucial/Micron batch serials (+1105 BE step pattern)."""
     parsed = [int(s.removeprefix("0x").removeprefix("0X"), 16) for s in existing_serials]

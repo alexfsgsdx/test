@@ -388,7 +388,13 @@ def enrich_brand_entries(
     enriched = []
     for entry in entries:
         part = entry["part_number"]
-        serials = generate_spd_serials(brand_id, part, generation, stick_count)
+        serials = generate_spd_serials(
+            brand_id,
+            part,
+            generation,
+            stick_count,
+            profiles=["xmp"],
+        )
         enriched.append(
             {
                 **entry,
@@ -444,6 +450,8 @@ def generate_report(spec: RamSpec, serial_salt: int | None = None) -> dict:
                 spec.generation,
                 spec.sticks,
                 serial_salt,
+                profiles=product.profiles,
+                verified=product.verified,
             )
             entries.append(
                 {
