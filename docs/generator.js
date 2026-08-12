@@ -266,44 +266,89 @@ let catalogCache = null;
 let catalogLoadPromise = null;
 
 async function fetchJsonWithProgress(url, onProgress) {
+  onProgress?.({ percent: 1, phase: "download" });
+
+  // XHR gives reliable download progress across browsers; fetch streams often
+  // buffer the entire body before emitting chunks (stuck at 0%).
+  if (typeof XMLHttpRequest !== "undefined") {
+    return await xhrJsonWithProgress(url, onProgress);
+  }
+
+  return await fetchJsonWithProgressFallback(url, onProgress);
+}
+
+function xhrJsonWithProgress(url, onProgress) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.responseType = "text";
+
+    const timeoutMs = 120000;
+    const timer = setTimeout(() => {
+      xhr.abort();
+      reject(new Error("Catalog download timed out. Check your connection and refresh."));
+    }, timeoutMs);
+
+    xhr.onprogress = (event) => {
+      if (event.lengthComputable && event.total > 0) {
+        const percent = Math.min(92, Math.max(1, Math.round((event.loaded / event.total) * 92)));
+        onProgress?.({
+          percent,
+          phase: "download",
+          received: event.loaded,
+          total: event.total,
+        });
+        return;
+      }
+      if (event.loaded > 0) {
+        const percent = Math.min(85, Math.max(1, Math.round((event.loaded / 1600000) * 85)));
+        onProgress?.({
+          percent,
+          phase: "download",
+          received: event.loaded,
+          total: null,
+        });
+      }
+    };
+
+    xhr.onload = () => {
+      clearTimeout(timer);
+      if (xhr.status < 200 || xhr.status >= 300) {
+        reject(new Error(`Failed to load catalog (HTTP ${xhr.status}).`));
+        return;
+      }
+      try {
+        onProgress?.({ percent: 96, phase: "parse" });
+        const data = JSON.parse(xhr.responseText);
+        onProgress?.({ percent: 100, phase: "ready" });
+        resolve(data);
+      } catch {
+        reject(new Error("Catalog file is invalid JSON."));
+      }
+    };
+
+    xhr.onerror = () => {
+      clearTimeout(timer);
+      reject(new Error("Network error while loading catalog."));
+    };
+
+    xhr.onabort = () => {
+      clearTimeout(timer);
+      reject(new Error("Catalog download was interrupted."));
+    };
+
+    xhr.send();
+  });
+}
+
+async function fetchJsonWithProgressFallback(url, onProgress) {
+  onProgress?.({ percent: 8, phase: "download" });
   const res = await fetch(url);
-  if (!res.ok) throw new Error("Failed to load verified product catalog.");
+  if (!res.ok) throw new Error(`Failed to load catalog (HTTP ${res.status}).`);
 
-  const total = parseInt(res.headers.get("Content-Length") || "0", 10);
-  const reader = res.body?.getReader();
-
-  if (!reader) {
-    onProgress?.({ percent: 50, phase: "download" });
-    const data = await res.json();
-    onProgress?.({ percent: 100, phase: "ready" });
-    return data;
-  }
-
-  const chunks = [];
-  let received = 0;
-  while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    chunks.push(value);
-    received += value.length;
-    let percent;
-    if (total > 0) {
-      percent = Math.min(92, Math.round((received / total) * 92));
-    } else {
-      percent = Math.min(85, Math.round((received / 1600000) * 85));
-    }
-    onProgress?.({ percent, phase: "download", received, total: total || null });
-  }
-
+  onProgress?.({ percent: 55, phase: "download" });
+  const data = await res.json();
   onProgress?.({ percent: 96, phase: "parse" });
-  const merged = new Uint8Array(received);
-  let offset = 0;
-  for (const chunk of chunks) {
-    merged.set(chunk, offset);
-    offset += chunk.length;
-  }
-  const text = new TextDecoder().decode(merged);
-  const data = JSON.parse(text);
   onProgress?.({ percent: 100, phase: "ready" });
   return data;
 }

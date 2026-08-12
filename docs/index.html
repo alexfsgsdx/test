@@ -153,6 +153,7 @@
       background: rgba(88, 166, 255, 0.15);
       border: 1px solid rgba(88, 166, 255, 0.2);
       overflow: hidden;
+      position: relative;
     }
 
     .catalog-status-bar {
@@ -161,6 +162,16 @@
       border-radius: 999px;
       background: linear-gradient(90deg, var(--accent), var(--accent-hover));
       transition: width 0.12s ease-out;
+    }
+
+    .catalog-status.loading .catalog-status-bar {
+      width: 35% !important;
+      animation: catalog-indeterminate 1.1s ease-in-out infinite;
+    }
+
+    @keyframes catalog-indeterminate {
+      0% { transform: translateX(-120%); }
+      100% { transform: translateX(320%); }
     }
 
     .catalog-status-pct {
@@ -1190,6 +1201,7 @@
         $("#catalogProgressWrap").hidden = false;
 
         if (phase === "parse") {
+          catalogStatus.classList.remove("loading");
           brandCountBadge.textContent = "Parsing catalog…";
           catalogProgressBar.style.width = "96%";
           catalogProgressPct.textContent = "96%";
@@ -1197,13 +1209,15 @@
         }
 
         if (phase === "ready") {
+          catalogStatus.classList.remove("loading");
           catalogStatus.classList.add("ready");
           catalogProgressBar.style.width = "100%";
           catalogProgressPct.textContent = "100%";
           return;
         }
 
-        brandCountBadge.textContent = "Loading catalog…";
+        catalogStatus.classList.toggle("loading", percent <= 1);
+        brandCountBadge.textContent = percent <= 1 ? "Connecting…" : "Loading catalog…";
         catalogProgressBar.style.width = `${percent}%`;
         catalogProgressPct.textContent = `${percent}%`;
       }
@@ -1666,8 +1680,9 @@
           const catalog = await loadCatalog({ onProgress: updateCatalogProgress });
           const stats = catalogStats(catalog);
           setCatalogReady(stats.product_count);
-        } catch {
-          setCatalogError("Catalog unavailable");
+        } catch (err) {
+          console.error("Catalog load failed:", err);
+          setCatalogError(err?.message || "Catalog unavailable");
         }
       })();
 
