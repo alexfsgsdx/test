@@ -47,10 +47,11 @@ function parseVerifiedDate(verified) {
   return new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
 }
 
-function resolveSerialScheme(brand, profiles) {
+function resolveSerialScheme(brand, profiles, generation = null) {
   const profileSet = new Set(profiles || []);
   if (brand === "gskill") return { scheme: "empty", step: 0 };
   if (brand === "corsair") {
+    if (generation === 5) return { scheme: "empty", step: 0 };
     const jedecOnly = profileSet.size <= 1 && profileSet.has("jedec");
     if (jedecOnly) return { scheme: "empty", step: 0 };
     return { scheme: "binary_le", step: 1 };
@@ -215,7 +216,7 @@ function buildModuleUniqueId(brand, raw, verifiedDate = null) {
 }
 
 async function generateSpdSerials(brand, part, generation, stickCount, serialSalt = 0, profiles = null, verified = null) {
-  const { scheme, step } = resolveSerialScheme(brand, profiles);
+  const { scheme, step } = resolveSerialScheme(brand, profiles, generation);
   const mfgDate = parseVerifiedDate(verified);
   const base = await batchBase(part, generation, serialSalt);
   const tester = testerId(serialSalt);

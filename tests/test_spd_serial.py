@@ -21,8 +21,12 @@ class TestResolveSerialScheme:
     def test_corsair_jedec_blank(self):
         assert resolve_serial_scheme("corsair", ["jedec"]) == ("empty", 0)
 
-    def test_corsair_xmp_programmed(self):
-        assert resolve_serial_scheme("corsair", ["xmp"]) == ("binary_le", 1)
+    def test_corsair_ddr4_xmp_programmed(self):
+        assert resolve_serial_scheme("corsair", ["xmp"], 4) == ("binary_le", 1)
+
+    def test_corsair_ddr5_xmp_blank(self):
+        assert resolve_serial_scheme("corsair", ["xmp"], 5) == ("empty", 0)
+        assert resolve_serial_scheme("corsair", ["both"], 5) == ("empty", 0)
 
     def test_kingston_big_endian(self):
         assert resolve_serial_scheme("kingston", ["xmp"]) == ("binary_be", 1)
@@ -61,17 +65,47 @@ class TestGenerateSpdSerials:
         )
         assert serials[0].serial_number == "0x00000000"
 
-    def test_corsair_xmp_sequential_le(self):
+    def test_corsair_ddr4_xmp_sequential_le(self):
         serials = generate_spd_serials(
             "corsair",
-            "CMK32GX5M2B6400Z36",
-            5,
+            "CMK32GX4M2B3200C16",
+            4,
             2,
             serial_salt=42,
-            profiles=["both"],
+            profiles=["xmp"],
         )
         assert serials[0].encoding == "binary_le"
         assert serials[1].uint32_le == serials[0].uint32_le + 1
+
+    def test_corsair_ddr5_thp_dump_skus_blank(self):
+        thp_parts = [
+            "CMH32GX5M2B6400C32",
+            "CMH32GX5M2B6400C36",
+            "CMH32GX5M2D6000C36",
+            "CMH32GX5M2E6000C36",
+            "CMH32GX5M2X7200C34",
+            "CMH64GX5M2B6000Z30",
+            "CMK32GX5M2B5600C36",
+            "CMK32GX5M2B6600C38",
+            "CMK32GX5M2D6000Z36",
+            "CMK64GX5M2B5600C40",
+            "CMK64GX5M2B6400C32",
+            "CMK64GX5M2B6600C32",
+            "CMT32GX5M2X7200C34",
+            "CMT32GX5M2X7600C36",
+        ]
+        for part in thp_parts:
+            serials = generate_spd_serials(
+                "corsair",
+                part,
+                5,
+                2,
+                serial_salt=12345,
+                profiles=["xmp"],
+            )
+            assert serials[0].serial_number == "0x00000000"
+            assert serials[1].serial_number == "0x00000000"
+            assert serials[0].encoding == "empty"
 
     def test_kingston_be_sequential(self):
         serials = generate_spd_serials(
@@ -113,16 +147,16 @@ class TestGenerateSpdSerials:
     def test_serial_salt_changes_lot(self):
         a = generate_spd_serials(
             "corsair",
-            "CMK32GX5M2B6400Z36",
-            5,
+            "CMK32GX4M2B3200C16",
+            4,
             1,
             serial_salt=1,
             profiles=["xmp"],
         )
         b = generate_spd_serials(
             "corsair",
-            "CMK32GX5M2B6400Z36",
-            5,
+            "CMK32GX4M2B3200C16",
+            4,
             1,
             serial_salt=2,
             profiles=["xmp"],
@@ -146,8 +180,8 @@ class TestGenerateSpdSerials:
     def test_same_salt_same_part_same_serials(self):
         kwargs = dict(
             brand="corsair",
-            part_number="CMK32GX5M2B6400Z36",
-            generation=5,
+            part_number="CMK32GX4M2B3200C16",
+            generation=4,
             stick_count=2,
             serial_salt=999,
             profiles=["xmp"],

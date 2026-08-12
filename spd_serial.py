@@ -104,6 +104,7 @@ def parse_verified_date(verified: str | None) -> datetime.date | None:
 def resolve_serial_scheme(
     brand: str,
     profiles: tuple[str, ...] | list[str] | None = None,
+    generation: Generation | None = None,
 ) -> tuple[str, int]:
     """Return (encoding scheme, per-stick counter step) for a catalog product."""
     profile_set = set(profiles or [])
@@ -112,6 +113,8 @@ def resolve_serial_scheme(
         return "empty", 0
 
     if brand == "corsair":
+        if generation == 5:
+            return "empty", 0
         jedec_only = profile_set <= {"jedec"} and "jedec" in profile_set
         if jedec_only:
             return "empty", 0
@@ -220,7 +223,7 @@ def generate_spd_serials(
     profiles: tuple[str, ...] | list[str] | None = None,
     verified: str | None = None,
 ) -> list[SpdSerialInfo]:
-    scheme, step = resolve_serial_scheme(brand, profiles)
+    scheme, step = resolve_serial_scheme(brand, profiles, generation)
     mfg_date = parse_verified_date(verified)
     base = _batch_base(part_number, serial_salt, generation)
     tester = _tester_id(serial_salt)
