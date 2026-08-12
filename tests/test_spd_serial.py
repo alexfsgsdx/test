@@ -28,6 +28,15 @@ class TestResolveSerialScheme:
         assert resolve_serial_scheme("corsair", ["xmp"], 5) == ("empty", 0)
         assert resolve_serial_scheme("corsair", ["both"], 5) == ("empty", 0)
 
+    def test_uses_null_spd_serial(self):
+        from spd_serial import uses_null_spd_serial
+
+        assert uses_null_spd_serial("gskill", ["xmp"], 5)
+        assert uses_null_spd_serial("corsair", ["xmp"], 5)
+        assert not uses_null_spd_serial("kingston", ["xmp"], 5)
+        assert uses_null_spd_serial("corsair", ["jedec"], 4)
+        assert not uses_null_spd_serial("corsair", ["xmp"], 4)
+
     def test_kingston_big_endian(self):
         assert resolve_serial_scheme("kingston", ["xmp"]) == ("binary_be", 1)
 

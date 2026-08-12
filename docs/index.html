@@ -261,6 +261,62 @@
       flex-shrink: 0;
     }
 
+    .results-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding-bottom: 0.75rem;
+    }
+
+    .results-header .panel-title {
+      margin: 0;
+    }
+
+    .filter-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .filter-toggle input {
+      appearance: none;
+      width: 2.2rem;
+      height: 1.2rem;
+      border-radius: 999px;
+      background: var(--border);
+      position: relative;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.15s;
+      border: 0;
+    }
+
+    .filter-toggle input::after {
+      content: "";
+      position: absolute;
+      top: 0.15rem;
+      left: 0.15rem;
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 50%;
+      background: #fff;
+      transition: transform 0.15s;
+    }
+
+    .filter-toggle input:checked {
+      background: var(--accent);
+    }
+
+    .filter-toggle input:checked::after {
+      transform: translateX(1rem);
+    }
+
     .panel-title {
       margin: 0 0 0.75rem;
       font-size: 0.75rem;
@@ -1190,8 +1246,12 @@
 
     <!-- Results panel -->
     <main class="panel panel-results" id="resultsPanel">
-      <div class="panel-header">
+      <div class="panel-header results-header">
         <h2 class="panel-title">Results</h2>
+        <label class="filter-toggle" title="Only show SKUs with blank SPD serial 0x00000000">
+          <input type="checkbox" id="nullSerialOnly">
+          <span>Null serial only</span>
+        </label>
       </div>
       <div class="results-body" id="resultsBody">
         <div class="empty-state" id="emptyState">
@@ -1268,6 +1328,7 @@
       const btnSeriesRefreshLookup = $("#btnSeriesRefreshLookup");
       const lookupQueryInput = $("#lookup_query");
       const lookupSuggestions = $("#lookupSuggestions");
+      const nullSerialOnlyToggle = $("#nullSerialOnly");
       const catalogStatus = $("#catalogStatus");
       const catalogProgressBar = $("#catalogProgressBar");
       const catalogProgressPct = $("#catalogProgressPct");
@@ -1714,7 +1775,10 @@
           const lookupLabel = catalog.lookup_query
             ? ` for <strong>${escapeHtml(catalog.lookup_query)}</strong>`
             : "";
-          html += `<div class="success-banner"><strong>100% catalog confirmed.</strong> Showing ${catalog.matched_products} verified SKU(s) from ${catalog.matched_brands} brand(s)${lookupLabel}. Database: ${catalog.product_count} products across ${catalog.brand_count} brands (updated ${catalog.updated}).</div>`;
+          const nullLabel = catalog.null_serial_only
+            ? " · <strong>null serial only</strong>"
+            : "";
+          html += `<div class="success-banner"><strong>100% catalog confirmed.</strong> Showing ${catalog.matched_products} verified SKU(s) from ${catalog.matched_brands} brand(s)${lookupLabel}${nullLabel}. Database: ${catalog.product_count} products across ${catalog.brand_count} brands (updated ${catalog.updated}).</div>`;
         }
         if (validation?.warnings?.length) {
           const items = validation.warnings
@@ -1735,8 +1799,76 @@
         });
       }
 
+      function nullSerialOnlyEnabled() {
+        return nullSerialOnlyToggle?.checked ?? false;
+      }
+
+      function entryHasNullSerial(entry) {
+        const serials = entry.spd_serials || [];
+        return (
+          serials.length > 0 &&
+          serials.every(
+            (s) => s.serial_number === "0x00000000" || s.serial_plain === "00000000"
+          )
+        );
+      }
+
+      function applyNullSerialFilter(report) {
+        if (!nullSerialOnlyEnabled()) return report;
+
+        const brands = {};
+        const brand_meta = [];
+        for (const meta of report.brand_meta || []) {
+          const entries = (report.brands[meta.id] || []).filter(entryHasNullSerial);
+          if (entries.length) {
+            brands[meta.id] = entries;
+            brand_meta.push(meta);
+          }
+        }
+
+        const matched_products = Object.values(brands).reduce(
+          (total, entries) => total + entries.length,
+          0
+        );
+        if (!matched_products) {
+          return { ...report, brands: {}, brand_meta: [], brand_count: 0, _filter_empty: true };
+        }
+
+        return {
+          ...report,
+          brands,
+          brand_meta,
+          brand_count: brand_meta.length,
+          catalog: {
+            ...report.catalog,
+            matched_brands: brand_meta.length,
+            matched_products,
+            null_serial_only: true,
+          },
+        };
+      }
+
+      nullSerialOnlyToggle.addEventListener("change", () => {
+        if (lastReport) renderResults(lastReport);
+      });
+
       function renderResults(data) {
-        const { spec, brand_meta, brands, brand_count, validation, catalog } = data;
+        lastReport = data;
+        const view = applyNullSerialFilter(data);
+
+        if (view._filter_empty) {
+          emptyState.hidden = true;
+          resultsContent.hidden = false;
+          hasResults = !!(data.brand_meta && data.brand_meta.length);
+          setSeriesRefreshEnabled(hasResults);
+          brandCountBadge.textContent = "0 verified brands";
+          resultsContent.innerHTML =
+            `<div class="warning-banner"><strong>No null-serial SKUs in these results.</strong> Turn off <em>Null serial only</em> or broaden your search. Only products with factory blank SPD serial <code>0x00000000</code> are shown when this filter is on.</div>`;
+          scrollToResultsOnMobile();
+          return;
+        }
+
+        const { spec, brand_meta, brands, brand_count, validation, catalog } = view;
 
         brandCountBadge.textContent = `${brand_count} verified brand${brand_count === 1 ? "" : "s"}`;
 
@@ -1813,16 +1945,16 @@
         clearLookupSuggestions();
 
         try {
+          const reportOptions = { nullSerialOnly: nullSerialOnlyEnabled() };
           let data;
           if (payload.lookup !== undefined) {
-            data = await generateLookupReport(payload.lookup);
+            data = await generateLookupReport(payload.lookup, reportOptions);
           } else {
             const spec = payload.natural_language
               ? parseNaturalLanguage(payload.natural_language)
               : specFromForm(payload);
-            data = await generateReport(spec);
+            data = await generateReport(spec, reportOptions);
           }
-          lastReport = data;
           renderResults(data);
         } catch (err) {
           renderError(err.message || "Generation failed");

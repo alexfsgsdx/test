@@ -24,7 +24,7 @@ from catalog import (
     search_catalog,
 )
 from product_validation import validate_kit_spec, validation_to_dict, valid_speeds
-from spd_serial import generate_spd_serials, spd_serial_to_dict
+from spd_serial import generate_spd_serials, spd_serial_to_dict, uses_null_spd_serial
 
 Profile = Literal["jedec", "xmp", "expo", "both"]
 Generation = Literal[4, 5]
@@ -443,9 +443,21 @@ def _report_from_products(
     serial_salt: int,
     *,
     lookup_query: str | None = None,
+    null_serial_only: bool = False,
 ) -> dict:
     if not products:
         raise ValueError("No catalog products matched.")
+
+    if null_serial_only:
+        products = [
+            p
+            for p in products
+            if uses_null_spd_serial(p.brand, p.profiles, p.generation)
+        ]
+        if not products:
+            raise ValueError(
+                "No catalog products with null SPD serials (0x00000000) matched."
+            )
 
     brands: dict[str, list[dict]] = {}
     brand_meta = []
@@ -501,6 +513,8 @@ def _report_from_products(
     }
     if lookup_query:
         catalog_info["lookup_query"] = lookup_query
+    if null_serial_only:
+        catalog_info["null_serial_only"] = True
 
     report = {
         "validation": validation,
@@ -534,6 +548,7 @@ def generate_lookup_report(
     *,
     limit: int = 50,
     exact_only: bool = False,
+    null_serial_only: bool = False,
 ) -> dict:
     query = query.strip()
     if not query:
@@ -555,7 +570,12 @@ def generate_lookup_report(
                 "Try a different part number or product name."
             )
 
-    return _report_from_products(products, serial_salt, lookup_query=query)
+    return _report_from_products(
+        products,
+        serial_salt,
+        lookup_query=query,
+        null_serial_only=null_serial_only,
+    )
 
 
 def format_lookup_output(report: dict) -> str:
@@ -580,7 +600,12 @@ def format_lookup_output(report: dict) -> str:
     return "\n".join(lines).rstrip()
 
 
-def generate_report(spec: RamSpec, serial_salt: int | None = None) -> dict:
+def generate_report(
+    spec: RamSpec,
+    serial_salt: int | None = None,
+    *,
+    null_serial_only: bool = False,
+) -> dict:
     spec.validate()
     validation = validation_to_dict(spec.validation_result())
     cl = spec.cas_latency or default_cl(spec.generation, spec.speed_mts, spec.profile)
@@ -618,6 +643,10 @@ def generate_report(spec: RamSpec, serial_salt: int | None = None) -> dict:
 
         entries = []
         for product in products:
+            if null_serial_only and not uses_null_spd_serial(
+                brand_id, product.profiles, product.generation
+            ):
+                continue
             matched_cls.add(product.cas_latency)
             base = catalog_product_to_entry(product, spec.profile)
             serials = generate_spd_serials(
@@ -636,22 +665,40 @@ def generate_report(spec: RamSpec, serial_salt: int | None = None) -> dict:
                 }
             )
 
+        if not entries:
+            continue
+
         brands[brand_id] = entries
         brand_meta.append({"id": brand_id, "name": brand_name})
+
+    if not brand_meta:
+        if null_serial_only:
+            raise ValueError(
+                "No catalog products with null SPD serials (0x00000000) match this "
+                "configuration."
+            )
+        raise ValueError(
+            "No verified manufacturer catalog products match this configuration. "
+            "Adjust speed, capacity, profile, RGB, or CAS latency — only catalog-confirmed "
+            "SKUs are returned."
+        )
 
     if len(matched_cls) == 1:
         cl = next(iter(matched_cls))
 
     stats = catalog_stats()
+    catalog_info = {
+        **stats,
+        "mode": "catalog_only",
+        "matched_brands": len(brand_meta),
+        "matched_products": sum(len(v) for v in brands.values()),
+    }
+    if null_serial_only:
+        catalog_info["null_serial_only"] = True
     return {
         "validation": validation,
         "valid_speeds": valid_speeds(spec.generation),
-        "catalog": {
-            **stats,
-            "mode": "catalog_only",
-            "matched_brands": len(brand_meta),
-            "matched_products": sum(len(v) for v in brands.values()),
-        },
+        "catalog": catalog_info,
         "spec": {
             "sticks": spec.sticks,
             "per_stick_gb": spec.per_stick_gb,

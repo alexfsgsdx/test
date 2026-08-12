@@ -66,12 +66,14 @@ def api_generate():
             serial_salt = payload.get("serial_salt")
             if serial_salt is not None:
                 serial_salt = int(serial_salt)
+            null_serial_only = bool(payload.get("null_serial_only"))
             return jsonify(
                 {
                     "ok": True,
                     **generate_lookup_report(
                         str(payload["lookup"]),
                         serial_salt=serial_salt,
+                        null_serial_only=null_serial_only,
                     ),
                 }
             )
@@ -82,7 +84,10 @@ def api_generate():
         serial_salt = payload.get("serial_salt")
         if serial_salt is not None:
             serial_salt = int(serial_salt)
-        return jsonify({"ok": True, **generate_report(spec, serial_salt=serial_salt)})
+        null_serial_only = bool(payload.get("null_serial_only"))
+        return jsonify(
+            {"ok": True, **generate_report(spec, serial_salt=serial_salt, null_serial_only=null_serial_only)}
+        )
     except (ValueError, KeyError, TypeError) as exc:
         return jsonify({"ok": False, "error": str(exc)}), 400
 
@@ -116,6 +121,7 @@ def api_lookup():
         if serial_salt is not None:
             serial_salt = int(serial_salt)
         exact_only = bool(payload.get("exact_only"))
+        null_serial_only = bool(payload.get("null_serial_only"))
         return jsonify(
             {
                 "ok": True,
@@ -123,6 +129,7 @@ def api_lookup():
                     str(query),
                     serial_salt=serial_salt,
                     exact_only=exact_only,
+                    null_serial_only=null_serial_only,
                 ),
             }
         )

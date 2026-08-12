@@ -145,6 +145,39 @@ class TestCatalogLookup(unittest.TestCase):
         with self.assertRaises(ValueError):
             generate_lookup_report("CMH32GX5M2B6400", exact_only=True)
 
+    def test_generate_report_null_serial_only_ddr5(self):
+        spec = RamSpec(
+            sticks=2,
+            total_gb=32,
+            generation=5,
+            speed_mts=6000,
+            profile="xmp",
+            rgb=False,
+        )
+        report = generate_report(spec, null_serial_only=True)
+        self.assertTrue(report["catalog"]["null_serial_only"])
+        brands = set(report["brands"].keys())
+        self.assertIn("corsair", brands)
+        self.assertNotIn("kingston", brands)
+        for entries in report["brands"].values():
+            for entry in entries:
+                for serial in entry["spd_serials"]:
+                    self.assertEqual(serial["serial_number"], "0x00000000")
+
+    def test_generate_report_null_serial_only_excludes_programmed(self):
+        spec = RamSpec(
+            sticks=2,
+            total_gb=32,
+            generation=5,
+            speed_mts=6000,
+            profile="xmp",
+            rgb=False,
+        )
+        full = generate_report(spec)
+        self.assertIn("kingston", full["brands"])
+        filtered = generate_report(spec, null_serial_only=True)
+        self.assertNotIn("kingston", filtered["brands"])
+
 
 if __name__ == "__main__":
     unittest.main()

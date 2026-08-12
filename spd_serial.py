@@ -133,6 +133,16 @@ def resolve_serial_scheme(
     return default, 1
 
 
+def uses_null_spd_serial(
+    brand: str,
+    profiles: tuple[str, ...] | list[str] | None = None,
+    generation: Generation | None = None,
+) -> bool:
+    """True when factory SPD assembly serial is blank (0x00000000)."""
+    scheme, _ = resolve_serial_scheme(brand, profiles, generation)
+    return scheme == "empty"
+
+
 def _batch_base(part_number: str, serial_salt: int, generation: Generation) -> int:
     """Deterministic production-lot start counter from SKU + batch salt."""
     payload = f"{part_number}|{generation}|{serial_salt}".encode()

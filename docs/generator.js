@@ -66,6 +66,10 @@ function resolveSerialScheme(brand, profiles, generation = null) {
   return { scheme: SERIAL_SCHEMES[brand] || "binary_le", step: 1 };
 }
 
+export function usesNullSpdSerial(brand, profiles, generation = null) {
+  return resolveSerialScheme(brand, profiles, generation).scheme === "empty";
+}
+
 async function batchBase(part, generation, serialSalt) {
   const payload = `${part}|${generation}|${serialSalt}`;
   const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(payload));
@@ -541,14 +545,23 @@ function primaryProfile(profiles) {
   return "jedec";
 }
 
-async function reportFromProducts(products, serialSalt, lookupQuery = null) {
+async function reportFromProducts(products, serialSalt, lookupQuery = null, nullSerialOnly = false) {
   const salt = serialSalt ?? ((Date.now() ^ (Math.random() * 0xFFFFFFFF)) >>> 0);
+  let filteredProducts = products;
+  if (nullSerialOnly) {
+    filteredProducts = products.filter((p) =>
+      usesNullSpdSerial(p.brand, p.profiles || [p.profile], p.generation)
+    );
+    if (!filteredProducts.length) {
+      throw new Error("No catalog products with null SPD serials (0x00000000) matched.");
+    }
+  }
   const brands = {};
   const brand_meta = [];
   const matchedCls = new Set();
 
   for (const [id, name] of BRAND_REGISTRY) {
-    const brandProducts = products.filter((p) => p.brand === id);
+    const brandProducts = filteredProducts.filter((p) => p.brand === id);
     if (!brandProducts.length) continue;
     const enriched = [];
     for (const product of brandProducts) {
@@ -579,7 +592,7 @@ async function reportFromProducts(products, serialSalt, lookupQuery = null) {
     brand_meta.push({ id, name });
   }
 
-  const primary = products[0];
+  const primary = filteredProducts[0];
   const profile = primaryProfile(primary.profiles || [primary.profile]);
   const spec = {
     sticks: primary.sticks,
@@ -600,16 +613,17 @@ async function reportFromProducts(products, serialSalt, lookupQuery = null) {
   const catalog = await loadCatalog();
   const stats = catalogStats(catalog);
   const uniqueSpecs = new Set(
-    products.map((p) => `${p.sticks}|${p.total_gb}|${p.generation}|${p.speed_mts}|${p.cas_latency}`)
+    filteredProducts.map((p) => `${p.sticks}|${p.total_gb}|${p.generation}|${p.speed_mts}|${p.cas_latency}`)
   );
 
   const catalogInfo = {
     ...stats,
     mode: lookupQuery ? "lookup" : "catalog_only",
     matched_brands: brand_meta.length,
-    matched_products: products.length,
+    matched_products: filteredProducts.length,
   };
   if (lookupQuery) catalogInfo.lookup_query = lookupQuery;
+  if (nullSerialOnly) catalogInfo.null_serial_only = true;
 
   const report = {
     ok: true,
@@ -622,7 +636,7 @@ async function reportFromProducts(products, serialSalt, lookupQuery = null) {
     brand_count: brand_meta.length,
     serial_salt: salt,
   };
-  if (products.length > 1 && uniqueSpecs.size > 1) report.lookup_mixed_specs = true;
+  if (filteredProducts.length > 1 && uniqueSpecs.size > 1) report.lookup_mixed_specs = true;
   return report;
 }
 
@@ -646,11 +660,12 @@ export async function generateLookupReport(query, options = {}) {
     }
   }
 
-  return reportFromProducts(products, options.serialSalt, q);
+  return reportFromProducts(products, options.serialSalt, q, !!options.nullSerialOnly);
 }
 
 export async function generateReport(spec, options = {}) {
   const serialSalt = options.serialSalt ?? ((Date.now() ^ (Math.random() * 0xFFFFFFFF)) >>> 0);
+  const nullSerialOnly = !!options.nullSerialOnly;
   const per = perStickGb(spec);
   const validation = validateKitSpec(spec);
   if (!validation.ok) throw new Error(validation.errors.join(" "));
@@ -675,6 +690,8 @@ export async function generateReport(spec, options = {}) {
     if (!products?.length) continue;
     const enriched = [];
     for (const product of products) {
+      const profiles = product.profiles || [product.profile];
+      if (nullSerialOnly && !usesNullSpdSerial(id, profiles, product.generation)) continue;
       matchedCls.add(product.cas_latency);
       enriched.push({
         part_number: product.part_number,
@@ -684,35 +701,48 @@ export async function generateReport(spec, options = {}) {
         source_url: product.source_url,
         source: product.source,
         verified: product.verified,
-        profiles: product.profiles || [product.profile],
+        profiles,
         spd_serials: await generateSpdSerials(
           id,
           product.part_number,
           spec.generation,
           spec.sticks,
           serialSalt,
-          product.profiles || [product.profile],
+          profiles,
           product.verified,
         ),
       });
     }
+    if (!enriched.length) continue;
     brands[id] = enriched;
     brand_meta.push({ id, name });
+  }
+
+  if (!brand_meta.length) {
+    throw new Error(
+      nullSerialOnly
+        ? "No catalog products with null SPD serials (0x00000000) match this configuration."
+        : "No verified manufacturer catalog products match this configuration. " +
+          "Adjust speed, capacity, profile, RGB, or CAS latency — only catalog-confirmed SKUs are returned."
+    );
   }
 
   if (matchedCls.size === 1) cl = [...matchedCls][0];
   const stats = catalogStats(catalog);
 
+  const catalogInfo = {
+    ...stats,
+    mode: "catalog_only",
+    matched_brands: brand_meta.length,
+    matched_products: Object.values(brands).reduce((n, arr) => n + arr.length, 0),
+  };
+  if (nullSerialOnly) catalogInfo.null_serial_only = true;
+
   return {
     ok: true,
     validation,
     valid_speeds: validSpeeds(spec.generation),
-    catalog: {
-      ...stats,
-      mode: "catalog_only",
-      matched_brands: brand_meta.length,
-      matched_products: Object.values(brands).reduce((n, arr) => n + arr.length, 0),
-    },
+    catalog: catalogInfo,
     spec: { ...spec, per_stick_gb: per, cas_latency: cl, cas_latency_custom: spec.cas_latency != null },
     brand_meta,
     brands,
