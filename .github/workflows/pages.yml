@@ -2,7 +2,7 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [main, cursor/ram-part-number-ui-485e]
+    branches: [main, cursor/ram-part-number-ui-485e, cursor/kingston-ddr5-scrape-d303]
   workflow_dispatch:
 
 permissions:

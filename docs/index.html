@@ -942,14 +942,39 @@
     .ram-details-panel > summary {
       list-style: none;
       cursor: pointer;
-      padding: 0.45rem 0.6rem;
-      border: 1px solid var(--border);
+      padding: 0.55rem 0.7rem;
+      border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--border));
       border-radius: var(--radius-sm);
-      background: color-mix(in srgb, var(--brand-color) 6%, var(--bg));
-      font-size: 0.75rem;
-      font-weight: 500;
+      background: color-mix(in srgb, var(--accent) 12%, var(--bg));
       color: var(--text);
-      transition: border-color 0.15s, background 0.15s;
+      transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+    }
+
+    .ram-details-summary {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      align-items: flex-start;
+    }
+
+    .ram-details-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+    }
+
+    .ram-details-preview {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .ram-details-hint {
+      font-size: 0.68rem;
+      color: var(--text-muted);
     }
 
     .ram-details-panel > summary::-webkit-details-marker {
@@ -967,7 +992,8 @@
     }
 
     .ram-details-panel > summary:hover {
-      border-color: var(--brand-color);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 25%, transparent);
     }
 
     .ram-details-body {
@@ -1019,6 +1045,15 @@
       padding-left: 1.1rem;
       font-size: 0.72rem;
       color: var(--text-dim);
+    }
+
+    .ram-details-missing {
+      margin-top: 0.55rem;
+      padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm);
+      border: 1px dashed var(--border);
+      font-size: 0.75rem;
+      color: var(--text-muted);
     }
 
     /* Toast */
@@ -1358,6 +1393,7 @@
 
   <script type="module">
     import { generateReport, generateLookupReport, searchCatalog, refreshReportSerials, parseNaturalLanguage, specFromForm, validSpeeds, validStickCounts, validTotalGb, loadCatalog, catalogStats } from "./generator.js";
+    import { buildRamDetails } from "./timings.js";
 
     (function () {
       "use strict";
@@ -1485,8 +1521,35 @@
         return `hsl(${hue}, ${sat}%, ${light}%)`;
       }
 
+      function resolveRamDetails(entry, meta, spec) {
+        if (entry.ram_details) return entry.ram_details;
+        if (!spec) return null;
+        return buildRamDetails(
+          {
+            brand: meta.id,
+            part_number: entry.part_number,
+            product_name: entry.product_name,
+            sticks: spec.sticks,
+            per_stick_gb: spec.per_stick_gb,
+            total_gb: spec.total_gb,
+            generation: spec.generation,
+            speed_mts: spec.speed_mts,
+            cas_latency: spec.cas_latency,
+            profiles: entry.profiles || ["jedec"],
+            rgb: spec.rgb,
+            ecc: spec.ecc,
+            form_factor: spec.form_factor,
+            verified: entry.verified,
+          },
+          spec.profile,
+          entry.spd_serials,
+        );
+      }
+
       function renderRamDetails(details, detailsId) {
-        if (!details) return "";
+        if (!details) {
+          return `<div class="ram-details-missing">Timings unavailable — regenerate results to load RAM details.</div>`;
+        }
 
         const sections = (details.sections || [])
           .map(
@@ -1510,9 +1573,18 @@
           .map((note) => `<li>${escapeHtml(note)}</li>`)
           .join("");
 
+        const preview = details.summary || details.primary_timings?.label || "timing & module info";
+        const voltage = details.voltages?.vdd != null ? `${details.voltages.vdd.toFixed(2)}V` : "";
+
         return `
           <details class="ram-details-panel" id="${escapeHtml(detailsId)}">
-            <summary>RAM details · ${escapeHtml(details.summary || "timing & module info")}</summary>
+            <summary>
+              <span class="ram-details-summary">
+                <span class="ram-details-label">Timings &amp; specs</span>
+                <span class="ram-details-preview">${escapeHtml(preview)}${voltage ? ` · ${escapeHtml(voltage)}` : ""}</span>
+                <span class="ram-details-hint">Click to expand full timing, voltage, and module info</span>
+              </span>
+            </summary>
             <div class="ram-details-body">
               ${sections}
               ${notes ? `<ul class="ram-details-notes">${notes}</ul>` : ""}
@@ -1847,13 +1919,14 @@
           .join("")}</div>`;
       }
 
-      function renderBrandCard(meta, entries) {
+      function renderBrandCard(meta, entries, spec) {
         const color = brandColor(meta.id);
 
         const parts = entries
           .map((entry) => {
             const pnId = `pn-${meta.id}-${hashCode(entry.part_number)}`;
             const detailsId = `ram-${meta.id}-${hashCode(entry.part_number)}`;
+            const ramDetails = resolveRamDetails(entry, meta, spec);
             return `
               <div class="part-entry">
                 <div class="verified-row">
@@ -1866,7 +1939,7 @@
                 </div>
                 ${entry.product_name ? `<div class="product-name">${escapeHtml(entry.product_name)}</div>` : ""}
                 ${entry.label ? `<div class="part-label">${escapeHtml(entry.label)}</div>` : ""}
-                ${renderRamDetails(entry.ram_details, detailsId)}
+                ${renderRamDetails(ramDetails, detailsId)}
                 ${entry.source_url ? `<a class="catalog-link" href="${escapeHtml(entry.source_url)}" target="_blank" rel="noopener noreferrer">View on manufacturer site</a>` : ""}
                 ${renderSpdSerials(entry.spd_serials, color)}
               </div>`;
@@ -1996,7 +2069,7 @@
         brandCountBadge.textContent = `${brand_count} verified brand${brand_count === 1 ? "" : "s"}`;
 
         const cards = brand_meta
-          .map((meta) => renderBrandCard(meta, brands[meta.id] || []))
+          .map((meta) => renderBrandCard(meta, brands[meta.id] || [], spec))
           .join("");
 
         const statsHtml = data.lookup_mixed_specs
