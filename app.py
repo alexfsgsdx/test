@@ -5,9 +5,14 @@ from __future__ import annotations
 
 from flask import Flask, jsonify, render_template, request, send_file
 
-from catalog import CATALOG_PATH, catalog_stats
+from catalog import CATALOG_PATH, catalog_product_summary, catalog_stats, search_catalog
 from product_validation import valid_speeds, valid_stick_counts, valid_total_gb
-from ram_part_number import generate_report, parse_natural_language, spec_from_form
+from ram_part_number import (
+    generate_lookup_report,
+    generate_report,
+    parse_natural_language,
+    spec_from_form,
+)
 
 app = Flask(__name__)
 
@@ -57,6 +62,19 @@ def api_generate():
     payload = request.get_json(silent=True) or {}
 
     try:
+        if payload.get("lookup"):
+            serial_salt = payload.get("serial_salt")
+            if serial_salt is not None:
+                serial_salt = int(serial_salt)
+            return jsonify(
+                {
+                    "ok": True,
+                    **generate_lookup_report(
+                        str(payload["lookup"]),
+                        serial_salt=serial_salt,
+                    ),
+                }
+            )
         if payload.get("natural_language"):
             spec = parse_natural_language(payload["natural_language"])
         else:
@@ -66,6 +84,49 @@ def api_generate():
             serial_salt = int(serial_salt)
         return jsonify({"ok": True, **generate_report(spec, serial_salt=serial_salt)})
     except (ValueError, KeyError, TypeError) as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 400
+
+
+@app.get("/api/search")
+def api_search():
+    query = request.args.get("q", "").strip()
+    if not query:
+        return jsonify({"ok": False, "error": "query parameter q is required"}), 400
+    limit = min(max(int(request.args.get("limit", 20)), 1), 100)
+    brand = request.args.get("brand")
+    results = search_catalog(query, limit=limit, brand=brand)
+    return jsonify(
+        {
+            "ok": True,
+            "query": query,
+            "count": len(results),
+            "results": [catalog_product_summary(p) for p in results],
+        }
+    )
+
+
+@app.post("/api/lookup")
+def api_lookup():
+    payload = request.get_json(silent=True) or {}
+    query = payload.get("query") or payload.get("part_number") or payload.get("lookup")
+    if not query:
+        return jsonify({"ok": False, "error": "query is required"}), 400
+    try:
+        serial_salt = payload.get("serial_salt")
+        if serial_salt is not None:
+            serial_salt = int(serial_salt)
+        exact_only = bool(payload.get("exact_only"))
+        return jsonify(
+            {
+                "ok": True,
+                **generate_lookup_report(
+                    str(query),
+                    serial_salt=serial_salt,
+                    exact_only=exact_only,
+                ),
+            }
+        )
+    except (ValueError, TypeError) as exc:
         return jsonify({"ok": False, "error": str(exc)}), 400
 
 

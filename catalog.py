@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
@@ -175,4 +176,107 @@ def catalog_product_to_entry(product: CatalogProduct, requested_profile: Profile
         "source": product.source,
         "verified": product.verified,
         "profiles": list(product.profiles),
+    }
+
+
+def normalize_part_number(part: str) -> str:
+    """Normalize a part number for index lookup (case/spacing/punctuation)."""
+    return re.sub(r"[\s\-_/]+", "", part.strip().upper())
+
+
+@lru_cache(maxsize=1)
+def part_number_index(path: Path | None = None) -> dict[str, CatalogProduct]:
+    index: dict[str, CatalogProduct] = {}
+    for product in load_catalog(path):
+        key = normalize_part_number(product.part_number)
+        index.setdefault(key, product)
+    return index
+
+
+def lookup_by_part_number(
+    part_number: str,
+    *,
+    brand: str | None = None,
+    path: Path | None = None,
+) -> CatalogProduct | None:
+    """Return a catalog product by exact part number match."""
+    product = part_number_index(path).get(normalize_part_number(part_number))
+    if product is None:
+        return None
+    if brand is not None and product.brand != brand:
+        return None
+    return product
+
+
+def _search_score(query: str, product: CatalogProduct) -> int:
+    norm_q = normalize_part_number(query)
+    if not norm_q and not query.strip():
+        return 0
+
+    pn_norm = normalize_part_number(product.part_number)
+    pn_lower = product.part_number.lower()
+    name_lower = product.product_name.lower()
+    tokens = [t for t in re.split(r"\s+", query.strip().lower()) if t]
+
+    if norm_q and pn_norm == norm_q:
+        return 1000
+    if norm_q and len(norm_q) >= 4 and pn_norm.startswith(norm_q):
+        return 500
+    if norm_q and len(norm_q) >= 4 and norm_q in pn_norm:
+        return 300
+    if tokens and all(t in name_lower or t in pn_lower for t in tokens):
+        return 100 + sum(10 for t in tokens if t in name_lower)
+    return 0
+
+
+def search_catalog(
+    query: str,
+    *,
+    limit: int = 50,
+    brand: str | None = None,
+    path: Path | None = None,
+) -> list[CatalogProduct]:
+    """Search catalog by part number fragment or product name tokens."""
+    query = query.strip()
+    if not query:
+        return []
+
+    scored: list[tuple[int, CatalogProduct]] = []
+    for product in load_catalog(path):
+        if brand is not None and product.brand != brand:
+            continue
+        score = _search_score(query, product)
+        if score > 0:
+            scored.append((score, product))
+
+    scored.sort(key=lambda item: (-item[0], item[1].part_number))
+    seen: set[tuple[str, str]] = set()
+    results: list[CatalogProduct] = []
+    for _, product in scored:
+        key = (product.brand, product.part_number)
+        if key in seen:
+            continue
+        seen.add(key)
+        results.append(product)
+        if len(results) >= limit:
+            break
+    return results
+
+
+def catalog_product_summary(product: CatalogProduct) -> dict:
+    return {
+        "brand": product.brand,
+        "part_number": product.part_number,
+        "product_name": product.product_name,
+        "sticks": product.sticks,
+        "per_stick_gb": product.per_stick_gb,
+        "total_gb": product.total_gb,
+        "generation": product.generation,
+        "speed_mts": product.speed_mts,
+        "cas_latency": product.cas_latency,
+        "profiles": list(product.profiles),
+        "rgb": product.rgb,
+        "ecc": product.ecc,
+        "form_factor": product.form_factor,
+        "verified": product.verified,
     }

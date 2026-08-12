@@ -15,7 +15,14 @@ import sys
 from dataclasses import dataclass
 from typing import Callable, Literal
 
-from catalog import catalog_product_to_entry, catalog_stats, lookup_catalog
+from catalog import (
+    CatalogProduct,
+    catalog_product_to_entry,
+    catalog_stats,
+    lookup_by_part_number,
+    lookup_catalog,
+    search_catalog,
+)
 from product_validation import validate_kit_spec, validation_to_dict, valid_speeds
 from spd_serial import generate_spd_serials, spd_serial_to_dict
 
@@ -404,6 +411,175 @@ def enrich_brand_entries(
     return enriched
 
 
+def primary_profile(profiles: tuple[str, ...] | list[str]) -> Profile:
+    profile_set = set(profiles)
+    if "xmp" in profile_set and "expo" in profile_set:
+        return "both"
+    if "both" in profile_set:
+        return "both"
+    if "xmp" in profile_set:
+        return "xmp"
+    if "expo" in profile_set:
+        return "expo"
+    return "jedec"
+
+
+def catalog_product_to_spec(product: CatalogProduct) -> RamSpec:
+    return RamSpec(
+        sticks=product.sticks,
+        total_gb=product.total_gb,
+        generation=product.generation,  # type: ignore[arg-type]
+        speed_mts=product.speed_mts,
+        profile=primary_profile(product.profiles),
+        cas_latency=product.cas_latency,
+        rgb=product.rgb,
+        ecc=product.ecc,
+        form_factor=product.form_factor,  # type: ignore[arg-type]
+    )
+
+
+def _report_from_products(
+    products: list[CatalogProduct],
+    serial_salt: int,
+    *,
+    lookup_query: str | None = None,
+) -> dict:
+    if not products:
+        raise ValueError("No catalog products matched.")
+
+    brands: dict[str, list[dict]] = {}
+    brand_meta = []
+    matched_cls: set[int] = set()
+
+    for brand_id, brand_name, _ in BRAND_REGISTRY:
+        brand_products = [p for p in products if p.brand == brand_id]
+        if not brand_products:
+            continue
+
+        entries = []
+        for product in brand_products:
+            profile = primary_profile(product.profiles)
+            matched_cls.add(product.cas_latency)
+            base = catalog_product_to_entry(product, profile)
+            serials = generate_spd_serials(
+                brand_id,
+                product.part_number,
+                product.generation,
+                product.sticks,
+                serial_salt,
+                profiles=product.profiles,
+                verified=product.verified,
+            )
+            entries.append(
+                {
+                    **base,
+                    "spd_serials": [spd_serial_to_dict(s) for s in serials],
+                }
+            )
+
+        brands[brand_id] = entries
+        brand_meta.append({"id": brand_id, "name": brand_name})
+
+    primary = products[0]
+    spec = catalog_product_to_spec(primary)
+    validation = validation_to_dict(spec.validation_result())
+    cl = spec.cas_latency
+    if len(matched_cls) == 1:
+        cl = next(iter(matched_cls))
+
+    unique_specs = {
+        (p.sticks, p.total_gb, p.generation, p.speed_mts, p.cas_latency)
+        for p in products
+    }
+
+    mode = "lookup" if lookup_query else "catalog_only"
+    catalog_info = {
+        **catalog_stats(),
+        "mode": mode,
+        "matched_brands": len(brand_meta),
+        "matched_products": len(products),
+    }
+    if lookup_query:
+        catalog_info["lookup_query"] = lookup_query
+
+    report = {
+        "validation": validation,
+        "valid_speeds": valid_speeds(spec.generation),
+        "catalog": catalog_info,
+        "spec": {
+            "sticks": spec.sticks,
+            "per_stick_gb": spec.per_stick_gb,
+            "total_gb": spec.total_gb,
+            "generation": spec.generation,
+            "speed_mts": spec.speed_mts,
+            "profile": spec.profile,
+            "cas_latency": cl,
+            "cas_latency_custom": True,
+            "rgb": spec.rgb,
+            "ecc": spec.ecc,
+            "form_factor": spec.form_factor,
+        },
+        "brand_meta": brand_meta,
+        "brands": brands,
+        "brand_count": len(brand_meta),
+    }
+    if len(products) > 1 and len(unique_specs) > 1:
+        report["lookup_mixed_specs"] = True
+    return report
+
+
+def generate_lookup_report(
+    query: str,
+    serial_salt: int | None = None,
+    *,
+    limit: int = 50,
+    exact_only: bool = False,
+) -> dict:
+    query = query.strip()
+    if not query:
+        raise ValueError("Enter a part number or product name to look up.")
+
+    if serial_salt is None:
+        serial_salt = secrets.randbelow(0xFFFFFFFF)
+
+    exact = lookup_by_part_number(query)
+    if exact:
+        products = [exact]
+    elif exact_only:
+        raise ValueError(f"Part number {query!r} not found in the verified catalog.")
+    else:
+        products = search_catalog(query, limit=limit)
+        if not products:
+            raise ValueError(
+                f"No catalog products match {query!r}. "
+                "Try a different part number or product name."
+            )
+
+    return _report_from_products(products, serial_salt, lookup_query=query)
+
+
+def format_lookup_output(report: dict) -> str:
+    query = report["catalog"].get("lookup_query", "")
+    lines = [
+        f"Catalog lookup: {query}",
+        f"Matched {report['catalog']['matched_products']} SKU(s) "
+        f"from {report['catalog']['matched_brands']} brand(s)",
+        "",
+    ]
+    for meta in report["brand_meta"]:
+        lines.append(f"[{meta['name']}]")
+        for entry in report["brands"][meta["id"]]:
+            lines.append(f"  {entry['part_number']}")
+            if entry.get("product_name"):
+                lines.append(f"    {entry['product_name']}")
+            for serial in entry.get("spd_serials") or []:
+                lines.append(
+                    f"    stick {serial['stick_index']}: {serial['serial_number']}"
+                )
+        lines.append("")
+    return "\n".join(lines).rstrip()
+
+
 def generate_report(spec: RamSpec, serial_salt: int | None = None) -> dict:
     spec.validate()
     validation = validation_to_dict(spec.validation_result())
@@ -681,6 +857,16 @@ def build_parser() -> argparse.ArgumentParser:
         default="all",
         help="Only show one brand",
     )
+    parser.add_argument(
+        "--lookup",
+        metavar="PART",
+        help="Look up a verified catalog SKU by exact part number",
+    )
+    parser.add_argument(
+        "--search",
+        metavar="QUERY",
+        help="Search the catalog by part number or product name",
+    )
     return parser
 
 
@@ -724,6 +910,22 @@ def spec_from_args(args: argparse.Namespace) -> RamSpec:
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+
+    if args.lookup and args.search:
+        print("Error: Use --lookup or --search, not both.", file=sys.stderr)
+        return 1
+
+    if args.lookup or args.search:
+        try:
+            report = generate_lookup_report(
+                args.lookup or args.search,
+                exact_only=bool(args.lookup),
+            )
+        except ValueError as exc:
+            print(f"Error: {exc}", file=sys.stderr)
+            return 1
+        print(format_lookup_output(report))
+        return 0
 
     try:
         spec = spec_from_args(args)

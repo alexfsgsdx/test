@@ -311,6 +311,62 @@
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
 
+    .lookup-suggestions {
+      list-style: none;
+      margin: 0.35rem 0 0;
+      padding: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      max-height: 220px;
+      overflow-y: auto;
+    }
+
+    .lookup-suggestions:empty { display: none; }
+
+    .lookup-suggestions li button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 0.55rem 0.75rem;
+      border: 0;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .lookup-suggestions li + li button {
+      border-top: 1px solid var(--border);
+    }
+
+    .lookup-suggestions li button:hover,
+    .lookup-suggestions li button:focus-visible {
+      background: color-mix(in srgb, var(--accent) 12%, transparent);
+      outline: none;
+    }
+
+    .lookup-suggestions .suggest-pn {
+      font-family: var(--mono);
+      font-size: 0.92rem;
+      color: var(--accent);
+    }
+
+    .lookup-suggestions .suggest-name {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+
+    .info-banner {
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
+      background: color-mix(in srgb, var(--accent) 10%, transparent);
+      border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
+      margin-bottom: 1rem;
+      font-size: 0.92rem;
+    }
+
     /* Form */
     .form-grid {
       display: grid;
@@ -1005,6 +1061,7 @@
         <div class="tabs" role="tablist">
           <button class="tab active" role="tab" aria-selected="true" data-tab="form">Form</button>
           <button class="tab" role="tab" aria-selected="false" data-tab="quick">Quick text</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="lookup">Lookup</button>
         </div>
       </div>
       <div class="panel-body">
@@ -1110,6 +1167,24 @@
             <p class="hint"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> or <kbd>⌘</kbd>+<kbd>Enter</kbd> to generate</p>
           </div>
         </div>
+
+        <!-- Part / product name lookup -->
+        <div class="tab-panel" id="tab-lookup" role="tabpanel">
+          <div class="form-grid">
+            <div class="field">
+              <label for="lookup_query">Part number or product name</label>
+              <input type="text" id="lookup_query" placeholder="e.g. CMH32GX5M2B6400C32 or Vengeance RGB 6400" autocomplete="off" spellcheck="false">
+              <ul class="lookup-suggestions" id="lookupSuggestions" hidden></ul>
+              <p class="hint">Exact part numbers match first; otherwise searches product names and part number fragments.</p>
+            </div>
+            <div class="actions">
+              <button type="button" class="btn btn-primary" id="btnLookup">Look up</button>
+              <button type="button" class="btn btn-ghost" id="btnExampleLookup">Load example</button>
+              <button type="button" class="btn btn-ghost" id="btnSeriesRefreshLookup" disabled>Series refresh</button>
+            </div>
+            <p class="hint"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> or <kbd>⌘</kbd>+<kbd>Enter</kbd> to look up</p>
+          </div>
+        </div>
       </div>
     </aside>
 
@@ -1136,7 +1211,7 @@
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
   <script type="module">
-    import { generateReport, refreshReportSerials, parseNaturalLanguage, specFromForm, validSpeeds, validStickCounts, validTotalGb, loadCatalog, catalogStats } from "./generator.js";
+    import { generateReport, generateLookupReport, searchCatalog, refreshReportSerials, parseNaturalLanguage, specFromForm, validSpeeds, validStickCounts, validTotalGb, loadCatalog, catalogStats } from "./generator.js";
 
     (function () {
       "use strict";
@@ -1155,6 +1230,8 @@
 
       const EXAMPLE_NL =
         "2 sticks 32 gb total ddr5 speed 6000 both xmp and expo";
+
+      const EXAMPLE_LOOKUP = "CMH32GX5M2B6400C32";
 
       const PROFILE_LABELS = {
         jedec: "JEDEC",
@@ -1186,6 +1263,11 @@
       const btnExampleQuick = $("#btnExampleQuick");
       const btnSeriesRefresh = $("#btnSeriesRefresh");
       const btnSeriesRefreshQuick = $("#btnSeriesRefreshQuick");
+      const btnLookup = $("#btnLookup");
+      const btnExampleLookup = $("#btnExampleLookup");
+      const btnSeriesRefreshLookup = $("#btnSeriesRefreshLookup");
+      const lookupQueryInput = $("#lookup_query");
+      const lookupSuggestions = $("#lookupSuggestions");
       const catalogStatus = $("#catalogStatus");
       const catalogProgressBar = $("#catalogProgressBar");
       const catalogProgressPct = $("#catalogProgressPct");
@@ -1194,6 +1276,7 @@
         catalogReady = !enabled;
         btnGenerate.disabled = enabled || isLoading;
         btnGenerateQuick.disabled = enabled || isLoading;
+        btnLookup.disabled = enabled || isLoading;
       }
 
       function updateCatalogProgress({ percent, phase }) {
@@ -1229,6 +1312,7 @@
         if (!isLoading) {
           btnGenerate.disabled = false;
           btnGenerateQuick.disabled = false;
+          btnLookup.disabled = false;
         }
       }
 
@@ -1238,6 +1322,7 @@
         brandCountBadge.textContent = message;
         btnGenerate.disabled = true;
         btnGenerateQuick.disabled = true;
+        btnLookup.disabled = true;
       }
 
       /* ── brandColor: deterministic hue from brand id hash ── */
@@ -1328,6 +1413,7 @@
           });
           $("#tab-form").classList.toggle("active", activeTab === "form");
           $("#tab-quick").classList.toggle("active", activeTab === "quick");
+          $("#tab-lookup").classList.toggle("active", activeTab === "lookup");
         });
       });
 
@@ -1348,12 +1434,19 @@
         $("#natural_language").value = EXAMPLE_NL;
       }
 
+      function loadExampleLookup() {
+        lookupQueryInput.value = EXAMPLE_LOOKUP;
+        clearLookupSuggestions();
+      }
+
       btnExample.addEventListener("click", loadExampleForm);
       btnExampleQuick.addEventListener("click", loadExampleQuick);
+      btnExampleLookup.addEventListener("click", loadExampleLookup);
 
       function setSeriesRefreshEnabled(enabled) {
         btnSeriesRefresh.disabled = !enabled;
         btnSeriesRefreshQuick.disabled = !enabled;
+        btnSeriesRefreshLookup.disabled = !enabled;
       }
 
       async function refreshSerials() {
@@ -1376,6 +1469,70 @@
 
       btnSeriesRefresh.addEventListener("click", refreshSerials);
       btnSeriesRefreshQuick.addEventListener("click", refreshSerials);
+      btnSeriesRefreshLookup.addEventListener("click", refreshSerials);
+
+      let lookupSuggestTimer = null;
+
+      function clearLookupSuggestions() {
+        lookupSuggestions.innerHTML = "";
+        lookupSuggestions.hidden = true;
+      }
+
+      function renderLookupSuggestions(results) {
+        if (!results.length) {
+          clearLookupSuggestions();
+          return;
+        }
+        lookupSuggestions.innerHTML = results
+          .slice(0, 8)
+          .map(
+            (item) => `
+            <li>
+              <button type="button" data-part="${escapeHtml(item.part_number)}">
+                <div class="suggest-pn">${escapeHtml(item.part_number)}</div>
+                <div class="suggest-name">${escapeHtml(item.product_name || item.brand)}</div>
+              </button>
+            </li>`
+          )
+          .join("");
+        lookupSuggestions.hidden = false;
+        lookupSuggestions.querySelectorAll("button[data-part]").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            lookupQueryInput.value = btn.dataset.part;
+            clearLookupSuggestions();
+            generate({ lookup: btn.dataset.part });
+          });
+        });
+      }
+
+      async function fetchLookupSuggestions(query) {
+        if (query.length < 2) {
+          clearLookupSuggestions();
+          return;
+        }
+        try {
+          const catalog = await loadCatalog();
+          renderLookupSuggestions(searchCatalog(catalog, query, { limit: 8 }));
+        } catch {
+          clearLookupSuggestions();
+        }
+      }
+
+      lookupQueryInput.addEventListener("input", () => {
+        clearTimeout(lookupSuggestTimer);
+        const query = lookupQueryInput.value.trim();
+        lookupSuggestTimer = setTimeout(() => fetchLookupSuggestions(query), 220);
+      });
+
+      lookupQueryInput.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") clearLookupSuggestions();
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!lookupSuggestions.contains(e.target) && e.target !== lookupQueryInput) {
+          clearLookupSuggestions();
+        }
+      });
 
       async function fetchValidSpeeds(generation) {
         speedOptions[generation] = validSpeeds(generation);
@@ -1554,7 +1711,10 @@
       function renderCatalogBanner(catalog, validation) {
         let html = "";
         if (catalog) {
-          html += `<div class="success-banner"><strong>100% catalog confirmed.</strong> Showing ${catalog.matched_products} verified SKU(s) from ${catalog.matched_brands} brand(s). Database: ${catalog.product_count} products across ${catalog.brand_count} brands (updated ${catalog.updated}).</div>`;
+          const lookupLabel = catalog.lookup_query
+            ? ` for <strong>${escapeHtml(catalog.lookup_query)}</strong>`
+            : "";
+          html += `<div class="success-banner"><strong>100% catalog confirmed.</strong> Showing ${catalog.matched_products} verified SKU(s) from ${catalog.matched_brands} brand(s)${lookupLabel}. Database: ${catalog.product_count} products across ${catalog.brand_count} brands (updated ${catalog.updated}).</div>`;
         }
         if (validation?.warnings?.length) {
           const items = validation.warnings
@@ -1584,9 +1744,13 @@
           .map((meta) => renderBrandCard(meta, brands[meta.id] || []))
           .join("");
 
+        const statsHtml = data.lookup_mixed_specs
+          ? `<div class="info-banner">Search results for <strong>${escapeHtml(catalog.lookup_query || "")}</strong> — ${catalog.matched_products} SKU(s). Kits may differ; see each entry below.</div>`
+          : renderStats(spec);
+
         resultsContent.innerHTML = `
           ${renderCatalogBanner(catalog, validation)}
-          ${renderStats(spec)}
+          ${statsHtml}
           <div class="brands-grid">${cards}</div>`;
 
         emptyState.hidden = true;
@@ -1617,30 +1781,47 @@
         document.body.classList.toggle("loading", loading);
         btnGenerate.disabled = loading || !catalogReady;
         btnGenerateQuick.disabled = loading || !catalogReady;
+        btnLookup.disabled = loading || !catalogReady;
         if (loading) {
           btnSeriesRefresh.disabled = true;
           btnSeriesRefreshQuick.disabled = true;
+          btnSeriesRefreshLookup.disabled = true;
         } else {
           setSeriesRefreshEnabled(hasResults);
         }
+      }
+
+      function getLookupPayload() {
+        return { lookup: lookupQueryInput.value.trim() };
       }
 
       /* ── Client-side generation (GitHub Pages — no server) ── */
       async function generate(payload) {
         if (isLoading) return;
 
-        if (payload.natural_language !== undefined && !payload.natural_language) {
+        if (payload.lookup !== undefined) {
+          if (!payload.lookup) {
+            renderError("Enter a part number or product name.");
+            return;
+          }
+        } else if (payload.natural_language !== undefined && !payload.natural_language) {
           renderError("Enter a natural language specification.");
           return;
         }
 
         setLoading(true);
+        clearLookupSuggestions();
 
         try {
-          const spec = payload.natural_language
-            ? parseNaturalLanguage(payload.natural_language)
-            : specFromForm(payload);
-          const data = await generateReport(spec);
+          let data;
+          if (payload.lookup !== undefined) {
+            data = await generateLookupReport(payload.lookup);
+          } else {
+            const spec = payload.natural_language
+              ? parseNaturalLanguage(payload.natural_language)
+              : specFromForm(payload);
+            data = await generateReport(spec);
+          }
           lastReport = data;
           renderResults(data);
         } catch (err) {
@@ -1654,6 +1835,8 @@
         if (activeTab === "form") {
           if (!specForm.reportValidity()) return;
           generate(getFormPayload());
+        } else if (activeTab === "lookup") {
+          generate(getLookupPayload());
         } else {
           generate(getQuickPayload());
         }
@@ -1665,6 +1848,7 @@
       });
 
       btnGenerateQuick.addEventListener("click", triggerGenerate);
+      btnLookup.addEventListener("click", triggerGenerate);
 
       document.addEventListener("keydown", (e) => {
         if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {

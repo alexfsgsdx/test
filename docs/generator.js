@@ -480,6 +480,175 @@ function lookupCatalog(spec, catalog) {
   return matches;
 }
 
+export function normalizePartNumber(part) {
+  return part.trim().toUpperCase().replace(/[\s\-_/]+/g, "");
+}
+
+function searchScore(query, product) {
+  const normQ = normalizePartNumber(query);
+  const q = query.trim();
+  if (!normQ && !q) return 0;
+
+  const pnNorm = normalizePartNumber(product.part_number);
+  const pnLower = product.part_number.toLowerCase();
+  const nameLower = (product.product_name || "").toLowerCase();
+  const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
+
+  if (normQ && pnNorm === normQ) return 1000;
+  if (normQ && normQ.length >= 4 && pnNorm.startsWith(normQ)) return 500;
+  if (normQ && normQ.length >= 4 && pnNorm.includes(normQ)) return 300;
+  if (tokens.length && tokens.every((t) => nameLower.includes(t) || pnLower.includes(t))) {
+    return 100 + tokens.reduce((n, t) => n + (nameLower.includes(t) ? 10 : 0), 0);
+  }
+  return 0;
+}
+
+export function lookupByPartNumber(catalog, partNumber) {
+  const norm = normalizePartNumber(partNumber);
+  return catalog.products.find((p) => normalizePartNumber(p.part_number) === norm) || null;
+}
+
+export function searchCatalog(catalog, query, { limit = 50, brand = null } = {}) {
+  const q = query.trim();
+  if (!q) return [];
+
+  const scored = [];
+  for (const product of catalog.products) {
+    if (brand && product.brand !== brand) continue;
+    const score = searchScore(q, product);
+    if (score > 0) scored.push({ score, product });
+  }
+
+  scored.sort((a, b) => b.score - a.score || a.product.part_number.localeCompare(b.product.part_number));
+  const seen = new Set();
+  const results = [];
+  for (const { product } of scored) {
+    const key = `${product.brand}|${product.part_number}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    results.push(product);
+    if (results.length >= limit) break;
+  }
+  return results;
+}
+
+function primaryProfile(profiles) {
+  const set = new Set(profiles || []);
+  if (set.has("xmp") && set.has("expo")) return "both";
+  if (set.has("both")) return "both";
+  if (set.has("xmp")) return "xmp";
+  if (set.has("expo")) return "expo";
+  return "jedec";
+}
+
+async function reportFromProducts(products, serialSalt, lookupQuery = null) {
+  const salt = serialSalt ?? ((Date.now() ^ (Math.random() * 0xFFFFFFFF)) >>> 0);
+  const brands = {};
+  const brand_meta = [];
+  const matchedCls = new Set();
+
+  for (const [id, name] of BRAND_REGISTRY) {
+    const brandProducts = products.filter((p) => p.brand === id);
+    if (!brandProducts.length) continue;
+    const enriched = [];
+    for (const product of brandProducts) {
+      const profiles = product.profiles || [product.profile];
+      const profile = primaryProfile(profiles);
+      matchedCls.add(product.cas_latency);
+      enriched.push({
+        part_number: product.part_number,
+        label: profileLabel(product, profile),
+        product_name: product.product_name,
+        catalog_confirmed: true,
+        source_url: product.source_url,
+        source: product.source,
+        verified: product.verified,
+        profiles,
+        spd_serials: await generateSpdSerials(
+          id,
+          product.part_number,
+          product.generation,
+          product.sticks,
+          salt,
+          profiles,
+          product.verified,
+        ),
+      });
+    }
+    brands[id] = enriched;
+    brand_meta.push({ id, name });
+  }
+
+  const primary = products[0];
+  const profile = primaryProfile(primary.profiles || [primary.profile]);
+  const spec = {
+    sticks: primary.sticks,
+    per_stick_gb: primary.per_stick_gb,
+    total_gb: primary.total_gb,
+    generation: primary.generation,
+    speed_mts: primary.speed_mts,
+    profile,
+    cas_latency: primary.cas_latency,
+    cas_latency_custom: true,
+    rgb: !!primary.rgb,
+    ecc: !!primary.ecc,
+    form_factor: primary.form_factor || "dimm",
+  };
+  if (matchedCls.size === 1) spec.cas_latency = [...matchedCls][0];
+
+  const validation = validateKitSpec(spec);
+  const catalog = await loadCatalog();
+  const stats = catalogStats(catalog);
+  const uniqueSpecs = new Set(
+    products.map((p) => `${p.sticks}|${p.total_gb}|${p.generation}|${p.speed_mts}|${p.cas_latency}`)
+  );
+
+  const catalogInfo = {
+    ...stats,
+    mode: lookupQuery ? "lookup" : "catalog_only",
+    matched_brands: brand_meta.length,
+    matched_products: products.length,
+  };
+  if (lookupQuery) catalogInfo.lookup_query = lookupQuery;
+
+  const report = {
+    ok: true,
+    validation,
+    valid_speeds: validSpeeds(spec.generation),
+    catalog: catalogInfo,
+    spec,
+    brand_meta,
+    brands,
+    brand_count: brand_meta.length,
+    serial_salt: salt,
+  };
+  if (products.length > 1 && uniqueSpecs.size > 1) report.lookup_mixed_specs = true;
+  return report;
+}
+
+export async function generateLookupReport(query, options = {}) {
+  const q = String(query || "").trim();
+  if (!q) throw new Error("Enter a part number or product name to look up.");
+
+  const catalog = await loadCatalog();
+  const exact = lookupByPartNumber(catalog, q);
+  let products;
+  if (exact) {
+    products = [exact];
+  } else if (options.exactOnly) {
+    throw new Error(`Part number ${q} not found in the verified catalog.`);
+  } else {
+    products = searchCatalog(catalog, q, { limit: options.limit ?? 50, brand: options.brand ?? null });
+    if (!products.length) {
+      throw new Error(
+        `No catalog products match ${JSON.stringify(q)}. Try a different part number or product name.`
+      );
+    }
+  }
+
+  return reportFromProducts(products, options.serialSalt, q);
+}
+
 export async function generateReport(spec, options = {}) {
   const serialSalt = options.serialSalt ?? ((Date.now() ^ (Math.random() * 0xFFFFFFFF)) >>> 0);
   const per = perStickGb(spec);

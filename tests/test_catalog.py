@@ -4,8 +4,14 @@ from __future__ import annotations
 
 import unittest
 
-from catalog import catalog_stats, load_catalog, lookup_catalog
-from ram_part_number import generate_report, RamSpec
+from catalog import (
+    catalog_stats,
+    load_catalog,
+    lookup_by_part_number,
+    lookup_catalog,
+    search_catalog,
+)
+from ram_part_number import generate_lookup_report, generate_report, RamSpec
 
 
 class TestCatalogLookup(unittest.TestCase):
@@ -95,6 +101,49 @@ class TestCatalogLookup(unittest.TestCase):
         with self.assertRaises(ValueError) as ctx:
             generate_report(spec)
         self.assertIn("No verified manufacturer catalog", str(ctx.exception))
+
+    def test_lookup_by_part_number_exact(self):
+        product = lookup_by_part_number("CMH32GX5M2B6400C32")
+        self.assertIsNotNone(product)
+        assert product is not None
+        self.assertEqual(product.brand, "corsair")
+        self.assertEqual(product.generation, 5)
+        self.assertEqual(lookup_by_part_number("cmh32gx5m2b6400c32"), product)
+        self.assertIsNone(lookup_by_part_number("NOT-A-REAL-SKU-99999"))
+
+    def test_search_catalog_by_product_name(self):
+        results = search_catalog("Vengeance RGB 6400", limit=10)
+        self.assertTrue(results)
+        self.assertTrue(any("6400" in p.part_number or "6400" in p.product_name for p in results))
+
+    def test_search_catalog_by_part_prefix(self):
+        results = search_catalog("CMK32GX5M2B", limit=10)
+        self.assertTrue(results)
+        self.assertTrue(all(p.part_number.upper().startswith("CMK32GX5M2B") for p in results))
+
+    def test_generate_lookup_report_single_sku(self):
+        report = generate_lookup_report("CMH32GX5M2B6400C32")
+        self.assertEqual(report["catalog"]["mode"], "lookup")
+        self.assertEqual(report["catalog"]["lookup_query"], "CMH32GX5M2B6400C32")
+        self.assertEqual(report["catalog"]["matched_products"], 1)
+        self.assertIn("corsair", report["brands"])
+        self.assertEqual(
+            report["brands"]["corsair"][0]["part_number"],
+            "CMH32GX5M2B6400C32",
+        )
+        self.assertEqual(
+            report["brands"]["corsair"][0]["spd_serials"][0]["serial_number"],
+            "0x00000000",
+        )
+
+    def test_generate_lookup_report_search(self):
+        report = generate_lookup_report("CMH32GX5M2B6400")
+        self.assertGreaterEqual(report["catalog"]["matched_products"], 1)
+        self.assertEqual(report["catalog"]["lookup_query"], "CMH32GX5M2B6400")
+
+    def test_generate_lookup_report_exact_only(self):
+        with self.assertRaises(ValueError):
+            generate_lookup_report("CMH32GX5M2B6400", exact_only=True)
 
 
 if __name__ == "__main__":
