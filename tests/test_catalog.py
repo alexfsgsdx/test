@@ -11,9 +11,10 @@ from ram_part_number import generate_report, RamSpec
 class TestCatalogLookup(unittest.TestCase):
     def test_catalog_loads(self):
         stats = catalog_stats()
-        self.assertGreaterEqual(stats["product_count"], 2700)
+        self.assertGreaterEqual(stats["product_count"], 4000)
         self.assertGreaterEqual(stats["brand_count"], 20)
         self.assertGreaterEqual(stats.get("ddr5_count", 0), 2700)
+        self.assertGreaterEqual(stats.get("ddr4_count", 0), 500)
 
     def test_all_ddr5_brands_represented(self):
         products = load_catalog()
@@ -37,6 +38,22 @@ class TestCatalogLookup(unittest.TestCase):
         self.assertIn("corsair", matches)
         parts = {p.part_number for p in matches["corsair"]}
         self.assertIn("CMK32GX5M2B6000C30", parts)
+
+    def test_ddr4_lookup(self):
+        matches = lookup_catalog(
+            sticks=2,
+            total_gb=32,
+            generation=4,
+            speed_mts=3200,
+            profile="xmp",
+            rgb=False,
+        )
+        self.assertTrue(matches, "expected DDR4 catalog matches for 2x16 3200 XMP")
+        combined = {p.part_number for brand in matches.values() for p in brand}
+        self.assertTrue(
+            any("3200" in pn or "32" in pn for pn in combined),
+            f"expected 32GB DDR4-3200 kit in results, got: {sorted(combined)[:5]}",
+        )
 
     def test_no_synthetic_when_not_in_catalog(self):
         matches = lookup_catalog(

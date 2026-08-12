@@ -1,0 +1,322 @@
+[
+  {
+    "brand": "kingston",
+    "part_number": "KF426C15RB/32",
+    "product_name": "Kingston FURY DDR4 32GB 2600 CL15",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2600,
+    "cas_latency": 15,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF426C15RB/32"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF426C16BB1AK4/64",
+    "product_name": "Kingston FURY DDR4 64GB 2600 CL16",
+    "sticks": 4,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2600,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF426C16BB1AK4/64"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF426C16BBAK4/128",
+    "product_name": "Kingston FURY DDR4 128GB 2600 CL16",
+    "sticks": 4,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2600,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF426C16BBAK4/128"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF426C16BBK2/64",
+    "product_name": "Kingston FURY DDR4 64GB 2600 CL16",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2600,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF426C16BBK2/64"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF426C16BBK4/16",
+    "product_name": "Kingston FURY DDR4 16GB 2600 CL16",
+    "sticks": 4,
+    "per_stick_gb": 4,
+    "generation": 4,
+    "speed_mts": 2600,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF426C16BBK4/16"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF430C15RB1AK2/32",
+    "product_name": "Kingston FURY DDR4 32GB 3000 CL15",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 15,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF430C15RB1AK2/32"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF430C15RB1K4/64",
+    "product_name": "Kingston FURY DDR4 64GB 3000 CL15",
+    "sticks": 4,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 15,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF430C15RB1K4/64"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF432C16BB2AK4/32",
+    "product_name": "Kingston FURY DDR4 32GB 3200 CL16",
+    "sticks": 4,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF432C16BB2AK4/32"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF432C16BBAK4/128",
+    "product_name": "Kingston FURY DDR4 128GB 3200 CL16",
+    "sticks": 4,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF432C16BBAK4/128"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF432C16BBK2/16",
+    "product_name": "FURY Beast 16GB (2x8GB) DDR4 3200 CL16",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF432C16BBK2/16"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF432C16BBK2/32",
+    "product_name": "FURY Beast 32GB (2x16GB) DDR4 3200 CL16",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF432C16BBK2/32"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF432C16BBK2/64",
+    "product_name": "FURY Beast 64GB (2x32GB) DDR4 3200 CL16",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF432C16BBK2/64"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF432C16BBK4/16",
+    "product_name": "Kingston FURY DDR4 16GB 3200 CL16",
+    "sticks": 4,
+    "per_stick_gb": 4,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF432C16BBK4/16"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF432C16RB/32",
+    "product_name": "Kingston FURY DDR4 32GB 3200 CL16",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF432C16RB/32"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF432C16RBAK4/32",
+    "product_name": "Kingston FURY DDR4 32GB 3200 CL16",
+    "sticks": 4,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF432C16RBAK4/32"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF436C16RB12K4/64",
+    "product_name": "Kingston FURY DDR4 64GB 3600 CL16",
+    "sticks": 4,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF436C16RB12K4/64"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF436C16RB2AK2/16",
+    "product_name": "Kingston FURY DDR4 16GB 3600 CL16",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF436C16RB2AK2/16"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF436C18BBK2/32",
+    "product_name": "FURY Beast 32GB (2x16GB) DDR4 3600 CL18",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF436C18BBK2/32"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF436C18RBK4/128",
+    "product_name": "Kingston FURY DDR4 128GB 3600 CL18",
+    "sticks": 4,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF436C18RBK4/128"
+  },
+  {
+    "brand": "kingston",
+    "part_number": "KF440C19RB1/16",
+    "product_name": "Kingston FURY DDR4 16GB 4000 CL19",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 4000,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.kingston.com/en/memory/search?partid=KF440C19RB1/16"
+  }
+]

@@ -1,0 +1,738 @@
+[
+  {
+    "brand": "crucial",
+    "part_number": "CT16G4DFD832A",
+    "product_name": "Crucial DDR4 16GB 3200",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct16g4dfd832a"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT16G4DFRA266",
+    "product_name": "Crucial DDR4 16GB 2666",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct16g4dfra266"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G4DFRA266",
+    "product_name": "Crucial DDR4 32GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k16g4dfra266"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G4DFRA32",
+    "product_name": "Crucial DDR4 32GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k16g4dfra32"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G4DFRA32A",
+    "product_name": "Crucial DDR4 32GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k16g4dfra32a"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G4DFRD2666",
+    "product_name": "Crucial DDR4 32GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k16g4dfrd2666"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G4SFD8266",
+    "product_name": "Crucial DDR4 32GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k16g4sfd8266"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K32G4DFD832A",
+    "product_name": "Crucial DDR4 64GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k32g4dfd832a"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K8G4DFRA32",
+    "product_name": "Crucial DDR4 16GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k8g4dfra32"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K8G4DFRA32A",
+    "product_name": "Crucial DDR4 16GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k8g4dfra32a"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K8G4DFRD2666",
+    "product_name": "Crucial DDR4 16GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k8g4dfrd2666"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT8G4DFRA266",
+    "product_name": "Crucial DDR4 8GB 2666",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct8g4dfra266"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSD416G3200K",
+    "product_name": "Patriot DDR4 16GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSD432G3200K",
+    "product_name": "Patriot DDR4 32GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G2400KH1",
+    "product_name": "Patriot DDR4 16GB 2400",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 2400,
+    "cas_latency": 17,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G2666H1",
+    "product_name": "Patriot DDR4 16GB 2666",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G2666KH1",
+    "product_name": "Patriot DDR4 16GB 2666",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G3200H1",
+    "product_name": "Patriot DDR4 16GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G3200KH1",
+    "product_name": "Patriot DDR4 16GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G3600KH1",
+    "product_name": "Patriot DDR4 16GB 3600",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP432G2666KH1",
+    "product_name": "Patriot DDR4 32GB 2666",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP432G3200H1",
+    "product_name": "Patriot DDR4 32GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP432G3200KH1",
+    "product_name": "Patriot DDR4 32GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP432G3600KH1",
+    "product_name": "Patriot DDR4 32GB 3600",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP464G3200KH1",
+    "product_name": "Patriot DDR4 64GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP464G3600KH1",
+    "product_name": "Patriot DDR4 64GB 3600",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PV416G320C16K",
+    "product_name": "Patriot Viper DDR4 16GB 32000",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 32000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PV416G360C18K",
+    "product_name": "Patriot Viper DDR4 16GB 36000",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 36000,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PV432G320C16K",
+    "product_name": "Patriot Viper DDR4 32GB 32000",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 32000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PV432G360C18K",
+    "product_name": "Patriot Viper DDR4 32GB 36000",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 36000,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U320016G16A-SBKD35G",
+    "product_name": "XPG DDR4 16GB 3200",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U320016G16A-WBKD35G",
+    "product_name": "XPG DDR4 16GB 3200",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U320032G16A-DTBKD35G",
+    "product_name": "XPG DDR4 16GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U320032G16A-WBKD35G",
+    "product_name": "XPG DDR4 16GB 3200",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U360016G18A-SBKD35G",
+    "product_name": "XPG DDR4 18GB 3600",
+    "sticks": 1,
+    "per_stick_gb": 18,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U360032G18A-DTBKD35G",
+    "product_name": "XPG DDR4 18GB 3600",
+    "sticks": 2,
+    "per_stick_gb": 18,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U360032G18A-WTBKD35G",
+    "product_name": "XPG DDR4 18GB 3600",
+    "sticks": 1,
+    "per_stick_gb": 18,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD16GK4D4320036XR",
+    "product_name": "PNY DDR4 16GB 3200",
+    "sticks": 4,
+    "per_stick_gb": 4,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD16GK4D4320036XRGB",
+    "product_name": "PNY DDR4 16GB 3200",
+    "sticks": 4,
+    "per_stick_gb": 4,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD16GK4D4360038XR",
+    "product_name": "PNY DDR4 16GB 3600",
+    "sticks": 4,
+    "per_stick_gb": 4,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK4D4320036XR",
+    "product_name": "PNY DDR4 32GB 3200",
+    "sticks": 4,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK4D4320036XRGB",
+    "product_name": "PNY DDR4 32GB 3200",
+    "sticks": 4,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK4D4360038XR",
+    "product_name": "PNY DDR4 32GB 3600",
+    "sticks": 4,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "ballistix",
+    "part_number": "BLT2K8G4D30AET4K",
+    "product_name": "Ballistix Tactical Tracer RGB DDR4",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "ballistix",
+    "part_number": "BLT2K8G4D32AET4K",
+    "product_name": "Ballistix Tactical Tracer RGB DDR4",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "ballistix",
+    "part_number": "BLT4K8G4D32AET4K",
+    "product_name": "Ballistix Tactical Tracer RGB DDR4",
+    "sticks": 4,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  }
+]

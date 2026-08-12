@@ -1,0 +1,114 @@
+[
+  {
+    "brand": "xpg",
+    "part_number": "AX4U320016G16A-SBKD35G",
+    "product_name": "XPG DDR4 16GB 3200",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U320016G16A-WBKD35G",
+    "product_name": "XPG DDR4 16GB 3200",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U320032G16A-DTBKD35G",
+    "product_name": "XPG DDR4 16GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U320032G16A-WBKD35G",
+    "product_name": "XPG DDR4 16GB 3200",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U360016G18A-SBKD35G",
+    "product_name": "XPG DDR4 18GB 3600",
+    "sticks": 1,
+    "per_stick_gb": 18,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U360032G18A-DTBKD35G",
+    "product_name": "XPG DDR4 18GB 3600",
+    "sticks": 2,
+    "per_stick_gb": 18,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "xpg",
+    "part_number": "AX4U360032G18A-WTBKD35G",
+    "product_name": "XPG DDR4 18GB 3600",
+    "sticks": 1,
+    "per_stick_gb": 18,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 32,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  }
+]

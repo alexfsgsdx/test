@@ -1,0 +1,98 @@
+[
+  {
+    "brand": "pny",
+    "part_number": "MD16GK4D4320036XR",
+    "product_name": "PNY DDR4 16GB 3200",
+    "sticks": 4,
+    "per_stick_gb": 4,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD16GK4D4320036XRGB",
+    "product_name": "PNY DDR4 16GB 3200",
+    "sticks": 4,
+    "per_stick_gb": 4,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD16GK4D4360038XR",
+    "product_name": "PNY DDR4 16GB 3600",
+    "sticks": 4,
+    "per_stick_gb": 4,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK4D4320036XR",
+    "product_name": "PNY DDR4 32GB 3200",
+    "sticks": 4,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK4D4320036XRGB",
+    "product_name": "PNY DDR4 32GB 3200",
+    "sticks": 4,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 36,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "pny",
+    "part_number": "MD32GK4D4360038XR",
+    "product_name": "PNY DDR4 32GB 3600",
+    "sticks": 4,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 38,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  }
+]

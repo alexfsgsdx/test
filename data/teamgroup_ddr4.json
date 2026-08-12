@@ -1,0 +1,1858 @@
+[
+  {
+    "brand": "teamgroup",
+    "part_number": "TCBD416G2666HC19",
+    "product_name": "TCBD416G2666HC19",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TCBD416G2666HC19DC",
+    "product_name": "TCBD416G2666HC19DC",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TCBD416G3200HC22",
+    "product_name": "TCBD416G3200HC22",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TCBD416G3200HC22DC",
+    "product_name": "TCBD416G3200HC22DC",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TCBD432G2666HC19",
+    "product_name": "TCBD432G2666HC19",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TCBD432G2666HC19DC",
+    "product_name": "TCBD432G2666HC19DC",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TCBD432G3200HC22",
+    "product_name": "TCBD432G3200HC22",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TCBD432G3200HC22DC",
+    "product_name": "TCBD432G3200HC22DC",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TCBD464G2666HC19DC",
+    "product_name": "TCBD464G2666HC19DC",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TCBD464G3200HC22DC",
+    "product_name": "TCBD464G3200HC22DC",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZBD416G3200HC16FDC01",
+    "product_name": "TLZBD416G3200HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZBD416G3600HC18JDC01",
+    "product_name": "TLZBD416G3600HC18JDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZBD432G3200HC16FDC01",
+    "product_name": "TLZBD432G3200HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZBD432G3600HC18JDC01",
+    "product_name": "TLZBD432G3600HC18JDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G2666HC18H01",
+    "product_name": "TLZGD416G2666HC18H01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G2666HC18HDC01",
+    "product_name": "TLZGD416G2666HC18HDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3000HC16C01",
+    "product_name": "TLZGD416G3000HC16C01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3000HC16CDC01",
+    "product_name": "TLZGD416G3000HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3000HC16F01",
+    "product_name": "TLZGD416G3000HC16F01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3000HC16FDC01",
+    "product_name": "TLZGD416G3000HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3200HC16C01",
+    "product_name": "TLZGD416G3200HC16C01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3200HC16CDC01",
+    "product_name": "TLZGD416G3200HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3200HC16F01",
+    "product_name": "TLZGD416G3200HC16F01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3200HC16FDC01",
+    "product_name": "TLZGD416G3200HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3600HC14CDC01",
+    "product_name": "TLZGD416G3600HC14CDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 14,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3600HC18J01",
+    "product_name": "TLZGD416G3600HC18J01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3600HC18JDC01",
+    "product_name": "TLZGD416G3600HC18JDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD416G3600HC20DDC01",
+    "product_name": "TLZGD416G3600HC20DDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 20,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G2666HC18H01",
+    "product_name": "TLZGD432G2666HC18H01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G2666HC18HDC01",
+    "product_name": "TLZGD432G2666HC18HDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3000HC16C01",
+    "product_name": "TLZGD432G3000HC16C01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3000HC16CDC01",
+    "product_name": "TLZGD432G3000HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3000HC16F01",
+    "product_name": "TLZGD432G3000HC16F01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3000HC16FDC01",
+    "product_name": "TLZGD432G3000HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3200HC16C01",
+    "product_name": "TLZGD432G3200HC16C01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3200HC16CDC01",
+    "product_name": "TLZGD432G3200HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3200HC16F01",
+    "product_name": "TLZGD432G3200HC16F01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3200HC16FDC01",
+    "product_name": "TLZGD432G3200HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3600HC14CDC01",
+    "product_name": "TLZGD432G3600HC14CDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 14,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3600HC18J01",
+    "product_name": "TLZGD432G3600HC18J01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD432G3600HC18JDC01",
+    "product_name": "TLZGD432G3600HC18JDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD464G2666HC18HDC01",
+    "product_name": "TLZGD464G2666HC18HDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD464G3000HC16CDC01",
+    "product_name": "TLZGD464G3000HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD464G3000HC16FDC01",
+    "product_name": "TLZGD464G3000HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD464G3200HC16CDC01",
+    "product_name": "TLZGD464G3200HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD464G3200HC16FDC01",
+    "product_name": "TLZGD464G3200HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZGD464G3600HC18JDC01",
+    "product_name": "TLZGD464G3600HC18JDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G2666HC18H01",
+    "product_name": "TLZRD416G2666HC18H01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G2666HC18HDC01",
+    "product_name": "TLZRD416G2666HC18HDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3000HC16C01",
+    "product_name": "TLZRD416G3000HC16C01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3000HC16CDC01",
+    "product_name": "TLZRD416G3000HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3000HC16F01",
+    "product_name": "TLZRD416G3000HC16F01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3000HC16FDC01",
+    "product_name": "TLZRD416G3000HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3200HC16C01",
+    "product_name": "TLZRD416G3200HC16C01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3200HC16CDC01",
+    "product_name": "TLZRD416G3200HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3200HC16F01",
+    "product_name": "TLZRD416G3200HC16F01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3200HC16FDC01",
+    "product_name": "TLZRD416G3200HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3600HC14CDC01",
+    "product_name": "TLZRD416G3600HC14CDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 14,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3600HC18J01",
+    "product_name": "TLZRD416G3600HC18J01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3600HC18JDC01",
+    "product_name": "TLZRD416G3600HC18JDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD416G3600HC20DDC01",
+    "product_name": "TLZRD416G3600HC20DDC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 20,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G2666HC18H01",
+    "product_name": "TLZRD432G2666HC18H01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G2666HC18HDC01",
+    "product_name": "TLZRD432G2666HC18HDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3000HC16C01",
+    "product_name": "TLZRD432G3000HC16C01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3000HC16CDC01",
+    "product_name": "TLZRD432G3000HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3000HC16F01",
+    "product_name": "TLZRD432G3000HC16F01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3000HC16FDC01",
+    "product_name": "TLZRD432G3000HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3200HC16C01",
+    "product_name": "TLZRD432G3200HC16C01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3200HC16CDC01",
+    "product_name": "TLZRD432G3200HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3200HC16F01",
+    "product_name": "TLZRD432G3200HC16F01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3200HC16FDC01",
+    "product_name": "TLZRD432G3200HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3600HC14CDC01",
+    "product_name": "TLZRD432G3600HC14CDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 14,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3600HC18J01",
+    "product_name": "TLZRD432G3600HC18J01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD432G3600HC18JDC01",
+    "product_name": "TLZRD432G3600HC18JDC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD464G2666HC18HDC01",
+    "product_name": "TLZRD464G2666HC18HDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 18,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD464G3000HC16CDC01",
+    "product_name": "TLZRD464G3000HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD464G3000HC16FDC01",
+    "product_name": "TLZRD464G3000HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD464G3200HC16CDC01",
+    "product_name": "TLZRD464G3200HC16CDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD464G3200HC16FDC01",
+    "product_name": "TLZRD464G3200HC16FDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TLZRD464G3600HC18JDC01",
+    "product_name": "TLZRD464G3600HC18JDC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G2133HC1501",
+    "product_name": "TPD416G2133HC1501",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2133,
+    "cas_latency": 15,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G2133HC15DC01",
+    "product_name": "TPD416G2133HC15DC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2133,
+    "cas_latency": 15,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G2133HC15QC01",
+    "product_name": "TPD416G2133HC15QC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2133,
+    "cas_latency": 15,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G2400HC1601",
+    "product_name": "TPD416G2400HC1601",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2400,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G2400HC16DC01",
+    "product_name": "TPD416G2400HC16DC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2400,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G2400HC16QC01",
+    "product_name": "TPD416G2400HC16QC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2400,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G2666HC1901",
+    "product_name": "TPD416G2666HC1901",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G2666HC19DC01",
+    "product_name": "TPD416G2666HC19DC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G2666HC19DC016",
+    "product_name": "TPD416G2666HC19DC016",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G2666HC19QC01",
+    "product_name": "TPD416G2666HC19QC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G3200HC2201",
+    "product_name": "TPD416G3200HC2201",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G3200HC22DC01",
+    "product_name": "TPD416G3200HC22DC01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD416G3200HC22DC016",
+    "product_name": "TPD416G3200HC22DC016",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD432G2133HC15DC01",
+    "product_name": "TPD432G2133HC15DC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2133,
+    "cas_latency": 15,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD432G2133HC15QC01",
+    "product_name": "TPD432G2133HC15QC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2133,
+    "cas_latency": 15,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD432G2400HC1601",
+    "product_name": "TPD432G2400HC1601",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2400,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD432G2400HC16DC01",
+    "product_name": "TPD432G2400HC16DC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2400,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD432G2400HC16QC01",
+    "product_name": "TPD432G2400HC16QC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2400,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD432G2666HC1901",
+    "product_name": "TPD432G2666HC1901",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD432G2666HC19DC01",
+    "product_name": "TPD432G2666HC19DC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD432G2666HC19QC01",
+    "product_name": "TPD432G2666HC19QC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD432G3200HC2201",
+    "product_name": "TPD432G3200HC2201",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD432G3200HC22DC01",
+    "product_name": "TPD432G3200HC22DC01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD464G2400HC16DC01",
+    "product_name": "TPD464G2400HC16DC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 2400,
+    "cas_latency": 16,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD464G2666HC19DC01",
+    "product_name": "TPD464G2666HC19DC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TPD464G3200HC22DC01",
+    "product_name": "TPD464G3200HC22DC01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TTCBD416G2666HC19-S01",
+    "product_name": "TTCBD416G2666HC19-S01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TTCBD416G2666HC19DC-S01",
+    "product_name": "TTCBD416G2666HC19DC-S01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TTCBD416G3200HC22-S01",
+    "product_name": "TTCBD416G3200HC22-S01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TTCBD416G3200HC22DC-S01",
+    "product_name": "TTCBD416G3200HC22DC-S01",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TTCBD432G2666HC19-S01",
+    "product_name": "TTCBD432G2666HC19-S01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TTCBD432G2666HC19DC-S01",
+    "product_name": "TTCBD432G2666HC19DC-S01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TTCBD432G3200HC22-S01",
+    "product_name": "TTCBD432G3200HC22-S01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TTCBD432G3200HC22DC-S01",
+    "product_name": "TTCBD432G3200HC22DC-S01",
+    "sticks": 1,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TTCBD464G2666HC19DC-S01",
+    "product_name": "TTCBD464G2666HC19DC-S01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  },
+  {
+    "brand": "teamgroup",
+    "part_number": "TTCBD464G3200HC22DC-S01",
+    "product_name": "TTCBD464G3200HC22DC-S01",
+    "sticks": 1,
+    "per_stick_gb": 64,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.teamgroupinc.com/en/product/compare/memory/"
+  }
+]

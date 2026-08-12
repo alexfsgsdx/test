@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import secrets
 import sys
 from dataclasses import dataclass
 from typing import Callable, Literal
@@ -422,8 +423,6 @@ def generate_report(spec: RamSpec, serial_salt: int | None = None) -> dict:
         )
 
     if serial_salt is None:
-        import secrets
-
         serial_salt = secrets.randbelow(0xFFFFFFFF)
 
     brands: dict[str, list[dict]] = {}

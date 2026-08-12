@@ -1,0 +1,290 @@
+[
+  {
+    "brand": "patriot",
+    "part_number": "PSD416G3200K",
+    "product_name": "Patriot DDR4 16GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSD432G3200K",
+    "product_name": "Patriot DDR4 32GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G2400KH1",
+    "product_name": "Patriot DDR4 16GB 2400",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 2400,
+    "cas_latency": 17,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G2666H1",
+    "product_name": "Patriot DDR4 16GB 2666",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G2666KH1",
+    "product_name": "Patriot DDR4 16GB 2666",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G3200H1",
+    "product_name": "Patriot DDR4 16GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G3200KH1",
+    "product_name": "Patriot DDR4 16GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP416G3600KH1",
+    "product_name": "Patriot DDR4 16GB 3600",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP432G2666KH1",
+    "product_name": "Patriot DDR4 32GB 2666",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP432G3200H1",
+    "product_name": "Patriot DDR4 32GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP432G3200KH1",
+    "product_name": "Patriot DDR4 32GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP432G3600KH1",
+    "product_name": "Patriot DDR4 32GB 3600",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP464G3200KH1",
+    "product_name": "Patriot DDR4 64GB 3200",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.patriotmemory.com/en/products/signature-line-premium-ddr4"
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PSP464G3600KH1",
+    "product_name": "Patriot DDR4 64GB 3600",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3600,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PV416G320C16K",
+    "product_name": "Patriot Viper DDR4 16GB 32000",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 32000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PV416G360C18K",
+    "product_name": "Patriot Viper DDR4 16GB 36000",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 36000,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PV432G320C16K",
+    "product_name": "Patriot Viper DDR4 32GB 32000",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 32000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "patriot",
+    "part_number": "PV432G360C18K",
+    "product_name": "Patriot Viper DDR4 32GB 36000",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 36000,
+    "cas_latency": 18,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": ""
+  }
+]

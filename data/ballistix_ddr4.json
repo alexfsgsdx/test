@@ -1,0 +1,50 @@
+[
+  {
+    "brand": "ballistix",
+    "part_number": "BLT2K8G4D30AET4K",
+    "product_name": "Ballistix Tactical Tracer RGB DDR4",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3000,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "ballistix",
+    "part_number": "BLT2K8G4D32AET4K",
+    "product_name": "Ballistix Tactical Tracer RGB DDR4",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  },
+  {
+    "brand": "ballistix",
+    "part_number": "BLT4K8G4D32AET4K",
+    "product_name": "Ballistix Tactical Tracer RGB DDR4",
+    "sticks": 4,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 16,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": true,
+    "form_factor": "dimm",
+    "source_url": ""
+  }
+]

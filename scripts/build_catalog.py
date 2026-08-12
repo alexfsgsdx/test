@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "catalog.json"
 DOCS = ROOT / "docs" / "catalog.json"
-VERIFIED = "2026-08-11"
+VERIFIED = "2026-08-12"
 
 
 def norm_profiles(raw) -> list[str]:

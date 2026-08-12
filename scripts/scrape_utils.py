@@ -59,12 +59,13 @@ def write_json(path: Path, items: list[dict]) -> None:
 
 
 def parse_gskill_spec(html: str, url: str) -> dict | None:
-    part_m = re.search(r"<h1[^>]*>(F5-[A-Z0-9-]+)</h1>", html)
+    part_m = re.search(r"<h1[^>]*>(F[45]-[A-Z0-9-]+)</h1>", html)
     if not part_m:
-        part_m = re.search(r"(F5-[A-Z0-9-]+)-Specification", url)
+        part_m = re.search(r"(F[45]-[A-Z0-9-]+)-Specification", url)
     if not part_m:
         return None
     part = part_m.group(1)
+    generation = 5 if part.upper().startswith("F5-") else 4
 
     def field(label: str) -> str | None:
         pat = rf'list-block list-tit">\s*{re.escape(label)}\s*</div>\s*<div class="list-block">\s*([^<]+)'
@@ -92,7 +93,7 @@ def parse_gskill_spec(html: str, url: str) -> dict | None:
 
     speed_m = re.search(r"(\d{4,5})", speed_raw.replace("*", ""))
     if not speed_m:
-        og = re.search(r'og:description" content="[^"]*DDR5-(\d{4,5})', html, re.I)
+        og = re.search(r'og:description" content="[^"]*DDR[45]-(\d{4,5})', html, re.I)
         if not og:
             return None
         speed_mts = int(og.group(1))
@@ -129,6 +130,7 @@ def parse_gskill_spec(html: str, url: str) -> dict | None:
         "product_name": product_name[:120],
         "sticks": stick_count,
         "per_stick_gb": per_stick_gb,
+        "generation": generation,
         "speed_mts": speed_mts,
         "cas_latency": cas,
         "profiles": profiles,

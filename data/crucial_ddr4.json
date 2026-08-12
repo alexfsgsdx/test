@@ -1,0 +1,194 @@
+[
+  {
+    "brand": "crucial",
+    "part_number": "CT16G4DFD832A",
+    "product_name": "Crucial DDR4 16GB 3200",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct16g4dfd832a"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT16G4DFRA266",
+    "product_name": "Crucial DDR4 16GB 2666",
+    "sticks": 1,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct16g4dfra266"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G4DFRA266",
+    "product_name": "Crucial DDR4 32GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k16g4dfra266"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G4DFRA32",
+    "product_name": "Crucial DDR4 32GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k16g4dfra32"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G4DFRA32A",
+    "product_name": "Crucial DDR4 32GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k16g4dfra32a"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G4DFRD2666",
+    "product_name": "Crucial DDR4 32GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k16g4dfrd2666"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K16G4SFD8266",
+    "product_name": "Crucial DDR4 32GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 16,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k16g4sfd8266"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K32G4DFD832A",
+    "product_name": "Crucial DDR4 64GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 32,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k32g4dfd832a"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K8G4DFRA32",
+    "product_name": "Crucial DDR4 16GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k8g4dfra32"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K8G4DFRA32A",
+    "product_name": "Crucial DDR4 16GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 3200,
+    "cas_latency": 22,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k8g4dfra32a"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT2K8G4DFRD2666",
+    "product_name": "Crucial DDR4 16GB Kit",
+    "sticks": 2,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "xmp"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct2k8g4dfrd2666"
+  },
+  {
+    "brand": "crucial",
+    "part_number": "CT8G4DFRA266",
+    "product_name": "Crucial DDR4 8GB 2666",
+    "sticks": 1,
+    "per_stick_gb": 8,
+    "generation": 4,
+    "speed_mts": 2666,
+    "cas_latency": 19,
+    "profiles": [
+      "jedec"
+    ],
+    "rgb": false,
+    "form_factor": "dimm",
+    "source_url": "https://www.crucial.com/memory/ddr4/ct8g4dfra266"
+  }
+]
