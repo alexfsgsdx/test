@@ -935,6 +935,92 @@
       font-style: italic;
     }
 
+    .ram-details-panel {
+      margin-top: 0.55rem;
+    }
+
+    .ram-details-panel > summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 0.45rem 0.6rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: color-mix(in srgb, var(--brand-color) 6%, var(--bg));
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .ram-details-panel > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .ram-details-panel > summary::before {
+      content: "▸ ";
+      color: var(--brand-color);
+      font-size: 0.8rem;
+    }
+
+    .ram-details-panel[open] > summary::before {
+      content: "▾ ";
+    }
+
+    .ram-details-panel > summary:hover {
+      border-color: var(--brand-color);
+    }
+
+    .ram-details-body {
+      margin-top: 0.45rem;
+      padding: 0.65rem 0.7rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+    }
+
+    .ram-details-section + .ram-details-section {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .ram-details-section-title {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-dim);
+      margin-bottom: 0.35rem;
+    }
+
+    .ram-details-grid {
+      display: grid;
+      grid-template-columns: minmax(7rem, 38%) 1fr;
+      gap: 0.25rem 0.75rem;
+      margin: 0;
+    }
+
+    .ram-details-grid dt {
+      margin: 0;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .ram-details-grid dd {
+      margin: 0;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      color: var(--text);
+      word-break: break-word;
+    }
+
+    .ram-details-notes {
+      margin: 0.75rem 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+
     /* Toast */
     .toast-container {
       position: fixed;
@@ -1399,6 +1485,41 @@
         return `hsl(${hue}, ${sat}%, ${light}%)`;
       }
 
+      function renderRamDetails(details, detailsId) {
+        if (!details) return "";
+
+        const sections = (details.sections || [])
+          .map(
+            (section) => `
+            <div class="ram-details-section">
+              <div class="ram-details-section-title">${escapeHtml(section.title)}</div>
+              <dl class="ram-details-grid">
+                ${(section.rows || [])
+                  .map(
+                    (row) => `
+                  <dt>${escapeHtml(row.label)}</dt>
+                  <dd>${escapeHtml(row.value)}</dd>`
+                  )
+                  .join("")}
+              </dl>
+            </div>`
+          )
+          .join("");
+
+        const notes = (details.notes || [])
+          .map((note) => `<li>${escapeHtml(note)}</li>`)
+          .join("");
+
+        return `
+          <details class="ram-details-panel" id="${escapeHtml(detailsId)}">
+            <summary>RAM details · ${escapeHtml(details.summary || "timing & module info")}</summary>
+            <div class="ram-details-body">
+              ${sections}
+              ${notes ? `<ul class="ram-details-notes">${notes}</ul>` : ""}
+            </div>
+          </details>`;
+      }
+
       /* ── renderSpdSerials: HTML for SPD assembly serial block ── */
       function renderSpdSerials(serials, accentColor) {
         if (!serials || serials.length === 0) return "";
@@ -1732,6 +1853,7 @@
         const parts = entries
           .map((entry) => {
             const pnId = `pn-${meta.id}-${hashCode(entry.part_number)}`;
+            const detailsId = `ram-${meta.id}-${hashCode(entry.part_number)}`;
             return `
               <div class="part-entry">
                 <div class="verified-row">
@@ -1744,6 +1866,7 @@
                 </div>
                 ${entry.product_name ? `<div class="product-name">${escapeHtml(entry.product_name)}</div>` : ""}
                 ${entry.label ? `<div class="part-label">${escapeHtml(entry.label)}</div>` : ""}
+                ${renderRamDetails(entry.ram_details, detailsId)}
                 ${entry.source_url ? `<a class="catalog-link" href="${escapeHtml(entry.source_url)}" target="_blank" rel="noopener noreferrer">View on manufacturer site</a>` : ""}
                 ${renderSpdSerials(entry.spd_serials, color)}
               </div>`;

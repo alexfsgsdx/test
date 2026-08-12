@@ -24,6 +24,7 @@ from catalog import (
     search_catalog,
 )
 from product_validation import validate_kit_spec, validation_to_dict, valid_speeds
+from ram_timings import build_ram_details
 from spd_serial import generate_spd_serials, spd_serial_to_dict, uses_null_spd_serial
 
 Profile = Literal["jedec", "xmp", "expo", "both"]
@@ -438,6 +439,31 @@ def catalog_product_to_spec(product: CatalogProduct) -> RamSpec:
     )
 
 
+def catalog_entry_ram_details(
+    product: CatalogProduct,
+    requested_profile: Profile,
+    spd_serials: list[dict] | None = None,
+) -> dict:
+    return build_ram_details(
+        brand=product.brand,
+        part_number=product.part_number,
+        product_name=product.product_name,
+        sticks=product.sticks,
+        per_stick_gb=product.per_stick_gb,
+        total_gb=product.total_gb,
+        generation=product.generation,
+        speed_mts=product.speed_mts,
+        cas_latency=product.cas_latency,
+        profiles=list(product.profiles),
+        requested_profile=requested_profile,
+        rgb=product.rgb,
+        ecc=product.ecc,
+        form_factor=product.form_factor,
+        verified=product.verified,
+        spd_serials=spd_serials,
+    )
+
+
 def _report_from_products(
     products: list[CatalogProduct],
     serial_salt: int,
@@ -482,10 +508,14 @@ def _report_from_products(
                 profiles=product.profiles,
                 verified=product.verified,
             )
+            serial_dicts = [spd_serial_to_dict(s) for s in serials]
             entries.append(
                 {
                     **base,
-                    "spd_serials": [spd_serial_to_dict(s) for s in serials],
+                    "spd_serials": serial_dicts,
+                    "ram_details": catalog_entry_ram_details(
+                        product, profile, serial_dicts
+                    ),
                 }
             )
 
@@ -658,10 +688,14 @@ def generate_report(
                 profiles=product.profiles,
                 verified=product.verified,
             )
+            serial_dicts = [spd_serial_to_dict(s) for s in serials]
             entries.append(
                 {
                     **base,
-                    "spd_serials": [spd_serial_to_dict(s) for s in serials],
+                    "spd_serials": serial_dicts,
+                    "ram_details": catalog_entry_ram_details(
+                        product, spec.profile, serial_dicts
+                    ),
                 }
             )
 

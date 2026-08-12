@@ -88,6 +88,8 @@ class TestCatalogLookup(unittest.TestCase):
             for entry in entries:
                 self.assertTrue(entry["catalog_confirmed"])
                 self.assertTrue(entry["source_url"])
+                self.assertIn("ram_details", entry)
+                self.assertIn("primary_timings", entry["ram_details"])
 
     def test_generate_report_rejects_unknown_config(self):
         spec = RamSpec(
@@ -134,6 +136,11 @@ class TestCatalogLookup(unittest.TestCase):
         self.assertEqual(
             report["brands"]["corsair"][0]["spd_serials"][0]["serial_number"],
             "0x00000000",
+        )
+        self.assertIn("ram_details", report["brands"]["corsair"][0])
+        self.assertEqual(
+            report["brands"]["corsair"][0]["ram_details"]["primary_timings"]["cl"],
+            32,
         )
 
     def test_generate_lookup_report_search(self):

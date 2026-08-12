@@ -2,6 +2,7 @@
  * RAM Part Number Generator — browser port for GitHub Pages.
  * Mirrors ram_part_number.py, product_validation.py, spd_serial.py
  */
+import { buildRamDetails } from "./timings.js";
 
 const DDR4_SPEEDS = [1600,1867,2133,2400,2667,2933,3000,3200,3600,3733,3866,4000,4133,4266,4400,4600,4800,5000,5100];
 const DDR5_SPEEDS = [4800,5200,5600,6000,6200,6400,6600,6800,7000,7200,7600,7800,8000,8200,8400,8600,8800,9000,9200];
@@ -587,6 +588,8 @@ async function reportFromProducts(products, serialSalt, lookupQuery = null, null
           product.verified,
         ),
       });
+      const last = enriched[enriched.length - 1];
+      last.ram_details = buildRamDetails(product, profile, last.spd_serials);
     }
     brands[id] = enriched;
     brand_meta.push({ id, name });
@@ -712,6 +715,12 @@ export async function generateReport(spec, options = {}) {
           product.verified,
         ),
       });
+      const last = enriched[enriched.length - 1];
+      last.ram_details = buildRamDetails(
+        { ...product, brand: id },
+        spec.profile,
+        last.spd_serials,
+      );
     }
     if (!enriched.length) continue;
     brands[id] = enriched;
@@ -759,17 +768,35 @@ export async function refreshReportSerials(report, serialSalt) {
   for (const meta of report.brand_meta) {
     const enriched = [];
     for (const entry of report.brands[meta.id]) {
+      const spd_serials = await generateSpdSerials(
+        meta.id,
+        entry.part_number,
+        spec.generation,
+        spec.sticks,
+        salt,
+        entry.profiles,
+        entry.verified,
+      );
+      const product = {
+        brand: meta.id,
+        part_number: entry.part_number,
+        product_name: entry.product_name,
+        sticks: spec.sticks,
+        per_stick_gb: spec.per_stick_gb,
+        total_gb: spec.total_gb,
+        generation: spec.generation,
+        speed_mts: spec.speed_mts,
+        cas_latency: spec.cas_latency,
+        profiles: entry.profiles,
+        rgb: spec.rgb,
+        ecc: spec.ecc,
+        form_factor: spec.form_factor,
+        verified: entry.verified,
+      };
       enriched.push({
         ...entry,
-        spd_serials: await generateSpdSerials(
-          meta.id,
-          entry.part_number,
-          spec.generation,
-          spec.sticks,
-          salt,
-          entry.profiles,
-          entry.verified,
-        ),
+        spd_serials,
+        ram_details: buildRamDetails(product, spec.profile, spd_serials),
       });
     }
     brands[meta.id] = enriched;
