@@ -6,6 +6,10 @@ Works on passnet-spd/Unsorted-SPD-Dumps and compatible .thp collections.
 
 Usage:
   python3 scripts/extract_thp_serials.py /path/to/dumps -o data/spd_dump_serials.csv
+
+Also writes per-generation CSVs next to the output path:
+  spd_dump_serials_ddr3.csv, spd_dump_serials_ddr4.csv, spd_dump_serials_ddr5.csv
+  spd_dump_serials_unknown.csv (failed THP decode)
 """
 
 from __future__ import annotations
@@ -110,6 +114,31 @@ def iter_thp(root: Path):
             yield path
 
 
+def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=CSV_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def write_split_csvs(output: Path, rows: list[dict[str, str]]) -> None:
+    stem = output.with_suffix("")
+    by_gen = {gen: [] for gen in GENERATIONS}
+    unknown: list[dict[str, str]] = []
+    for row in rows:
+        gen = row["generation"]
+        if gen in by_gen:
+            by_gen[gen].append(row)
+        else:
+            unknown.append(row)
+
+    for gen in GENERATIONS:
+        write_csv(stem.parent / f"{stem.name}_{gen.lower()}.csv", by_gen[gen])
+    write_csv(stem.parent / f"{stem.name}_unknown.csv", unknown)
+
+
+CSV_FIELDS = ["filename", "format", "generation", "serial_hex", "valid"]
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("dump_dir", type=Path, help="Directory containing .thp files")
