@@ -898,11 +898,13 @@
             <div class="field-row">
               <div class="field">
                 <label for="sticks">Sticks</label>
-                <input type="number" id="sticks" name="sticks" min="1" max="8" value="2" required>
+                <select id="sticks" name="sticks" required></select>
+                <p class="hint" id="sticksHint">Retail kits are usually 1, 2, or 4 modules</p>
               </div>
               <div class="field">
                 <label for="total_gb">Total GB</label>
-                <input type="number" id="total_gb" name="total_gb" min="1" value="32" required>
+                <select id="total_gb" name="total_gb" required></select>
+                <p class="hint" id="totalGbHint">Common kit sizes: 8–128 GB</p>
               </div>
             </div>
 
@@ -1018,7 +1020,7 @@
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
   <script type="module">
-    import { generateReport, refreshReportSerials, parseNaturalLanguage, specFromForm, validSpeeds, loadCatalog, catalogStats } from "./generator.js";
+    import { generateReport, refreshReportSerials, parseNaturalLanguage, specFromForm, validSpeeds, validStickCounts, validTotalGb, loadCatalog, catalogStats } from "./generator.js";
 
     (function () {
       "use strict";
@@ -1048,6 +1050,7 @@
       let activeTab = "form";
       let isLoading = false;
       let speedOptions = { 4: [], 5: [] };
+      let kitOptions = { sticks: [], totalGb: [] };
       let lastReport = null;
       let hasResults = false;
 
@@ -1160,8 +1163,8 @@
 
       /* ── Load example ── */
       function loadExampleForm() {
-        $("#sticks").value = EXAMPLE_FORM.sticks;
-        $("#total_gb").value = EXAMPLE_FORM.total_gb;
+        populateSticksSelect(EXAMPLE_FORM.sticks);
+        populateTotalGbSelect(EXAMPLE_FORM.sticks, EXAMPLE_FORM.total_gb);
         $("#generation").value = EXAMPLE_FORM.generation;
         $("#speed_mts").value = EXAMPLE_FORM.speed_mts;
         $(`input[name="profile"][value="${EXAMPLE_FORM.profile}"]`).checked = true;
@@ -1208,6 +1211,63 @@
         speedOptions[generation] = validSpeeds(generation);
         return speedOptions[generation];
       }
+
+      function loadKitOptions(sticks) {
+        kitOptions.sticks = validStickCounts();
+        kitOptions.totalGb = validTotalGb(sticks);
+        return kitOptions;
+      }
+
+      function populateSticksSelect(preferred) {
+        const sticks = kitOptions.sticks || [];
+        const select = $("#sticks");
+        select.innerHTML = sticks
+          .map((s) => `<option value="${s}">${s} module${s === 1 ? "" : "s"}</option>`)
+          .join("");
+        const pick =
+          preferred && sticks.includes(preferred)
+            ? preferred
+            : sticks.includes(2)
+              ? 2
+              : sticks[0];
+        if (pick) select.value = String(pick);
+        $("#sticksHint").textContent =
+          "Retail kits are usually 1, 2, or 4 modules — 8-stick kits are rare";
+      }
+
+      function populateTotalGbSelect(sticks, preferred) {
+        const totals = kitOptions.totalGb || [];
+        const select = $("#total_gb");
+        select.innerHTML = totals
+          .map((total) => {
+            const per = total / sticks;
+            const perLabel = sticks > 1 ? ` (${sticks}×${per} GB)` : "";
+            return `<option value="${total}">${total} GB${perLabel}</option>`;
+          })
+          .join("");
+        const pick =
+          preferred && totals.includes(preferred)
+            ? preferred
+            : totals.includes(32)
+              ? 32
+              : totals[0];
+        if (pick) select.value = String(pick);
+        $("#totalGbHint").textContent =
+          totals.length
+            ? `${totals.length} common size${totals.length === 1 ? "" : "s"} for ${sticks} module${sticks === 1 ? "" : "s"}`
+            : "No common kit sizes for this stick count";
+      }
+
+      function refreshTotalGbForSticks(sticks, preferred) {
+        loadKitOptions(sticks);
+        populateTotalGbSelect(sticks, preferred);
+      }
+
+      $("#sticks").addEventListener("change", () => {
+        const sticks = parseInt($("#sticks").value, 10);
+        const preferred = parseInt($("#total_gb").value, 10);
+        refreshTotalGbForSticks(sticks, preferred);
+      });
 
       function populateSpeedSelect(generation, preferred) {
         const speeds = speedOptions[generation] || [];
@@ -1457,6 +1517,12 @@
         speedOptions[4] = validSpeeds(4);
         speedOptions[5] = validSpeeds(5);
         populateSpeedSelect(parseInt($("#generation").value, 10), EXAMPLE_FORM.speed_mts);
+      })();
+
+      (function initKitOptions() {
+        loadKitOptions(EXAMPLE_FORM.sticks);
+        populateSticksSelect(EXAMPLE_FORM.sticks);
+        populateTotalGbSelect(EXAMPLE_FORM.sticks, EXAMPLE_FORM.total_gb);
       })();
     })();
   </script>

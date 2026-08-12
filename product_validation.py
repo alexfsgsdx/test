@@ -61,10 +61,13 @@ DDR5_NON_RETAIL_SPEEDS = frozenset({4000, 4400, 6400})  # 6400 is retail actuall
 DDR5_MIN_RETAIL = 4800
 
 # Common per-stick capacities for consumer kits.
-CONSUMER_PER_STICK_GB = frozenset({4, 8, 16, 24, 32, 48})
+CONSUMER_PER_STICK_GB = frozenset({4, 8, 16, 24, 32, 48, 64})
 
 # Typical total kit sizes at retail.
 COMMON_TOTAL_GB = frozenset({8, 16, 32, 48, 64, 96, 128})
+
+# Common module counts in retail kits.
+VALID_STICK_COUNTS = (1, 2, 4, 8)
 
 # Speeds where XMP/EXPO kits are commonly sold (not strict JEDEC-only bins).
 DDR4_OC_SPEEDS = frozenset({3000, 3200, 3600, 3733, 3866, 4000, 4133, 4266, 4400, 4600, 4800, 5000, 5100})
@@ -89,6 +92,22 @@ class ValidationResult:
 
 def valid_speeds(generation: Generation) -> list[int]:
     return list(DDR5_SPEEDS if generation == 5 else DDR4_SPEEDS)
+
+
+def valid_stick_counts() -> list[int]:
+    return list(VALID_STICK_COUNTS)
+
+
+def valid_total_gb(sticks: int | None = None) -> list[int]:
+    """Return common kit totals, optionally filtered for a stick count."""
+    totals = sorted(COMMON_TOTAL_GB)
+    if sticks is None:
+        return totals
+    return [
+        total
+        for total in totals
+        if total % sticks == 0 and (total // sticks) in CONSUMER_PER_STICK_GB
+    ]
 
 
 def nearest_valid_speed(generation: Generation, speed_mts: int) -> int:
@@ -145,7 +164,7 @@ def validate_kit_spec(
     if per_stick_gb not in CONSUMER_PER_STICK_GB:
         warnings.append(
             f"{per_stick_gb} GB per stick is uncommon. Most retail kits use "
-            f"4/8/16/24/32/48 GB modules."
+            f"4/8/16/24/32/48/64 GB modules."
         )
 
     if total_gb not in COMMON_TOTAL_GB:

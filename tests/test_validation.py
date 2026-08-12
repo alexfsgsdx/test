@@ -4,7 +4,13 @@ from __future__ import annotations
 
 import unittest
 
-from product_validation import nearest_valid_speed, validate_kit_spec, valid_speeds
+from product_validation import (
+    nearest_valid_speed,
+    validate_kit_spec,
+    valid_speeds,
+    valid_stick_counts,
+    valid_total_gb,
+)
 from ram_part_number import parse_natural_language, spec_from_form
 
 
@@ -37,6 +43,15 @@ class TestProductValidation(unittest.TestCase):
         self.assertIn(6000, speeds)
         self.assertNotIn(4000, speeds)
         self.assertEqual(nearest_valid_speed(5, 4000), 4800)
+
+    def test_valid_stick_counts(self):
+        sticks = valid_stick_counts()
+        self.assertEqual(sticks, [1, 2, 4, 8])
+
+    def test_valid_total_gb_filtered_by_sticks(self):
+        self.assertEqual(valid_total_gb(2), [8, 16, 32, 48, 64, 96, 128])
+        self.assertEqual(valid_total_gb(4), [16, 32, 64, 96, 128])
+        self.assertEqual(valid_total_gb(8), [32, 64, 128])
 
     def test_spec_from_form_rejects_bad_speed(self):
         with self.assertRaises(ValueError) as ctx:

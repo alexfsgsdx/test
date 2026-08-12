@@ -6,8 +6,9 @@
 const DDR4_SPEEDS = [1600,1867,2133,2400,2667,2933,3000,3200,3600,3733,3866,4000,4133,4266,4400,4600,4800,5000,5100];
 const DDR5_SPEEDS = [4800,5200,5600,6000,6200,6400,6600,6800,7000,7200,7600,7800,8000,8200,8400,8600,8800,9000,9200];
 const DDR5_MIN_RETAIL = 4800;
-const CONSUMER_PER_STICK_GB = new Set([4,8,16,24,32,48]);
+const CONSUMER_PER_STICK_GB = new Set([4,8,16,24,32,48,64]);
 const COMMON_TOTAL_GB = new Set([8,16,32,48,64,96,128]);
+const VALID_STICK_COUNTS = [1, 2, 4, 8];
 const DDR4_OC = new Set([3000,3200,3600,3733,3866,4000,4133,4266,4400,4600,4800,5000,5100]);
 const DDR5_OC = new Set([6000,6200,6400,6600,6800,7000,7200,7600,7800,8000,8200,8400,8600,8800,9000,9200]);
 const DDR4_JEDEC = new Set([1600,1867,2133,2400,2667,2933,3200]);
@@ -40,6 +41,18 @@ export function validSpeeds(generation) {
   return generation === 5 ? [...DDR5_SPEEDS] : [...DDR4_SPEEDS];
 }
 
+export function validStickCounts() {
+  return [...VALID_STICK_COUNTS];
+}
+
+export function validTotalGb(sticks = null) {
+  const totals = [...COMMON_TOTAL_GB].sort((a, b) => a - b);
+  if (sticks == null) return totals;
+  return totals.filter(
+    (total) => total % sticks === 0 && CONSUMER_PER_STICK_GB.has(total / sticks)
+  );
+}
+
 function nearestValidSpeed(generation, speed) {
   const speeds = validSpeeds(generation);
   return speeds.reduce((a, b) => Math.abs(b - speed) < Math.abs(a - speed) ? b : a);
@@ -69,7 +82,7 @@ export function validateKitSpec(spec) {
     errors.push(`DDR5 desktop kits rarely exist below ${DDR5_MIN_RETAIL} MT/s. You entered ${spec.speed_mts} MT/s.`);
   }
   if (!CONSUMER_PER_STICK_GB.has(perStick)) {
-    warnings.push(`${perStick} GB per stick is uncommon. Most retail kits use 4/8/16/24/32/48 GB modules.`);
+    warnings.push(`${perStick} GB per stick is uncommon. Most retail kits use 4/8/16/24/32/48/64 GB modules.`);
   }
   if (!COMMON_TOTAL_GB.has(spec.total_gb)) {
     warnings.push(`${spec.total_gb} GB total is an unusual kit size. Common kits: 8/16/32/48/64/96/128 GB.`);
