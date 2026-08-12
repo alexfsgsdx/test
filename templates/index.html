@@ -95,6 +95,97 @@
       height: 6px;
       border-radius: 50%;
       background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .catalog-status {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.35rem;
+      min-width: 200px;
+      max-width: min(280px, 100%);
+    }
+
+    .catalog-status-text {
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-align: right;
+      line-height: 1.3;
+    }
+
+    .catalog-status.ready .catalog-status-text {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(88, 166, 255, 0.12);
+      border: 1px solid rgba(88, 166, 255, 0.25);
+    }
+
+    .catalog-status.ready .catalog-status-text::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .catalog-status-progress {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+    }
+
+    .catalog-status.ready .catalog-status-progress {
+      display: none;
+    }
+
+    .catalog-status-track {
+      flex: 1;
+      height: 5px;
+      border-radius: 999px;
+      background: rgba(88, 166, 255, 0.15);
+      border: 1px solid rgba(88, 166, 255, 0.2);
+      overflow: hidden;
+    }
+
+    .catalog-status-bar {
+      height: 100%;
+      width: 0%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+      transition: width 0.12s ease-out;
+    }
+
+    .catalog-status-pct {
+      min-width: 2.75rem;
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-align: right;
+    }
+
+    .catalog-status.error .catalog-status-text {
+      color: var(--danger);
+      background: rgba(248, 81, 73, 0.1);
+      border: 1px solid rgba(248, 81, 73, 0.35);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+    }
+
+    .catalog-status.error .catalog-status-text::before {
+      display: none;
+    }
+
+    .catalog-status.error .catalog-status-progress {
+      display: none;
     }
 
     .layout {
@@ -792,6 +883,12 @@
         margin-top: 0.2rem;
       }
 
+      .catalog-status {
+        align-items: stretch;
+        width: 100%;
+        max-width: none;
+      }
+
       .panel-header,
       .panel-body,
       .results-body {
@@ -878,7 +975,15 @@
 <body>
   <header class="header">
     <h1>RAM Part Number Generator <span>manufacturer catalog lookup</span></h1>
-    <div class="brand-count-badge" id="brandCountBadge">Loading catalog…</div>
+    <div class="catalog-status" id="catalogStatus">
+      <div class="catalog-status-text" id="brandCountBadge">Loading catalog…</div>
+      <div class="catalog-status-progress" id="catalogProgressWrap">
+        <div class="catalog-status-track" aria-hidden="true">
+          <div class="catalog-status-bar" id="catalogProgressBar"></div>
+        </div>
+        <span class="catalog-status-pct" id="catalogProgressPct">0%</span>
+      </div>
+    </div>
   </header>
 
   <div class="layout">
@@ -1051,6 +1156,7 @@
       let kitOptions = { sticks: [], totalGb: [] };
       let lastPayload = null;
       let hasResults = false;
+      let catalogReady = false;
 
       function newSerialSalt() {
         return (Date.now() ^ Math.floor(Math.random() * 0xFFFFFFFF)) >>> 0;
@@ -1071,6 +1177,99 @@
       const btnExampleQuick = $("#btnExampleQuick");
       const btnSeriesRefresh = $("#btnSeriesRefresh");
       const btnSeriesRefreshQuick = $("#btnSeriesRefreshQuick");
+      const catalogStatus = $("#catalogStatus");
+      const catalogProgressBar = $("#catalogProgressBar");
+      const catalogProgressPct = $("#catalogProgressPct");
+
+      function setCatalogLoadingUi(enabled) {
+        catalogReady = !enabled;
+        btnGenerate.disabled = enabled || isLoading;
+        btnGenerateQuick.disabled = enabled || isLoading;
+      }
+
+      function updateCatalogProgress({ percent, phase }) {
+        catalogStatus.classList.remove("ready", "error");
+        $("#catalogProgressWrap").hidden = false;
+
+        if (phase === "parse") {
+          brandCountBadge.textContent = "Parsing catalog…";
+          catalogProgressBar.style.width = "96%";
+          catalogProgressPct.textContent = "96%";
+          return;
+        }
+
+        if (phase === "ready") {
+          catalogStatus.classList.add("ready");
+          catalogProgressBar.style.width = "100%";
+          catalogProgressPct.textContent = "100%";
+          return;
+        }
+
+        brandCountBadge.textContent = "Loading catalog…";
+        catalogProgressBar.style.width = `${percent}%`;
+        catalogProgressPct.textContent = `${percent}%`;
+      }
+
+      function setCatalogReady(productCount) {
+        catalogReady = true;
+        updateCatalogProgress({ percent: 100, phase: "ready" });
+        brandCountBadge.textContent = `${productCount} verified SKUs`;
+        if (!isLoading) {
+          btnGenerate.disabled = false;
+          btnGenerateQuick.disabled = false;
+        }
+      }
+
+      function setCatalogError(message) {
+        catalogReady = false;
+        catalogStatus.classList.add("error");
+        brandCountBadge.textContent = message;
+        btnGenerate.disabled = true;
+        btnGenerateQuick.disabled = true;
+      }
+
+      async function fetchJsonWithProgress(url, onProgress) {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error("Failed to load verified product catalog.");
+
+        const total = parseInt(res.headers.get("Content-Length") || "0", 10);
+        const reader = res.body?.getReader();
+
+        if (!reader) {
+          onProgress?.({ percent: 50, phase: "download" });
+          const data = await res.json();
+          onProgress?.({ percent: 100, phase: "ready" });
+          return data;
+        }
+
+        const chunks = [];
+        let received = 0;
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          chunks.push(value);
+          received += value.length;
+          let percent;
+          if (total > 0) {
+            percent = Math.min(92, Math.round((received / total) * 92));
+          } else {
+            percent = Math.min(85, Math.round((received / 1600000) * 85));
+          }
+          onProgress?.({ percent, phase: "download", received, total: total || null });
+        }
+
+        onProgress?.({ percent: 96, phase: "parse" });
+        const merged = new Uint8Array(received);
+        let offset = 0;
+        for (const chunk of chunks) {
+          merged.set(chunk, offset);
+          offset += chunk.length;
+        }
+        const text = new TextDecoder().decode(merged);
+        const data = JSON.parse(text);
+        onProgress?.({ percent: 100, phase: "ready" });
+        return data;
+      }
 
       /* ── brandColor: deterministic hue from brand id hash ── */
       function brandColor(brandId) {
@@ -1444,8 +1643,8 @@
       function setLoading(loading) {
         isLoading = loading;
         document.body.classList.toggle("loading", loading);
-        btnGenerate.disabled = loading;
-        btnGenerateQuick.disabled = loading;
+        btnGenerate.disabled = loading || !catalogReady;
+        btnGenerateQuick.disabled = loading || !catalogReady;
         if (loading) {
           btnSeriesRefresh.disabled = true;
           btnSeriesRefreshQuick.disabled = true;
@@ -1518,12 +1717,13 @@
       });
 
       (async function initCatalog() {
+        setCatalogLoadingUi(true);
+        updateCatalogProgress({ percent: 0, phase: "download" });
         try {
-          const res = await fetch("/api/catalog-stats");
-          const data = await res.json();
-          if (data.ok) brandCountBadge.textContent = `${data.product_count} verified SKUs`;
+          const catalog = await fetchJsonWithProgress("/api/catalog", updateCatalogProgress);
+          setCatalogReady(catalog.products?.length || 0);
         } catch {
-          brandCountBadge.textContent = "Catalog unavailable";
+          setCatalogError("Catalog unavailable");
         }
       })();
 

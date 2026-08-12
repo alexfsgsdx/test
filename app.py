@@ -3,9 +3,9 @@
 
 from __future__ import annotations
 
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, send_file
 
-from catalog import catalog_stats
+from catalog import CATALOG_PATH, catalog_stats
 from product_validation import valid_speeds, valid_stick_counts, valid_total_gb
 from ram_part_number import generate_report, parse_natural_language, spec_from_form
 
@@ -20,6 +20,11 @@ def index():
 @app.get("/api/catalog-stats")
 def api_catalog_stats():
     return jsonify({"ok": True, **catalog_stats()})
+
+
+@app.get("/api/catalog")
+def api_catalog():
+    return send_file(CATALOG_PATH, mimetype="application/json")
 
 
 @app.get("/api/valid-speeds")

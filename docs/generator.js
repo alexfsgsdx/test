@@ -263,13 +263,74 @@ const BRAND_REGISTRY = [
 ];
 
 let catalogCache = null;
+let catalogLoadPromise = null;
 
-export async function loadCatalog() {
-  if (catalogCache) return catalogCache;
-  const res = await fetch(new URL("./catalog.json", import.meta.url));
+async function fetchJsonWithProgress(url, onProgress) {
+  const res = await fetch(url);
   if (!res.ok) throw new Error("Failed to load verified product catalog.");
-  catalogCache = await res.json();
-  return catalogCache;
+
+  const total = parseInt(res.headers.get("Content-Length") || "0", 10);
+  const reader = res.body?.getReader();
+
+  if (!reader) {
+    onProgress?.({ percent: 50, phase: "download" });
+    const data = await res.json();
+    onProgress?.({ percent: 100, phase: "ready" });
+    return data;
+  }
+
+  const chunks = [];
+  let received = 0;
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    chunks.push(value);
+    received += value.length;
+    let percent;
+    if (total > 0) {
+      percent = Math.min(92, Math.round((received / total) * 92));
+    } else {
+      percent = Math.min(85, Math.round((received / 1600000) * 85));
+    }
+    onProgress?.({ percent, phase: "download", received, total: total || null });
+  }
+
+  onProgress?.({ percent: 96, phase: "parse" });
+  const merged = new Uint8Array(received);
+  let offset = 0;
+  for (const chunk of chunks) {
+    merged.set(chunk, offset);
+    offset += chunk.length;
+  }
+  const text = new TextDecoder().decode(merged);
+  const data = JSON.parse(text);
+  onProgress?.({ percent: 100, phase: "ready" });
+  return data;
+}
+
+export async function loadCatalog(options = {}) {
+  const { onProgress } = options;
+  if (catalogCache) {
+    onProgress?.({ percent: 100, phase: "ready" });
+    return catalogCache;
+  }
+  if (!catalogLoadPromise) {
+    const url = new URL("./catalog.json", import.meta.url);
+    catalogLoadPromise = fetchJsonWithProgress(url, onProgress)
+      .then((data) => {
+        catalogCache = data;
+        return data;
+      })
+      .catch((err) => {
+        catalogLoadPromise = null;
+        throw err;
+      });
+  } else if (onProgress) {
+    onProgress({ percent: 72, phase: "download" });
+  }
+  const data = await catalogLoadPromise;
+  onProgress?.({ percent: 100, phase: "ready" });
+  return data;
 }
 
 export function catalogStats(catalog) {
