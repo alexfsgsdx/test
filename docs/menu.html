@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlay Menu · UI mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #07090d;
+      --panel: #10141c;
+      --panel-2: #161c27;
+      --line: #263044;
+      --text: #e8eef8;
+      --muted: #8b97ab;
+      --dim: #5d6a80;
+      --accent: #3ee0b2;
+      --accent-dim: rgba(62, 224, 178, 0.16);
+      --danger: #ff6b7a;
+      --warn: #f0c14a;
+      --team: #5aa8ff;
+      --shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      overflow: hidden;
+    }
+
+    .scene {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(1200px 600px at 50% 110%, rgba(62, 224, 178, 0.08), transparent 60%),
+        linear-gradient(180deg, #0b1018 0%, #0a0e14 40%, #121820 100%);
+    }
+
+    .grid-floor {
+      position: absolute;
+      inset: 42% 0 0;
+      background-image:
+        linear-gradient(rgba(62, 224, 178, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(62, 224, 178, 0.08) 1px, transparent 1px);
+      background-size: 48px 48px;
+      transform: perspective(500px) rotateX(62deg);
+      transform-origin: top;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
+    }
+
+    .horizon {
+      position: absolute;
+      left: 0; right: 0; top: 42%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(62, 224, 178, 0.35), transparent);
+    }
+
+    .hint {
+      position: fixed;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
+
+    .hint kbd {
+      display: inline-block;
+      padding: 2px 6px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      color: var(--accent);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 11px;
+    }
+
+    .fov-ring {
+      position: absolute;
+      left: 50%;
+      top: 46%;
+      width: var(--fov-px, 220px);
+      height: var(--fov-px, 220px);
+      border: 1px dashed rgba(62, 224, 178, 0.45);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      display: none;
+    }
+
+    .fov-ring.on { display: block; }
+
+    .crosshair {
+      position: absolute;
+      left: 50%;
+      top: 46%;
+      width: 12px;
+      height: 12px;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .crosshair::before, .crosshair::after {
+      content: "";
+      position: absolute;
+      background: rgba(232, 238, 248, 0.7);
+    }
+
+    .crosshair::before { left: 5px; top: 0; width: 2px; height: 12px; }
+    .crosshair::after { left: 0; top: 5px; width: 12px; height: 2px; }
+
+    .dummy {
+      position: absolute;
+      transform: translate(-50%, -100%);
+      pointer-events: none;
+    }
+
+    .dummy .body {
+      width: 28px;
+      height: 72px;
+      border-radius: 14px 14px 6px 6px;
+      background: linear-gradient(180deg, #3a4658, #232b38);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+    }
+
+    .dummy.team .body { background: linear-gradient(180deg, #3d6ea8, #243a58); }
+    .dummy.down .body { opacity: 0.35; }
+
+    .esp-box {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 42px;
+      height: 86px;
+      transform: translateX(-50%);
+      border: 1px solid transparent;
+      display: none;
+    }
+
+    .esp-box.full { border-style: solid; }
+    .esp-box.corner {
+      border: none;
+      background:
+        linear-gradient(var(--esp), var(--esp)) top left / 8px 1px no-repeat,
+        linear-gradient(var(--esp), var(--esp)) top left / 1px 8px no-repeat,
+        linear-gradient(var(--esp), var(--esp)) top right / 8px 1px no-repeat,
+        linear-gradient(var(--esp), var(--esp)) top right / 1px 8px no-repeat,
+        linear-gradient(var(--esp), var(--esp)) bottom left / 8px 1px no-repeat,
+        linear-gradient(var(--esp), var(--esp)) bottom left / 1px 8px no-repeat,
+        linear-gradient(var(--esp), var(--esp)) bottom right / 8px 1px no-repeat,
+        linear-gradient(var(--esp), var(--esp)) bottom right / 1px 8px no-repeat;
+    }
+
+    .show-boxes .esp-box { display: block; }
+
+    .esp-name, .esp-dist {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px;
+      white-space: nowrap;
+      display: none;
+      text-shadow: 0 1px 4px #000;
+    }
+
+    .esp-name { top: -18px; color: var(--text); }
+    .esp-dist { bottom: -16px; color: var(--muted); }
+    .show-names .esp-name { display: block; }
+    .show-dist .esp-dist { display: block; }
+
+    .hp {
+      position: absolute;
+      left: -6px;
+      top: 0;
+      width: 3px;
+      height: 86px;
+      background: rgba(0,0,0,0.45);
+      display: none;
+    }
+
+    .hp span {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      background: #3ee0b2;
+    }
+
+    .show-hp .hp { display: block; }
+
+    .snap {
+      position: absolute;
+      left: 50%;
+      top: 46%;
+      width: 1px;
+      background: rgba(62, 224, 178, 0.28);
+      transform-origin: top center;
+      display: none;
+      pointer-events: none;
+    }
+
+    .show-snaps .snap { display: block; }
+
+    .panel {
+      position: fixed;
+      top: 86px;
+      left: 64px;
+      width: 520px;
+      max-width: calc(100vw - 32px);
+      background: linear-gradient(180deg, rgba(22, 28, 39, 0.96), rgba(16, 20, 28, 0.96));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      z-index: 10;
+      overflow: hidden;
+      backdrop-filter: blur(16px);
+    }
+
+    .panel.hidden { display: none; }
+
+    .titlebar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      cursor: grab;
+      user-select: none;
+    }
+
+    .titlebar:active { cursor: grabbing; }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mark {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      background: var(--accent-dim);
+      border: 1px solid rgba(62, 224, 178, 0.4);
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 13px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--dim);
+      letter-spacing: 0.08em;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .badge {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px;
+      color: var(--accent);
+      border: 1px solid rgba(62, 224, 178, 0.35);
+      padding: 3px 7px;
+      border-radius: 999px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 128px 1fr;
+      min-height: 360px;
+    }
+
+    .nav {
+      border-right: 1px solid var(--line);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: rgba(0,0,0,0.18);
+    }
+
+    .nav button {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      text-align: left;
+      padding: 10px 10px;
+      border-radius: 8px;
+      font: inherit;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .nav button:hover { background: rgba(255,255,255,0.04); color: var(--text); }
+    .nav button.active {
+      background: var(--accent-dim);
+      color: var(--accent);
+    }
+
+    .page { display: none; padding: 16px 18px 18px; }
+    .page.active { display: block; }
+
+    .page h2 {
+      margin: 0 0 14px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 34px;
+      margin-bottom: 8px;
+    }
+
+    .row label { font-size: 13px; color: var(--text); }
+
+    .toggle {
+      width: 36px;
+      height: 20px;
+      border-radius: 999px;
+      background: #2a3344;
+      border: 1px solid var(--line);
+      position: relative;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .toggle.on { background: var(--accent); border-color: var(--accent); }
+    .toggle i {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      transition: left 0.16s ease;
+    }
+    .toggle.on i { left: 18px; }
+
+    .slider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 210px;
+    }
+
+    .slider input[type="range"] {
+      flex: 1;
+      accent-color: var(--accent);
+    }
+
+    .slider output {
+      width: 36px;
+      text-align: right;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    select, .search {
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 6px 8px;
+      font: inherit;
+      font-size: 12px;
+    }
+
+    .colors {
+      display: flex;
+      gap: 8px;
+    }
+
+    .colors input[type="color"] {
+      width: 28px;
+      height: 22px;
+      border: 1px solid var(--line);
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .stat {
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--dim);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .stat b {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    th {
+      text-align: left;
+      color: var(--dim);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 10px;
+      padding: 0 6px 8px;
+    }
+
+    td {
+      padding: 7px 6px;
+      border-top: 1px solid rgba(38, 48, 68, 0.7);
+      font-family: "IBM Plex Mono", monospace;
+    }
+
+    tr.selected td { background: var(--accent-dim); color: var(--accent); }
+    tr { cursor: pointer; }
+    .team { color: var(--team); }
+    .enemy { color: var(--danger); }
+    .down { color: var(--dim); }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 14px;
+      border-top: 1px solid var(--line);
+      color: var(--dim);
+      font-size: 11px;
+      letter-spacing: 0.04em;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    @media (max-width: 640px) {
+      .panel { left: 16px; top: 72px; width: calc(100vw - 32px); }
+      .layout { grid-template-columns: 1fr; }
+      .nav { flex-direction: row; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--line); }
+      .slider { width: 150px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scene" id="scene">
+    <div class="grid-floor"></div>
+    <div class="horizon"></div>
+    <div class="fov-ring" id="fovRing"></div>
+    <div class="crosshair"></div>
+    <div class="snap" id="snap0"></div>
+    <div class="snap" id="snap1"></div>
+    <div class="snap" id="snap2"></div>
+    <div class="snap" id="snap3"></div>
+    <div class="dummy enemy" style="left: 38%; top: 48%;" data-i="0">
+      <div class="esp-box full"></div>
+      <div class="esp-name">VEX_9</div>
+      <div class="hp"><span style="height: 78%"></span></div>
+      <div class="body"></div>
+      <div class="esp-dist">34m</div>
+    </div>
+    <div class="dummy team" style="left: 57%; top: 50%;" data-i="1">
+      <div class="esp-box full"></div>
+      <div class="esp-name">MIRA</div>
+      <div class="hp"><span style="height: 94%"></span></div>
+      <div class="body"></div>
+      <div class="esp-dist">21m</div>
+    </div>
+    <div class="dummy enemy" style="left: 68%; top: 44%;" data-i="2">
+      <div class="esp-box full"></div>
+      <div class="esp-name">KITE</div>
+      <div class="hp"><span style="height: 41%"></span></div>
+      <div class="body"></div>
+      <div class="esp-dist">57m</div>
+    </div>
+    <div class="dummy enemy down" style="left: 46%; top: 55%;" data-i="3">
+      <div class="esp-box full"></div>
+      <div class="esp-name">NOVA</div>
+      <div class="hp"><span style="height: 0%"></span></div>
+      <div class="body"></div>
+      <div class="esp-dist">12m</div>
+    </div>
+  </div>
+
+  <div class="hint">Press <kbd>INSERT</kbd> to toggle menu · visual mockup only</div>
+
+  <div class="panel" id="panel" role="dialog" aria-label="Overlay menu mockup">
+    <div class="titlebar" id="titlebar">
+      <div class="brand">
+        <div class="mark">S</div>
+        <div>
+          <h1>Spectra</h1>
+          <small>Menu mockup · demo data</small>
+        </div>
+      </div>
+      <span class="badge">UI ONLY</span>
+    </div>
+
+    <div class="layout">
+      <nav class="nav" aria-label="Sections">
+        <button class="active" data-tab="aim">Aim</button>
+        <button data-tab="esp">ESP</button>
+        <button data-tab="info">Info</button>
+        <button data-tab="list">Playerlist</button>
+      </nav>
+
+      <div>
+        <section class="page active" id="aim">
+          <h2>Aim</h2>
+          <div class="row"><label>Enable</label><button class="toggle" id="aimEnable" aria-pressed="false"><i></i></button></div>
+          <div class="row">
+            <label>Field of view</label>
+            <div class="slider"><input type="range" id="fov" min="10" max="180" value="82"><output id="fovOut">82</output></div>
+          </div>
+          <div class="row">
+            <label>Smoothness</label>
+            <div class="slider"><input type="range" id="smooth" min="1" max="30" value="12"><output id="smoothOut">12</output></div>
+          </div>
+          <div class="row">
+            <label>Target bone</label>
+            <select id="bone">
+              <option>Head</option>
+              <option>Chest</option>
+              <option>Closest</option>
+            </select>
+          </div>
+          <div class="row"><label>Visibility check</label><button class="toggle" id="vis" aria-pressed="false"><i></i></button></div>
+          <div class="row"><label>Humanize</label><button class="toggle on" id="human" aria-pressed="true"><i></i></button></div>
+          <div class="row"><label>Draw FOV</label><button class="toggle" id="drawFov" aria-pressed="false"><i></i></button></div>
+        </section>
+
+        <section class="page" id="esp">
+          <h2>ESP</h2>
+          <div class="row"><label>Boxes</label><button class="toggle" id="boxes" aria-pressed="false"><i></i></button></div>
+          <div class="row">
+            <label>Box style</label>
+            <select id="boxStyle">
+              <option value="full">Full</option>
+              <option value="corner">Corner</option>
+            </select>
+          </div>
+          <div class="row"><label>Names</label><button class="toggle" id="names" aria-pressed="false"><i></i></button></div>
+          <div class="row"><label>Health</label><button class="toggle" id="hp" aria-pressed="false"><i></i></button></div>
+          <div class="row"><label>Distance</label><button class="toggle" id="dist" aria-pressed="false"><i></i></button></div>
+          <div class="row"><label>Snaplines</label><button class="toggle" id="snaps" aria-pressed="false"><i></i></button></div>
+          <div class="row">
+            <label>Colors</label>
+            <div class="colors">
+              <input type="color" id="enemyColor" value="#ff6b7a" title="Enemy">
+              <input type="color" id="teamColor" value="#5aa8ff" title="Team">
+            </div>
+          </div>
+        </section>
+
+        <section class="page" id="info">
+          <h2>Info</h2>
+          <div class="stats">
+            <div class="stat"><span>Build</span><b>demo-ui.1</b></div>
+            <div class="stat"><span>FPS</span><b id="fps">144</b></div>
+            <div class="stat"><span>Ping</span><b>32 ms</b></div>
+            <div class="stat"><span>Session</span><b id="session">00:00</b></div>
+          </div>
+          <p class="note">
+            This is a standalone overlay menu. Toggles only change this page.
+            There is no process attach, memory read, or aim lock — dummy figures
+            on the backdrop are placeholders so the layout is visible.
+          </p>
+        </section>
+
+        <section class="page" id="list">
+          <h2>Playerlist</h2>
+          <div class="row">
+            <label>Filter</label>
+            <input class="search" id="filter" placeholder="name…">
+          </div>
+          <table>
+            <thead>
+              <tr><th>Name</th><th>Side</th><th>HP</th><th>Dist</th><th>State</th></tr>
+            </thead>
+            <tbody id="players"></tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span><span class="dot"></span>local preview</span>
+      <span>drag title · insert hides</span>
+    </div>
+  </div>
+
+  <script>
+    const PLAYERS = [
+      { name: "VEX_9", side: "Enemy", hp: 78, dist: 34, state: "Alive" },
+      { name: "MIRA", side: "Team", hp: 94, dist: 21, state: "Alive" },
+      { name: "KITE", side: "Enemy", hp: 41, dist: 57, state: "Alive" },
+      { name: "NOVA", side: "Enemy", hp: 0, dist: 12, state: "Down" },
+      { name: "DRIFT", side: "Team", hp: 100, dist: 8, state: "Alive" },
+      { name: "HALO", side: "Enemy", hp: 63, dist: 73, state: "Alive" },
+    ];
+
+    const scene = document.getElementById("scene");
+    const panel = document.getElementById("panel");
+    const fovRing = document.getElementById("fovRing");
+    const started = Date.now();
+    let selected = "VEX_9";
+
+    document.querySelectorAll(".nav button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".nav button").forEach((b) => b.classList.remove("active"));
+        document.querySelectorAll(".page").forEach((p) => p.classList.remove("active"));
+        btn.classList.add("active");
+        document.getElementById(btn.dataset.tab).classList.add("active");
+      });
+    });
+
+    function bindToggle(id, onChange) {
+      const el = document.getElementById(id);
+      el.addEventListener("click", () => {
+        const on = !el.classList.contains("on");
+        el.classList.toggle("on", on);
+        el.setAttribute("aria-pressed", String(on));
+        onChange?.(on);
+      });
+    }
+
+    bindToggle("aimEnable");
+    bindToggle("vis");
+    bindToggle("human");
+    bindToggle("drawFov", (on) => fovRing.classList.toggle("on", on));
+    bindToggle("boxes", (on) => scene.classList.toggle("show-boxes", on));
+    bindToggle("names", (on) => scene.classList.toggle("show-names", on));
+    bindToggle("hp", (on) => scene.classList.toggle("show-hp", on));
+    bindToggle("dist", (on) => scene.classList.toggle("show-dist", on));
+    bindToggle("snaps", (on) => scene.classList.toggle("show-snaps", on));
+
+    const fov = document.getElementById("fov");
+    const fovOut = document.getElementById("fovOut");
+    const setFov = () => {
+      fovOut.textContent = fov.value;
+      const px = 80 + Number(fov.value) * 2.2;
+      fovRing.style.setProperty("--fov-px", px + "px");
+    };
+    fov.addEventListener("input", setFov);
+    setFov();
+
+    const smooth = document.getElementById("smooth");
+    const smoothOut = document.getElementById("smoothOut");
+    smooth.addEventListener("input", () => { smoothOut.textContent = smooth.value; });
+
+    document.getElementById("boxStyle").addEventListener("change", (e) => {
+      document.querySelectorAll(".esp-box").forEach((box) => {
+        box.classList.toggle("full", e.target.value === "full");
+        box.classList.toggle("corner", e.target.value === "corner");
+      });
+    });
+
+    function paintEspColors() {
+      const enemy = document.getElementById("enemyColor").value;
+      const team = document.getElementById("teamColor").value;
+      document.querySelectorAll(".dummy").forEach((d) => {
+        const color = d.classList.contains("team") ? team : enemy;
+        d.style.setProperty("--esp", color);
+        d.querySelector(".esp-box").style.borderColor = color;
+        d.querySelector(".esp-name").style.color = color;
+      });
+    }
+    document.getElementById("enemyColor").addEventListener("input", paintEspColors);
+    document.getElementById("teamColor").addEventListener("input", paintEspColors);
+    paintEspColors();
+
+    function placeSnaps() {
+      document.querySelectorAll(".dummy").forEach((d, i) => {
+        const snap = document.getElementById("snap" + i);
+        if (!snap) return;
+        const r = d.getBoundingClientRect();
+        const x = r.left + r.width / 2;
+        const y = r.top;
+        const cx = window.innerWidth / 2;
+        const cy = window.innerHeight * 0.46;
+        const dx = x - cx;
+        const dy = y - cy;
+        const len = Math.hypot(dx, dy);
+        const ang = Math.atan2(dy, dx) * 180 / Math.PI - 90;
+        snap.style.height = len + "px";
+        snap.style.transform = `rotate(${ang}deg)`;
+      });
+    }
+    placeSnaps();
+    window.addEventListener("resize", placeSnaps);
+
+    function renderPlayers() {
+      const q = document.getElementById("filter").value.toLowerCase();
+      const body = document.getElementById("players");
+      body.innerHTML = PLAYERS.filter((p) => p.name.toLowerCase().includes(q)).map((p) => {
+        const sideClass = p.side === "Team" ? "team" : "enemy";
+        const stateClass = p.state === "Down" ? "down" : "";
+        const sel = p.name === selected ? "selected" : "";
+        return `<tr class="${sel} ${stateClass}" data-name="${p.name}">
+          <td>${p.name}</td>
+          <td class="${sideClass}">${p.side}</td>
+          <td>${p.hp}</td>
+          <td>${p.dist}m</td>
+          <td>${p.state}</td>
+        </tr>`;
+      }).join("");
+      body.querySelectorAll("tr").forEach((row) => {
+        row.addEventListener("click", () => {
+          selected = row.dataset.name;
+          renderPlayers();
+        });
+      });
+    }
+    document.getElementById("filter").addEventListener("input", renderPlayers);
+    renderPlayers();
+
+    setInterval(() => {
+      document.getElementById("fps").textContent = String(138 + Math.round(Math.random() * 8));
+      const s = Math.floor((Date.now() - started) / 1000);
+      const mm = String(Math.floor(s / 60)).padStart(2, "0");
+      const ss = String(s % 60).padStart(2, "0");
+      document.getElementById("session").textContent = `${mm}:${ss}`;
+    }, 1000);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Insert") {
+        e.preventDefault();
+        panel.classList.toggle("hidden");
+      }
+    });
+
+    const bar = document.getElementById("titlebar");
+    let drag = null;
+    bar.addEventListener("mousedown", (e) => {
+      const r = panel.getBoundingClientRect();
+      drag = { x: e.clientX - r.left, y: e.clientY - r.top };
+    });
+    window.addEventListener("mouseup", () => { drag = null; });
+    window.addEventListener("mousemove", (e) => {
+      if (!drag) return;
+      panel.style.left = Math.max(8, e.clientX - drag.x) + "px";
+      panel.style.top = Math.max(8, e.clientY - drag.y) + "px";
+    });
+  </script>
+</body>
+</html>
