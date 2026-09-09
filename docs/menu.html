@@ -396,6 +396,35 @@
       font-size: 12px;
     }
 
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .chip {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font: inherit;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .chip:hover { color: var(--text); }
+    .chip.on {
+      background: var(--accent-dim);
+      border-color: rgba(62, 224, 178, 0.4);
+      color: var(--accent);
+    }
+
     .colors {
       display: flex;
       gap: 8px;
@@ -631,7 +660,12 @@
           <h2>Playerlist</h2>
           <div class="row">
             <label>Filter</label>
-            <input class="search" id="filter" placeholder="name…">
+            <div class="filters">
+              <button type="button" class="chip on" data-side="all">All</button>
+              <button type="button" class="chip" data-side="Team">Team</button>
+              <button type="button" class="chip" data-side="Enemy">Enemy</button>
+              <input class="search" id="filter" type="search" placeholder="name…" autocomplete="off">
+            </div>
           </div>
           <table>
             <thead>
@@ -664,6 +698,7 @@
     const fovRing = document.getElementById("fovRing");
     const started = Date.now();
     let selected = "VEX_9";
+    let sideFilter = "all";
 
     document.querySelectorAll(".nav button").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -749,10 +784,23 @@
     placeSnaps();
     window.addEventListener("resize", placeSnaps);
 
+    document.querySelectorAll(".chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        sideFilter = chip.dataset.side;
+        document.querySelectorAll(".chip").forEach((c) => c.classList.remove("on"));
+        chip.classList.add("on");
+        renderPlayers();
+      });
+    });
+
     function renderPlayers() {
       const q = document.getElementById("filter").value.toLowerCase();
       const body = document.getElementById("players");
-      body.innerHTML = PLAYERS.filter((p) => p.name.toLowerCase().includes(q)).map((p) => {
+      body.innerHTML = PLAYERS.filter((p) => {
+        const nameOk = p.name.toLowerCase().includes(q);
+        const sideOk = sideFilter === "all" || p.side === sideFilter;
+        return nameOk && sideOk;
+      }).map((p) => {
         const sideClass = p.side === "Team" ? "team" : "enemy";
         const stateClass = p.state === "Down" ? "down" : "";
         const sel = p.name === selected ? "selected" : "";
